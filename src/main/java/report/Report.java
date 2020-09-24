@@ -21,7 +21,7 @@ public class Report {
             item = BoC;
         }else{
             System.out.println("Не правильное значение, попробуйте еще раз");
-            getPlatform();
+            item = getPlatform();
         }
         return item;
     }
@@ -80,8 +80,13 @@ if (OS.equals("1")){
     Report = Report + Scan.scanText()+"\n\n";
 
     System.out.println(Bug.Preconditions.getString());
-    Report = Report + Bug.Preconditions.getString();
-    Report = Report + Scan.scanText()+"\n\n";
+    String itemP = Scan.scanText();
+    if (itemP.equals("-")){
+
+    } else {
+        Report = Report + Bug.Preconditions.getString();
+        Report = Report + itemP+"\n\n";
+    }
 
     System.out.println(Bug.Description.getString());
     Report = Report + Bug.Description.getString();
@@ -100,8 +105,25 @@ if (OS.equals("1")){
     Report = Report + Scan.scanText()+"\n\n";
 
     System.out.println(Bug.AI.getString());
-    Report = Report + Bug.AI.getString();
-    Report = Report + Scan.scanText()+"\n\n\n\n\n\n\n\n\n\n\n";
+    String itemAI = Scan.scanText();
+    if (itemAI.equals("-")){
+
+    } else {
+        Report = Report + Bug.AI.getString();
+        Report = Report + itemAI+"\n\n";
+    }
+
+    System.out.println(Bug.Timestamp.getString());
+    String itemT = Scan.scanText();
+    if (itemT.equals("-")){
+
+    } else {
+        Report = Report + Bug.Timestamp.getString();
+        Report = Report + itemT+"\n";
+    }
+
+    System.out.println(Bug.SystemLog.getString());
+    Report = Report + Bug.SystemLog.getString()+"\n\n\n\n\n\n\n\n\n\n\n";
 
     System.out.println(Report);
     StringSelection stringSelection = new StringSelection(Report);
@@ -159,8 +181,13 @@ if (OS.equals("1")){
     Report = Report + Scan.scanText()+"\n\n";
 
     System.out.println(Bug.Preconditions.getString());
-    Report = Report + Bug.Preconditions.getString();
-    Report = Report + Scan.scanText()+"\n\n";
+    String itemP = Scan.scanText();
+    if (itemP.equals("-")){
+
+    } else {
+        Report = Report + Bug.Preconditions.getString();
+        Report = Report + itemP+"\n\n";
+    }
 
     System.out.println(Bug.Description.getString());
     Report = Report + Bug.Description.getString();
@@ -179,8 +206,26 @@ if (OS.equals("1")){
     Report = Report + Scan.scanText()+"\n\n";
 
     System.out.println(Bug.AI.getString());
-    Report = Report + Bug.AI.getString();
-    Report = Report + Scan.scanText()+"\n\n\n\n\n\n\n\n\n\n\n";
+    String itemAI = Scan.scanText();
+    if (itemAI.equals("-")){
+
+    } else {
+        Report = Report + Bug.AI.getString();
+        Report = Report + itemAI+"\n\n";
+    }
+
+    System.out.println(Bug.Timestamp.getString());
+    String itemT = Scan.scanText();
+    if (itemT.equals("-")){
+
+    } else {
+        Report = Report + Bug.Timestamp.getString();
+        Report = Report + itemT+"\n";
+    }
+
+    System.out.println(Bug.SystemLog.getString());
+    Report = Report + Bug.SystemLog.getString()+"\n\n\n\n\n\n\n\n\n\n\n";
+
 
     System.out.println(Report);
     StringSelection stringSelection = new StringSelection(Report);
@@ -202,23 +247,34 @@ if (OS.equals("1")){
 
             System.out.println(Bug.Device.getString());
             Report = Report + Bug.Device.getString();
-            Report = Report + Scan.scanText()+"\n\n";
+            Report = Report + Scan.scanText()+"\n";
 
             System.out.println(Bug.Server.getString());
             Report = Report + Bug.Server.getString();
             Report = Report + Answer.Sever()+"\n\n";
 
             System.out.println(Bug.Description.getString());
-            Report = Report + Bug.Description.getString();
-            Report = Report + Scan.scanText()+"\n";
+            String itemD = Scan.scanText();
+            if (itemD.equals("-")){
+
+            } else {
+                Report = Report + Bug.Description.getString();
+                Report = Report + itemD+"\n";
+            }
+
 
             System.out.println(Comment.TestStatus.getString());
             Report = Report + Comment.TestStatus.getString();
             Report = Report + Answer.TestStatus()+"\n\n";
 
             System.out.println(Bug.AI.getString());
-            Report = Report + Bug.AI.getString();
-            Report = Report + Scan.scanText()+"\n\n";
+            String itemAI = Scan.scanText();
+            if (itemAI.equals("-")){
+
+            } else {
+                Report = Report + Bug.AI.getString();
+                Report = Report + itemAI+"\n\n";
+            }
 
             System.out.println(Comment.Evidence.getString());
             Report = Report + Comment.Evidence.getString()+"\n\n\n\n\n\n\n\n\n";
@@ -237,23 +293,33 @@ if (OS.equals("1")){
 
             System.out.println(Bug.Device.getString());
             Report = Report + Bug.Device.getString();
-            Report = Report + Scan.scanText()+"\n\n";
+            Report = Report + Scan.scanText()+"\n";
 
             System.out.println(Bug.Server.getString());
             Report = Report + Bug.Server.getString();
             Report = Report + Answer.Sever()+"\n\n";
 
             System.out.println(Bug.Description.getString());
-            Report = Report + Bug.Description.getString();
-            Report = Report + Scan.scanText()+"\n";
+            String itemD = Scan.scanText();
+            if (itemD.equals("-")){
+
+            } else {
+                Report = Report + Bug.Description.getString();
+                Report = Report + itemD+"\n";
+            }
 
             System.out.println(Comment.TestStatus.getString());
             Report = Report + Comment.TestStatus.getString();
             Report = Report + Answer.TestStatus()+"\n\n";
 
             System.out.println(Bug.AI.getString());
-            Report = Report + Bug.AI.getString();
-            Report = Report + Scan.scanText()+"\n\n";
+            String itemAI = Scan.scanText();
+            if (itemAI.equals("-")){
+
+            } else {
+                Report = Report + Bug.AI.getString();
+                Report = Report + itemAI+"\n\n";
+            }
 
             System.out.println(Comment.Evidence.getString());
             Report = Report + Comment.Evidence.getString()+"\n\n\n\n\n\n\n\n\n";
@@ -270,12 +336,12 @@ if (OS.equals("1")){
         System.out.println("1 - Bug or 2 - Comment");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
-        String item = null;
+        String item;
         if (BoC.equals("1")||BoC.equals("2")) {
             item = BoC;
         }else{
             System.out.println("Не правильное значение, попробуйте еще раз");
-            getBoC();
+            item = getBoC();
         }
         return item;
     }

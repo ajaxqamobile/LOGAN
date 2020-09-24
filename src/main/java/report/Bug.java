@@ -22,7 +22,9 @@ public enum Bug {
     StepsToReproduce("Steps to Reproduce: "),
     AR("❌ Actual result: "),
     ER("✅ Expected Result: "),
-    AI("Additional Information: ");
+    AI("Additional Information: "),
+    Timestamp("Timestamp: "),
+    SystemLog("System Log: ");
 
     private final String text;
     Bug(String P) {
