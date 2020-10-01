@@ -12,11 +12,11 @@ public class Report {
         getReport(getBoC(),getPlatform());
     }
 
-    private static String getPlatform() {
+    static String getPlatform() {
         System.out.println("1 - AOS or 2 - iOS");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
-        String item = null;
+        String item;
         if (BoC.equals("1")||BoC.equals("2")) {
             item = BoC;
         }else{
@@ -68,12 +68,24 @@ if (OS.equals("1")){
     Report = Report + Bug.Repeated.getString()+"\n";
 
     System.out.println(Bug.Email.getString());
-    Report = Report + Bug.Email.getString();
-    Report = Report + Scan.scanText()+"\n";
+    String itemE = Scan.scanText();
+    if (itemE.equals("-")){
+        Report = Report + Bug.Email.getString();
+        Report = Report + "qa.ajax+all@gmail.com"+"\n";
+    } else {
+        Report = Report + Bug.Email.getString();
+        Report = Report + itemE+"\n";
+    }
 
     System.out.println(Bug.Pass.getString());
-    Report = Report + Bug.Pass.getString();
-    Report = Report + Scan.scanText()+"\n";
+    String itemPass = Scan.scanText();
+    if (itemPass.equals("-")){
+        Report = Report + Bug.Pass.getString();
+        Report = Report + "qwe"+"\n";
+    } else {
+        Report = Report + Bug.Pass.getString();
+        Report = Report + itemPass+"\n";
+    }
 
     System.out.println(Bug.HubName.getString());
     Report = Report + Bug.HubName.getString();
@@ -169,12 +181,24 @@ if (OS.equals("1")){
     Report = Report + Bug.Repeated.getString()+"\n";
 
     System.out.println(Bug.Email.getString());
-    Report = Report + Bug.Email.getString();
-    Report = Report + Scan.scanText()+"\n";
+    String itemE = Scan.scanText();
+    if (itemE.equals("-")){
+        Report = Report + Bug.Email.getString();
+        Report = Report + "qa.ajax+all@gmail.com"+"\n";
+    } else {
+        Report = Report + Bug.Email.getString();
+        Report = Report + itemE+"\n";
+    }
 
     System.out.println(Bug.Pass.getString());
-    Report = Report + Bug.Pass.getString();
-    Report = Report + Scan.scanText()+"\n";
+    String itemPass = Scan.scanText();
+    if (itemPass.equals("-")){
+        Report = Report + Bug.Pass.getString();
+        Report = Report + "qwe"+"\n";
+    } else {
+        Report = Report + Bug.Pass.getString();
+        Report = Report + itemPass+"\n";
+    }
 
     System.out.println(Bug.HubName.getString());
     Report = Report + Bug.HubName.getString();

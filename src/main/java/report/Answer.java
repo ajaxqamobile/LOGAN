@@ -66,23 +66,4 @@ public class Answer {
         }
         return Answer;
     }
-
-    public static String notEmpty () {
-        String Answer;
-        System.out.println("1 - Done!✅, 2 - Fail❌ or 3 - Not reproduced!✅");
-        String scan = Scan.scanText();
-        if (scan.equals("1")) {
-            Answer = "Done!✅";
-        } else if (scan.equals("2")){
-            Answer = "Fail❌";
-        } else if (scan.equals("3")){
-            Answer = "Not reproduced!✅";
-        } else {
-            System.out.println("Не правильное значение, попробуйте еще раз");
-            Answer = TestStatus();
-        }
-        return Answer;
-    }
-
-
 }

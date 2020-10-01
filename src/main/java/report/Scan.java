@@ -2,6 +2,8 @@ package main.java.report;
 
 import java.util.Scanner;
 
+import static main.java.report.Report.*;
+
 public class Scan {
 
     public static String scanText () {
