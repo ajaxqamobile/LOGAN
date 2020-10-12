@@ -363,7 +363,7 @@ if (OS.equals("1")){
         System.out.println("1 - Bug, 2 - Comment or 3 - QA Report");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
-        String item = null;
+        String item;
         if (BoC.equals("1")||BoC.equals("2")) {
             item = BoC;
         }else if (BoC.equals("3")) {
