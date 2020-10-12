@@ -11,7 +11,7 @@ public enum Bug {
     HubVer("Hub Version: "),
     Device("Device: "),
     Repeated("How often is repeated: "),
-    inRelease("Issue exists in release app: "),
+    inRelease("The issue exists in the release app: "),
     Another("Reproduce on another platform: "),
     TestAccount("Test Account: "),
     Email("E-mail: "),
