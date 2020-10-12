@@ -360,7 +360,7 @@ if (OS.equals("1")){
 
 
     public static String getBoC() {
-        System.out.println("1 - Bug, 2 - Comment or 3 - QA Report");
+        System.out.println("1 - Bug or 2 - Comment or 3 - QA Report");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item;
