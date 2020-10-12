@@ -371,7 +371,7 @@ if (OS.equals("1")){
             Date date = new Date();
             SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy");
             String currentDate = formatForDateNow.format(date);
-String report = "Date\uD83D\uDCC5: "+currentDate+"\n\n"+"Fail❌: \n\n"+"Done!✅:";
+String report = "Date\uD83D\uDCC5: "+currentDate+"\n\n"+"Fail❌: \n\n"+"Done!✅: \n\n";
             System.out.println(report);
             StringSelection stringSelection = new StringSelection(report);
             Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
