@@ -109,7 +109,19 @@ if (OS.equals("1")){
 
     System.out.println(Bug.StepsToReproduce.getString());
     Report = Report + Bug.StepsToReproduce.getString();
-    Report = Report + Scan.scanText()+"\n\n";
+    String space = "-";
+    String scan = null;
+        for (int i = 1; i <= 100; i++){
+            System.out.println(i+": ");
+scan = Scan.scanText();
+if (!scan.equals(space)){
+    Report = Report +"\n"+i+": "+ scan;
+} else {
+    break;
+}
+        }
+    Report = Report +"\n\n";
+
 
     System.out.println(Bug.AR.getString());
     Report = Report + Bug.AR.getString();
@@ -222,7 +234,18 @@ if (OS.equals("1")){
 
     System.out.println(Bug.StepsToReproduce.getString());
     Report = Report + Bug.StepsToReproduce.getString();
-    Report = Report + Scan.scanText()+"\n\n";
+    String space = "-";
+    String scan = null;
+    for (int i = 1; i <= 100; i++){
+        System.out.println(i+": ");
+        scan = Scan.scanText();
+        if (!scan.equals(space)){
+            Report = Report +"\n"+i+": "+ scan;
+        } else {
+            break;
+        }
+    }
+    Report = Report +"\n\n";
 
     System.out.println(Bug.AR.getString());
     Report = Report + Bug.AR.getString();
