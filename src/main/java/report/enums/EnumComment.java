@@ -1,6 +1,6 @@
-package main.java.report;
+package main.java.report.enums;
 
-public enum Comment {
+public enum EnumComment {
 
     Environment("Environment: "),
     Device("Device: "),
@@ -12,7 +12,7 @@ public enum Comment {
 
 
     private final String text;
-    Comment(String P) {
+    EnumComment(String P) {
         text = P;
     }
     public String getString() {

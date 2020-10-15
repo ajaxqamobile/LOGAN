@@ -1,6 +1,6 @@
 package main.java.report;
 
-public class Answer {
+public class Answers {
 
     public static String YesNo () {
         String Answer;

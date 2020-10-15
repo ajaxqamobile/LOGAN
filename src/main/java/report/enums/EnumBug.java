@@ -1,6 +1,6 @@
-package main.java.report;
+package main.java.report.enums;
 
-public enum Bug {
+public enum EnumBug {
 
     Environment("Environment: "),
     iOSversion("iOS version: "),
@@ -27,7 +27,7 @@ public enum Bug {
     SystemLog("System Log: ");
 
     private final String text;
-    Bug(String P) {
+    EnumBug(String P) {
         text = P;
     }
     public String getString() {
