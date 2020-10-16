@@ -212,7 +212,7 @@ public class ReportElements {
 
     public static void systemLog (){
         System.out.println(EnumBug.SystemLog.getString());
-        Report = Report + EnumBug.SystemLog.getString() + "\n\n\n\n\n\n\n\n\n\n\n";
+        Report = Report + EnumBug.SystemLog.getString() + "\n";
 
     }
 
