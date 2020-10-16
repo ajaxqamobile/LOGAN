@@ -57,6 +57,12 @@ public class ReportElements {
         Report = Report + Scan.scanText()+"\n\n";
     }
 
+    public static void commentDevice (){
+        System.out.println(EnumBug.Device.getString());
+        Report = Report + EnumBug.Device.getString();
+        Report = Report + Scan.scanText()+"\n";
+    }
+
     public static void repeated (){
         System.out.println(EnumBug.Repeated.getString());
         Report = Report + EnumBug.Repeated.getString();

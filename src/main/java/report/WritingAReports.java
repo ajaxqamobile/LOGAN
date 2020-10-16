@@ -69,7 +69,7 @@ public class WritingAReports {
 
             ReportElements.enviroment();
             ReportElements.appVersion(OS);
-            ReportElements.device();
+            ReportElements.commentDevice();
             ReportElements.server();
             ReportElements.testStatus();
             ReportElements.commentDescription();
@@ -81,7 +81,7 @@ public class WritingAReports {
 
             ReportElements.enviroment();
             ReportElements.appVersion(OS);
-            ReportElements.device();
+            ReportElements.commentDevice();
             ReportElements.server();
             ReportElements.commentDescription();
             ReportElements.testStatus();
