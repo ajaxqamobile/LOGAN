@@ -54,13 +54,13 @@ public class ReportElements {
     public static void device (){
         System.out.println(EnumBug.Device.getString());
         Report = Report + EnumBug.Device.getString();
-        Report = Report + Scan.scanText()+"\n";
+        Report = Report + Scan.scanText()+"\n\n";
     }
 
     public static void repeated (){
         System.out.println(EnumBug.Repeated.getString());
         Report = Report + EnumBug.Repeated.getString();
-        Report = Report + "\n"+ Answers.HowOften()+"\n";
+        Report = Report + Answers.HowOften()+"\n";
     }
 
     public static void inRelease (){
@@ -77,7 +77,7 @@ public class ReportElements {
 
     public static void testAccount(){
         System.out.println(EnumBug.TestAccount.getString());
-        Report = Report + EnumBug.Repeated.getString() + "\n";
+        Report = Report + EnumBug.TestAccount.getString() + "\n";
     }
 
     public static void email (){
@@ -146,18 +146,20 @@ public class ReportElements {
 
     public static void stepsToReproduce (){
         System.out.println(EnumBug.StepsToReproduce.getString());
-        Report = Report + EnumBug.StepsToReproduce.getString();
+        Report = Report + EnumBug.StepsToReproduce.getString()+"\n\n";
         String space = "-";
         String scan;
         for (int i = 1; i <= 100; i++) {
             System.out.println(i + ": ");
             scan = Scan.scanText();
             if (!scan.equals(space)) {
-                Report = Report + "\n" + i + ": " + scan;
+                Report = Report + i + ": " + scan;
+                Report = Report + "\n";
             } else {
+                Report = Report + "\n";
                 break;
             }
-            Report = Report + "\n";
+
         }
     }
 
