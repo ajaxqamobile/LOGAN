@@ -2,6 +2,7 @@ package main.java.report;
 
 import main.java.report.enums.EnumBug;
 import main.java.report.enums.EnumComment;
+import main.java.report.enums.HubTypes;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -45,22 +46,29 @@ public class ReportElements {
         Report = Report + Answers.Sever()+"\n\n";
     }
 
+    public static void hubType (){
+        System.out.println(EnumBug.HubType.getString());
+        Report = Report + EnumBug.HubType.getString();
+        Report = Report + HubTypes.getType()+"\n";
+    }
+
     public static void hubVer (){
         System.out.println(EnumBug.HubVer.getString());
         Report = Report + EnumBug.HubVer.getString();
         Report = Report + Scan.scanText()+"\n";
     }
 
-    public static void device (){
+    public static void device (String OS){
         System.out.println(EnumBug.Device.getString());
         Report = Report + EnumBug.Device.getString();
-        Report = Report + Scan.scanText()+"\n\n";
+        Report = Report + Phones.getPhone(OS)+"\n\n";
     }
 
-    public static void commentDevice (){
+    public static void commentDevice (String OS){
         System.out.println(EnumBug.Device.getString());
         Report = Report + EnumBug.Device.getString();
-        Report = Report + Scan.scanText()+"\n";
+        Report = Report + Phones.getPhone(OS)+"\n";
+        //Report = Report + Scan.scanText()+"\n";
     }
 
     public static void repeated (){

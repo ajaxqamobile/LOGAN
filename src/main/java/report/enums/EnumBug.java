@@ -9,6 +9,7 @@ public enum EnumBug {
     AOSAppVersion("Android App version: "),
     Server("Server: "),
     HubVer("Hub Version: "),
+    HubType("Hub Type: "),
     Device("Device: "),
     Repeated("How often is repeated: "),
     inRelease("The issue exists in the release app: "),
