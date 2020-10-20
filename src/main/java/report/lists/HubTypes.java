@@ -1,4 +1,4 @@
-package main.java.report.enums;
+package main.java.report.lists;
 
 import main.java.report.Scan;
 

@@ -2,7 +2,8 @@ package main.java.report;
 
 import main.java.report.enums.EnumBug;
 import main.java.report.enums.EnumComment;
-import main.java.report.enums.HubTypes;
+import main.java.report.lists.HubTypes;
+import main.java.report.lists.Phones;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -18,25 +19,31 @@ public class ReportElements {
    }
 
    public static void osVersion (String OS){
-       if (OS.equals("1")){
-           System.out.println(EnumBug.AOSversion.getString());
-           Report = Report + EnumBug.AOSversion.getString();
-           Report = Report + Scan.scanText()+"\n";
-       } else {
-           System.out.println(EnumBug.iOSversion.getString());
-           Report = Report + EnumBug.iOSversion.getString();
-           Report = Report + Scan.scanText() + "\n";
+       switch (OS) {
+           case "1" -> {
+               System.out.println(EnumBug.AOSversion.getString());
+               Report = Report + EnumBug.AOSversion.getString();
+               Report = Report + Scan.scanText() + "\n";
+           }
+           case "2" -> {
+               System.out.println(EnumBug.iOSversion.getString());
+               Report = Report + EnumBug.iOSversion.getString();
+               Report = Report + Scan.scanText() + "\n";
+           }
        }
    }
-    public static void appVersion (String OS){
-        if (OS.equals("1")){
-            System.out.println(EnumBug.AOSAppVersion.getString());
-            Report = Report + EnumBug.AOSAppVersion.getString();
-            Report = Report + Scan.scanText()+"\n";
-        } else {
-            System.out.println(EnumBug.iOSAppVersion.getString());
-            Report = Report + EnumBug.iOSAppVersion.getString();
-            Report = Report + Scan.scanText()+"\n";
+    public static void appVersion (String OS) {
+        switch (OS) {
+            case "1" -> {
+                System.out.println(EnumBug.AOSAppVersion.getString());
+                Report = Report + EnumBug.AOSAppVersion.getString();
+                Report = Report + Scan.scanText() + "\n";
+            }
+            case "2" -> {
+                System.out.println(EnumBug.iOSAppVersion.getString());
+                Report = Report + EnumBug.iOSAppVersion.getString();
+                Report = Report + Scan.scanText() + "\n";
+            }
         }
     }
 
@@ -68,7 +75,6 @@ public class ReportElements {
         System.out.println(EnumBug.Device.getString());
         Report = Report + EnumBug.Device.getString();
         Report = Report + Phones.getPhone(OS)+"\n";
-        //Report = Report + Scan.scanText()+"\n";
     }
 
     public static void repeated (){
@@ -127,9 +133,7 @@ public class ReportElements {
     public static void preconditions(){
         System.out.println(EnumBug.Preconditions.getString());
         String itemP = Scan.scanText();
-        if (itemP.equals("-")) {
-
-        } else {
+        if (!itemP.equals("-")) {
             Report = Report + EnumBug.Preconditions.getString();
             Report = Report + itemP + "\n\n";
         }
@@ -144,9 +148,7 @@ public class ReportElements {
     public static void commentDescription(){
         System.out.println(EnumBug.Description.getString());
         String itemD = Scan.scanText();
-        if (itemD.equals("-")) {
-
-        } else {
+        if (!itemD.equals("-")) {
             Report = Report + EnumBug.Description.getString();
             Report = Report + itemD + "\n\n";
         }
@@ -173,7 +175,6 @@ public class ReportElements {
                 Report = Report + "\n";
                 break;
             }
-
         }
     }
 
@@ -194,21 +195,16 @@ public class ReportElements {
         String itemE = Scan.scanText();
         if (itemE.equals("+")) {
             Report = Report + EnumComment.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
-        } else if (itemE.equals("-")){
-
-        } else {
+        } else if (!itemE.equals("-")){
             System.out.println("Не правильное значение, попробуйте еще раз");
             evidence();
         }
-
     }
 
     public static void AI (){
         System.out.println(EnumBug.AI.getString());
         String itemAI = Scan.scanText();
-        if (itemAI.equals("-")) {
-
-        } else {
+        if (!itemAI.equals("-")) {
             Report = Report + EnumBug.AI.getString();
             Report = Report + itemAI + "\n\n";
         }
@@ -217,9 +213,7 @@ public class ReportElements {
     public static void timestamp (){
         System.out.println(EnumBug.Timestamp.getString());
         String itemT = Scan.scanText();
-        if (itemT.equals("-")) {
-
-        } else {
+        if (!itemT.equals("-")) {
             Report = Report + EnumBug.Timestamp.getString();
             Report = Report + itemT + "\n";
             systemLog();
@@ -229,7 +223,6 @@ public class ReportElements {
     public static void systemLog (){
         System.out.println(EnumBug.SystemLog.getString());
         Report = Report + EnumBug.SystemLog.getString() + "\n";
-
     }
 
     public static void clipboard (){
@@ -239,8 +232,8 @@ public class ReportElements {
         clipboard.setContents(stringSelection, null);
     }
 
-    public static void clipboardStatus (String Status){
-        StringSelection stringSelection = new StringSelection(Status);
+    public static void clipboardIndex(String index){
+        StringSelection stringSelection = new StringSelection(index);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
     }

@@ -3,6 +3,6 @@ package main.java.report;
 public class Main {
 
     public static void main(String[] args) {
-        WritingAReports.getReport(Choise.getBoC(), Choise.getPlatform());
+        WritingAReports.getReport(GetData.getBoC(), GetData.getPlatform());
     }
 }

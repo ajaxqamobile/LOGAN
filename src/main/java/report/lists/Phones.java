@@ -1,7 +1,6 @@
-package main.java.report;
+package main.java.report.lists;
 
-import java.awt.*;
-import java.util.Scanner;
+import main.java.report.Scan;
 
 public class Phones {
 
@@ -35,18 +34,21 @@ public class Phones {
 
     public static String getPhone(String OS) {
         int count = 1;
-        if (OS.equals("1")) {
-            for (String i : androidPhones) {
-                System.out.println(count + ": " + i);
-                count++;
+        switch (OS) {
+            case "1" -> {
+                for (String i : androidPhones) {
+                    System.out.println(count + ": " + i);
+                    count++;
+                }
+                currentPhone = Scan.scanPhone(count, OS);
             }
-             currentPhone = Scan.scanPhone(count,OS);
-        } else if (OS.equals("2")){
-            for (String i : iOSPhones) {
-                System.out.println(count + ": " + i);
-                count++;
+            case "2" -> {
+                for (String i : iOSPhones) {
+                    System.out.println(count + ": " + i);
+                    count++;
+                }
+                currentPhone = Scan.scanPhone(count, OS);
             }
-            currentPhone = Scan.scanPhone(count,OS);
         }
         return currentPhone;
     }

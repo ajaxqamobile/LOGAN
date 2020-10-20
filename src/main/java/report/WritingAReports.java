@@ -3,12 +3,11 @@ package main.java.report;
 public class WritingAReports {
 
     public static void getReport(String item, String OS) {
-        if (item.equals("1")) {
-            Bug(OS);
-        } else if (item.equals("2")) {
-            Comment(OS);
+        switch (item){
+            case "1": Bug(OS);
+            case "2": Comment(OS);
         }
-        getReport(Choise.getBoC(), Choise.getPlatform());
+        getReport(GetData.getBoC(), GetData.getPlatform());
     }
 
     public static void Bug(String OS) {
