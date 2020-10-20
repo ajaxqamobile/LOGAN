@@ -33,11 +33,11 @@ public class GetData {
                 item = getBoC();
             }
             case "4" -> {
-                ReportElements.clipboardIndex("Done!✅");
+                ReportMethods.clipboardIndex("Done!✅");
                 item = getBoC();
             }
             case "5" -> {
-                ReportElements.clipboardIndex("Fail❌");
+                ReportMethods.clipboardIndex("Fail❌");
                 item = getBoC();
             }
             default -> {
@@ -50,7 +50,7 @@ public class GetData {
 
     public static void qaReport() {
         System.out.println(getDate());
-        ReportElements.clipboardIndex(getDate());
+        ReportMethods.clipboardIndex(getDate());
     }
 
     public static String getDate(){
