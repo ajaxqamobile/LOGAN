@@ -52,7 +52,7 @@ public class Answers {
 
     public static String TestStatus () {
         String Answer;
-        System.out.println("1 - Done!✅, 2 - Fail❌ or 3 - Not reproduced!✅");
+        System.out.println("1 - Done!✅, 2 - Fail❌, 3 - Not reproduced!✅ or 4 - In Progress!\uD83D\uDD53");
         String scan = Scan.scanText();
         if (scan.equals("1")) {
             Answer = "Done!✅";
@@ -60,7 +60,9 @@ public class Answers {
             Answer = "Fail❌";
         } else if (scan.equals("3")){
             Answer = "Not reproduced!✅";
-        } else {
+        } else if (scan.equals("4")){
+            Answer = "In Progress!\uD83D\uDD53";
+        }else {
             System.out.println("Не правильное значение, попробуйте еще раз");
            Answer = TestStatus();
         }
