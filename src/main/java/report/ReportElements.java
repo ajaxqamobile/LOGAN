@@ -35,7 +35,7 @@ public class ReportElements {
         } else {
             System.out.println(EnumBug.iOSAppVersion.getString());
             Report = Report + EnumBug.iOSAppVersion.getString();
-            Report = Report + Scan.scanText()+"\n\n";
+            Report = Report + Scan.scanText()+"\n";
         }
     }
 
