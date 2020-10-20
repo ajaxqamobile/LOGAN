@@ -4,7 +4,7 @@ public class Answers {
 
     public static String YesNo () {
         String Answer;
-        System.out.println("1 - Yes or 2 - No");
+        System.out.println("1 - Yes \n2 - No");
         String scan = Scan.scanText();
         if (scan.equals("1")) {
             Answer = "Yes";
@@ -19,7 +19,7 @@ public class Answers {
 
     public static String HowOften () {
         String Answer;
-        System.out.println("1 - Always, 2 - Rarely or 3 - Failed to retry");
+        System.out.println("1 - Always \n2 - Rarely \n3 - Failed to retry");
         String scan = Scan.scanText();
         if (scan.equals("1")) {
             Answer = "Always";
@@ -36,7 +36,7 @@ public class Answers {
 
     public static String Sever () {
         String Answer;
-        System.out.println("1 - Release or 2 - Stage");
+        System.out.println("1 - Release \n2 - Stage");
         String scan = Scan.scanText();
         if (scan.equals("1")) {
             Answer = "Release";
@@ -52,7 +52,7 @@ public class Answers {
 
     public static String TestStatus () {
         String Answer;
-        System.out.println("1 - Done!✅, 2 - Fail❌, 3 - Not reproduced!✅ or 4 - In Progress!\uD83D\uDD53");
+        System.out.println("1 - Done!✅ \n2 - Fail❌ \n3 - Not reproduced!✅ \n4 - In Progress!\uD83D\uDD53");
         String scan = Scan.scanText();
         if (scan.equals("1")) {
             Answer = "Done!✅";

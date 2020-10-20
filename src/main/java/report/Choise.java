@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Choise {
 
     public static String getPlatform() {
-        System.out.println("1 - AOS or 2 - iOS");
+        System.out.println("1 - AOS \n2 - iOS");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item;
@@ -23,8 +23,8 @@ public class Choise {
         return item;
     }
 
-    public static String getBoC(){
-        System.out.println("1 - Bug or 2 - Comment or 3 - QA Report");
+    public static String getBoC() {
+        System.out.println("Make a choice: \n1 - Bug🔴  \n2 - Comment🟢  \n3 - QA Report📅  \n4 - Done!✅  \n5 - Fail❌");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item;
@@ -33,6 +33,12 @@ public class Choise {
         } else if (BoC.equals("3")) {
             qaReport();
             item = getBoC();
+        } else if (BoC.equals("4")) {
+            ReportElements.clipboardStatus("Done!✅");
+            item = getBoC();
+        } else if (BoC.equals("5")) {
+            ReportElements.clipboardStatus("Fail❌");
+            item = getBoC();
         } else {
             System.out.println("Не правильное значение, попробуйте еще раз");
             item = getBoC();
@@ -40,7 +46,7 @@ public class Choise {
         return item;
     }
 
-    public static void qaReport(){
+    public static void qaReport() {
         Date date = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy");
         String currentDate = formatForDateNow.format(date);

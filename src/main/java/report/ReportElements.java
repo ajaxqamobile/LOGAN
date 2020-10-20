@@ -230,4 +230,10 @@ public class ReportElements {
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
     }
+
+    public static void clipboardStatus (String Status){
+        StringSelection stringSelection = new StringSelection(Status);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
+    }
 }
