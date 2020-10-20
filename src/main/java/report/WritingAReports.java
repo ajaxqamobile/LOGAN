@@ -12,7 +12,6 @@ public class WritingAReports {
     }
 
     public static void Bug(String OS) {
-        if (OS.equals("1")) {
 
             ReportElements.enviroment();
             ReportElements.osVersion(OS);
@@ -35,38 +34,11 @@ public class WritingAReports {
             ReportElements.AI();
             ReportElements.timestamp();
             ReportElements.clipboard();
-
-        } else {
-            ReportElements.enviroment();
-            ReportElements.osVersion(OS);
-            ReportElements.appVersion(OS);
-            ReportElements.server();
-            ReportElements.hubVer();
-            ReportElements.device();
-            ReportElements.repeated();
-            ReportElements.inRelease();
-            ReportElements.another();
-            ReportElements.testAccount();
-            ReportElements.email();
-            ReportElements.password();
-            ReportElements.hubName();
-            ReportElements.preconditions();
-            ReportElements.description();
-            ReportElements.stepsToReproduce();
-            ReportElements.AR();
-            ReportElements.ER();
-            ReportElements.AI();
-            ReportElements.timestamp();
-            ReportElements.clipboard();
-
-        }
 
     }
 
     public static void Comment(String OS) {
 
-        if (OS.equals("1")) {
-
             ReportElements.enviroment();
             ReportElements.appVersion(OS);
             ReportElements.commentDevice();
@@ -76,20 +48,6 @@ public class WritingAReports {
             ReportElements.AI();
             ReportElements.evidence();
             ReportElements.clipboard();
-
-        } else {
-
-            ReportElements.enviroment();
-            ReportElements.appVersion(OS);
-            ReportElements.commentDevice();
-            ReportElements.server();
-            ReportElements.commentDescription();
-            ReportElements.testStatus();
-            ReportElements.AI();
-            ReportElements.evidence();
-            ReportElements.clipboard();
-
-        }
     }
 
 }
