@@ -78,7 +78,7 @@ public class ReportMethods {
 
     public static void repeated (){
         System.out.println(ReportElements.Repeated.getString());
-        Report = Report + ReportElements.Repeated.getString();
+        Report = Report + "\n"+ReportElements.Repeated.getString();
         Report = Report + Answers.HowOften()+"\n";
     }
 

@@ -42,8 +42,8 @@ public class Scan {
         } else {
             i--;
             switch (OS) {
-                case "1" -> currentPhone = Phones.androidPhones[i];
-                case "2" -> currentPhone = Phones.iOSPhones[i];
+                case "1" -> currentPhone = Phones.androidPhones[i]+"\n"+Phones.androidOS[i];
+                case "2" -> currentPhone = Phones.iOSPhones[i]+"\n"+Phones.iOSOS[i];
             }
         }
         return currentPhone;

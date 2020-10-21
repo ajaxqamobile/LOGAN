@@ -14,9 +14,21 @@ public class Phones {
                     "Samsung Galaxy S4",
                     "Xiaomi MI A2",
                     "Nexus P6",
-                    "Prestigio",
+                    "Prestigio (PSP7505DUO)",
                     "Meizu PRO 6",
                     "Huawei P Smart"};
+
+    public static String[] androidOS =
+            {"Android version: 10.0",
+                    "Android version: 9.0",
+                    "Android version: 5.1.1",
+                    "Android version: 11.0 Beta",
+                    "Android version: 5.1",
+                    "Android version: 9.0",
+                    "Android version: 10.0",
+                    "Android version: 4.4.2",
+                    "Android version: 6.0",
+                    "Android version: 9.0"};
 
     public static String[] iOSPhones =
             {"Apple Watch 1",
@@ -31,6 +43,20 @@ public class Phones {
                     "iPhone 6s",
                     "iPhone SE 2020",
                     "iPhone 8 Plus"};
+
+    public static String[] iOSOS =
+            {"WatchOS version: 4.3.2",
+                    "WatchOS version: 7.0",
+                    "WatchOS version: 7.1",
+                    "iOS version: ",
+                    "iOS version: 9.3.5",
+                    "iOS version: ",
+                    "iOS version: ",
+                    "iOS version: 14.2 Beta 4",
+                    "iOS version: 12.4.1",
+                    "iOS version: 12.4",
+                    "iOS version: 13.5.1",
+                    "iOS version: "};
 
     public static String getPhone(String OS) {
         int count = 1;

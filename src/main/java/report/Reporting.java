@@ -13,12 +13,12 @@ public class Reporting {
     public static void composeBug(String OS) {
 
         ReportMethods.enviroment();
-        ReportMethods.osVersion(OS);
+      //  ReportMethods.osVersion(OS);
         ReportMethods.appVersion(OS);
+        ReportMethods.device(OS);
         ReportMethods.server();
         ReportMethods.hubType();
         ReportMethods.hubVer();
-        ReportMethods.device(OS);
         ReportMethods.repeated();
         ReportMethods.inRelease();
         ReportMethods.another();
@@ -42,6 +42,7 @@ public class Reporting {
         ReportMethods.enviroment();
         ReportMethods.appVersion(OS);
         ReportMethods.commentDevice(OS);
+       // ReportMethods.osVersion(OS);
         ReportMethods.hubType();
         ReportMethods.hubVer();
         ReportMethods.server();
