@@ -1,4 +1,7 @@
-package main.java.report;
+package main.java.report.mainClass;
+
+import main.java.report.GetData;
+import main.java.report.Reporting;
 
 public class Main {
 
