@@ -3,9 +3,9 @@ package main.java.report;
 public class Reporting {
 
     public static void getReport(String item, String OS) {
-        switch (item){
-            case "1": composeBug(OS);
-            case "2": composeComment(OS);
+        switch (item) {
+            case "1" -> composeBug(OS);
+            case "2" -> composeComment(OS);
         }
         getReport(GetData.getBoC(), GetData.getPlatform());
     }
