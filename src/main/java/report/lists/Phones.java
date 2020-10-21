@@ -1,6 +1,7 @@
 package main.java.report.lists;
 
 import main.java.report.Scan;
+import main.java.report.mainClass.Main;
 
 public class Phones {
 
@@ -75,6 +76,7 @@ public class Phones {
                 }
                 currentPhone = Scan.scanPhone(count, OS);
             }
+            case "reboot" -> Main.retry();
         }
         return currentPhone;
     }

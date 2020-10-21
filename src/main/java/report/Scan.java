@@ -2,7 +2,9 @@ package main.java.report;
 
 import main.java.report.lists.HubTypes;
 import main.java.report.lists.Phones;
+import main.java.report.mainClass.Main;
 
+import javax.swing.text.TabExpander;
 import java.util.Scanner;
 
 public class Scan {
@@ -13,38 +15,51 @@ public class Scan {
         if (text.equals("")) {
             System.out.println("Не правильное значение, попробуйте еще раз");
             scanText();
+        } else if (text.equals("reboot")) {
+            Main.retry();
         }
         return text;
     }
 
     public static String scanHubType(int count) {
+        String currentType = "null";
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
-        int i = Integer.parseInt(text);
-        String currentType = "null";
-        if (text.equals("") || i < 0 || i > count) {
-            System.out.println("Не правильное значение, попробуйте еще раз");
-            scanHubType(count);
-        } else {
-            currentType = HubTypes.hubTypes[i - 1];
+        try {
+            int i = Integer.parseInt(text);
+            if (text.equals("") || i < 0 || i > count) {
+                System.out.println("Не правильное значение, попробуйте еще раз");
+                scanHubType(count);
+            } else if (text.equals("reboot")) {
+                Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
+            } else {
+                currentType = HubTypes.hubTypes[i - 1];
+            }
+        } catch (NumberFormatException e) {
+            Main.retry();
         }
         return currentType;
     }
+
 
     public static String scanPhone(int count, String OS) {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         String currentPhone = "null";
-        int i = Integer.parseInt(text);
-        if (text.equals("") || i < 0 || i > count) {
-            System.out.println("Не правильное значение, попробуйте еще раз");
-            scanPhone(count, OS);
-        } else {
-            i--;
-            switch (OS) {
-                case "1" -> currentPhone = Phones.androidPhones[i]+"\n"+Phones.androidOS[i];
-                case "2" -> currentPhone = Phones.iOSPhones[i]+"\n"+Phones.iOSOS[i];
+        try {
+            int i = Integer.parseInt(text);
+            if (text.equals("") || i < 0 || i > count) {
+                System.out.println("Не правильное значение, попробуйте еще раз");
+                scanPhone(count, OS);
+            } else {
+                i--;
+                switch (OS) {
+                    case "1" -> currentPhone = Phones.androidPhones[i] + "\n" + Phones.androidOS[i];
+                    case "2" -> currentPhone = Phones.iOSPhones[i] + "\n" + Phones.iOSOS[i];
+                }
             }
+        } catch (NumberFormatException e) {
+            Main.retry();
         }
         return currentPhone;
     }

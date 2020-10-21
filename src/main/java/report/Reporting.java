@@ -1,11 +1,15 @@
 package main.java.report;
 
+import main.java.report.mainClass.Main;
+
 public class Reporting {
 
     public static void getReport(String item, String OS) {
         switch (item) {
             case "1" -> composeBug(OS);
             case "2" -> composeComment(OS);
+            case "reboot" -> Main.retry();
+
         }
         getReport(GetData.getBoC(), GetData.getPlatform());
     }
@@ -13,7 +17,7 @@ public class Reporting {
     public static void composeBug(String OS) {
 
         ReportMethods.enviroment();
-      //  ReportMethods.osVersion(OS);
+        //  ReportMethods.osVersion(OS);
         ReportMethods.appVersion(OS);
         ReportMethods.device(OS);
         ReportMethods.server();
@@ -42,7 +46,7 @@ public class Reporting {
         ReportMethods.enviroment();
         ReportMethods.appVersion(OS);
         ReportMethods.commentDevice(OS);
-       // ReportMethods.osVersion(OS);
+        // ReportMethods.osVersion(OS);
         ReportMethods.hubType();
         ReportMethods.hubVer();
         ReportMethods.server();

@@ -12,26 +12,27 @@ public class ReportMethods {
 
     private static String Report;
 
-   public static void enviroment (){
-       System.out.println(ReportElements.Environment.getString()+"\n");
-       Report = ReportElements.Environment.getString()+"\n";
-   }
+    public static void enviroment() {
+        System.out.println(ReportElements.Environment.getString() + "\n");
+        Report = ReportElements.Environment.getString() + "\n";
+    }
 
-   public static void osVersion (String OS){
-       switch (OS) {
-           case "1" -> {
-               System.out.println(ReportElements.AOSversion.getString());
-               Report = Report + ReportElements.AOSversion.getString();
-               Report = Report + Scan.scanText() + "\n";
-           }
-           case "2" -> {
-               System.out.println(ReportElements.iOSversion.getString());
-               Report = Report + ReportElements.iOSversion.getString();
-               Report = Report + Scan.scanText() + "\n";
-           }
-       }
-   }
-    public static void appVersion (String OS) {
+    public static void osVersion(String OS) {
+        switch (OS) {
+            case "1" -> {
+                System.out.println(ReportElements.AOSversion.getString());
+                Report = Report + ReportElements.AOSversion.getString();
+                Report = Report + Scan.scanText() + "\n";
+            }
+            case "2" -> {
+                System.out.println(ReportElements.iOSversion.getString());
+                Report = Report + ReportElements.iOSversion.getString();
+                Report = Report + Scan.scanText() + "\n";
+            }
+        }
+    }
+
+    public static void appVersion(String OS) {
         switch (OS) {
             case "1" -> {
                 System.out.println(ReportElements.AOSAppVersion.getString());
@@ -46,60 +47,60 @@ public class ReportMethods {
         }
     }
 
-    public static void server () {
+    public static void server() {
         System.out.println(ReportElements.Server.getString());
         Report = Report + ReportElements.Server.getString();
-        Report = Report + Answers.Sever()+"\n\n";
+        Report = Report + Answers.Sever() + "\n\n";
     }
 
-    public static void hubType (){
+    public static void hubType() {
         System.out.println(ReportElements.HubType.getString());
         Report = Report + ReportElements.HubType.getString();
-        Report = Report + HubTypes.getType()+"\n";
+        Report = Report + HubTypes.getType() + "\n";
     }
 
-    public static void hubVer (){
+    public static void hubVer() {
         System.out.println(ReportElements.HubVer.getString());
         Report = Report + ReportElements.HubVer.getString();
-        Report = Report + Scan.scanText()+"\n";
+        Report = Report + Scan.scanText() + "\n";
     }
 
-    public static void device (String OS){
+    public static void device(String OS) {
         System.out.println(ReportElements.Device.getString());
         Report = Report + ReportElements.Device.getString();
-        Report = Report + Phones.getPhone(OS)+"\n\n";
+        Report = Report + Phones.getPhone(OS) + "\n\n";
     }
 
-    public static void commentDevice (String OS){
+    public static void commentDevice(String OS) {
         System.out.println(ReportElements.Device.getString());
         Report = Report + ReportElements.Device.getString();
-        Report = Report + Phones.getPhone(OS)+"\n";
+        Report = Report + Phones.getPhone(OS) + "\n";
     }
 
-    public static void repeated (){
+    public static void repeated() {
         System.out.println(ReportElements.Repeated.getString());
-        Report = Report + "\n"+ReportElements.Repeated.getString();
-        Report = Report + Answers.HowOften()+"\n";
+        Report = Report + "\n" + ReportElements.Repeated.getString();
+        Report = Report + Answers.HowOften() + "\n";
     }
 
-    public static void inRelease (){
+    public static void inRelease() {
         System.out.println(ReportElements.inRelease.getString());
         Report = Report + ReportElements.inRelease.getString();
-        Report = Report + Answers.YesNo()+"\n";
+        Report = Report + Answers.YesNo() + "\n";
     }
 
-    public static void another (){
+    public static void another() {
         System.out.println(ReportElements.Another.getString());
         Report = Report + ReportElements.Another.getString();
-        Report = Report + Answers.YesNo()+"\n\n";
+        Report = Report + Answers.YesNo() + "\n\n";
     }
 
-    public static void testAccount(){
+    public static void testAccount() {
         System.out.println(ReportElements.TestAccount.getString());
         Report = Report + ReportElements.TestAccount.getString() + "\n";
     }
 
-    public static void email (){
+    public static void email() {
         System.out.println(ReportElements.Email.getString());
         String itemE = Scan.scanText();
         if (itemE.equals("-")) {
@@ -111,7 +112,7 @@ public class ReportMethods {
         }
     }
 
-    public static void password(){
+    public static void password() {
         System.out.println(ReportElements.Pass.getString());
         String itemPass = Scan.scanText();
         if (itemPass.equals("-")) {
@@ -123,13 +124,13 @@ public class ReportMethods {
         }
     }
 
-    public static void hubName (){
+    public static void hubName() {
         System.out.println(ReportElements.HubName.getString());
         Report = Report + ReportElements.HubName.getString();
         Report = Report + Scan.scanText() + "\n\n";
     }
 
-    public static void preconditions(){
+    public static void preconditions() {
         System.out.println(ReportElements.Preconditions.getString());
         String itemP = Scan.scanText();
         if (!itemP.equals("-")) {
@@ -138,13 +139,13 @@ public class ReportMethods {
         }
     }
 
-    public static void description(){
+    public static void description() {
         System.out.println(ReportElements.Description.getString());
         Report = Report + ReportElements.Description.getString();
         Report = Report + Scan.scanText() + "\n\n";
     }
 
-    public static void commentDescription(){
+    public static void commentDescription() {
         System.out.println(ReportElements.Description.getString());
         String itemD = Scan.scanText();
         if (!itemD.equals("-")) {
@@ -153,15 +154,15 @@ public class ReportMethods {
         }
     }
 
-    public static void testStatus(){
-        System.out.println(ReportElements.Case.getString()+ReportElements.TestStatus.getString());
-        Report = Report + ReportElements.Case.getString()+ReportElements.TestStatus.getString();
+    public static void testStatus() {
+        System.out.println(ReportElements.Case.getString() + ReportElements.TestStatus.getString());
+        Report = Report + ReportElements.Case.getString() + ReportElements.TestStatus.getString();
         Report = Report + Answers.TestStatus() + "\n\n";
     }
 
-    public static void stepsToReproduce (){
+    public static void stepsToReproduce() {
         System.out.println(ReportElements.StepsToReproduce.getString());
-        Report = Report + ReportElements.StepsToReproduce.getString()+"\n\n";
+        Report = Report + ReportElements.StepsToReproduce.getString() + "\n\n";
         String space = "-";
         String scan;
         for (int i = 1; i <= 100; i++) {
@@ -177,32 +178,33 @@ public class ReportMethods {
         }
     }
 
-    public static void AR (){
+    public static void AR() {
         System.out.println(ReportElements.AR.getString());
         Report = Report + ReportElements.AR.getString();
         Report = Report + Scan.scanText() + "\n\n";
     }
 
-    public static void ER (){
+    public static void ER() {
         System.out.println(ReportElements.ER.getString());
         Report = Report + ReportElements.ER.getString();
         Report = Report + Scan.scanText() + "\n\n";
     }
 
-    public static void evidence(){
+    public static void evidence() {
         System.out.println(ReportElements.Evidence.getString());
         String itemE = Scan.scanText();
         switch (itemE) {
             case "+" -> Report = Report + ReportElements.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
             case "-" -> {
-            }default -> {
+            }
+            default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 evidence();
             }
         }
     }
 
-    public static void AI (){
+    public static void AI() {
         System.out.println(ReportElements.AI.getString());
         String itemAI = Scan.scanText();
         if (!itemAI.equals("-")) {
@@ -211,7 +213,7 @@ public class ReportMethods {
         }
     }
 
-    public static void timestamp (){
+    public static void timestamp() {
         System.out.println(ReportElements.Timestamp.getString());
         String itemT = Scan.scanText();
         if (!itemT.equals("-")) {
@@ -221,19 +223,19 @@ public class ReportMethods {
         }
     }
 
-    public static void systemLog (){
+    public static void systemLog() {
         System.out.println(ReportElements.SystemLog.getString());
         Report = Report + ReportElements.SystemLog.getString() + "\n";
     }
 
-    public static void clipboard (){
+    public static void clipboard() {
         System.out.println(Report);
         StringSelection stringSelection = new StringSelection(Report);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
     }
 
-    public static void clipboardIndex(String index){
+    public static void clipboardIndex(String index) {
         StringSelection stringSelection = new StringSelection(index);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);

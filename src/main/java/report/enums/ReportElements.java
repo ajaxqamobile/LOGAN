@@ -31,9 +31,11 @@ public enum ReportElements {
     SystemLog("System Log: ");
 
     private final String text;
+
     ReportElements(String P) {
         text = P;
     }
+
     public String getString() {
         return text;
     }
