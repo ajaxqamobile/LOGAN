@@ -1,5 +1,6 @@
 package main.java.report;
 
+import main.java.report.enums.ReportElements;
 import main.java.report.lists.HubTypes;
 import main.java.report.lists.Phones;
 
@@ -115,7 +116,7 @@ public class ReportMethods {
         String itemPass = Scan.scanText();
         if (itemPass.equals("-")) {
             Report = Report + ReportElements.Pass.getString();
-            Report = Report + "qwe" + "\n";
+            Report = Report + "ajaxtest" + "\n";
         } else {
             Report = Report + ReportElements.Pass.getString();
             Report = Report + itemPass + "\n";
@@ -153,8 +154,8 @@ public class ReportMethods {
     }
 
     public static void testStatus(){
-        System.out.println(ReportElements.TestStatus.getString());
-        Report = Report + ReportElements.TestStatus.getString();
+        System.out.println(ReportElements.Case.getString()+ReportElements.TestStatus.getString());
+        Report = Report + ReportElements.Case.getString()+ReportElements.TestStatus.getString();
         Report = Report + Answers.TestStatus() + "\n\n";
     }
 
@@ -194,6 +195,7 @@ public class ReportMethods {
         switch (itemE) {
             case "+" -> Report = Report + ReportElements.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
             case "-" -> {
+            }default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 evidence();
             }

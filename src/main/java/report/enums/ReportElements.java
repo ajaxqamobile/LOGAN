@@ -1,4 +1,4 @@
-package main.java.report;
+package main.java.report.enums;
 
 public enum ReportElements {
 
@@ -10,6 +10,7 @@ public enum ReportElements {
     Server("Server: "),
     HubVer("Hub Version: "),
     HubType("Hub Type: "),
+    Case("Case "),
     TestStatus("Test Status: "),
     Evidence("Evidence: "),
     Device("Device: "),
