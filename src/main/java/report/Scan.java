@@ -4,7 +4,6 @@ import main.java.report.lists.HubTypes;
 import main.java.report.lists.Phones;
 import main.java.report.mainClass.Main;
 
-import javax.swing.text.TabExpander;
 import java.util.Scanner;
 
 public class Scan {

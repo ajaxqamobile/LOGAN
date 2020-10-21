@@ -17,21 +17,6 @@ public class ReportMethods {
         Report = ReportElements.Environment.getString() + "\n";
     }
 
-    public static void osVersion(String OS) {
-        switch (OS) {
-            case "1" -> {
-                System.out.println(ReportElements.AOSversion.getString());
-                Report = Report + ReportElements.AOSversion.getString();
-                Report = Report + Scan.scanText() + "\n";
-            }
-            case "2" -> {
-                System.out.println(ReportElements.iOSversion.getString());
-                Report = Report + ReportElements.iOSversion.getString();
-                Report = Report + Scan.scanText() + "\n";
-            }
-        }
-    }
-
     public static void appVersion(String OS) {
         switch (OS) {
             case "1" -> {
