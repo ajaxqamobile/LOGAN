@@ -51,7 +51,7 @@ public class Phones {
                     "WatchOS version: 7.1 Beta",
                     "iOS version: 13.5.1",
                     "iOS version: 9.3.5",
-                    "iOS version: 13.5.1",
+                    "iOS version: 13.6.1",
                     "iOS version: 13.6",
                     "iOS version: 14.2 Beta",
                     "iOS version: 12.4.1",
