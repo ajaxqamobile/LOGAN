@@ -44,6 +44,10 @@ public class GetData {
                 ReportMethods.clipboardIndex("Fail❌");
                 item = getBoC();
             }
+            case "9" -> {
+                System.out.println("Слава Mobile Team, QA слава");
+                Main.retry();
+            }
             case "reboot" -> Main.retry();
 
             default -> {
