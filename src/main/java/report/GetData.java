@@ -27,7 +27,7 @@ public class GetData {
     }
 
     public static String getBoC() {
-        System.out.println("Make a choice: \n1 - 🔴 Bug  \n2 - 🟢 Comment  \n3 - 📅 QA Report  \n4 - ✅ Done!  \n5 - ❌ Fail");
+        System.out.println("Make a choice: \n1 - 🔴 Bug  \n2 - \uD83D\uDD30 Comment  \n3 - 📅 QA Report  \n4 - ✅ Done!  \n5 - ❌ Fail");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item = null;
