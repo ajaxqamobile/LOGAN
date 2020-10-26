@@ -3,6 +3,7 @@ package main.java.report;
 import main.java.report.enums.ReportElements;
 import main.java.report.lists.HubTypes;
 import main.java.report.lists.Phones;
+import main.java.report.lists.lastData;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -22,12 +23,12 @@ public class ReportMethods {
             case "1" -> {
                 System.out.println(ReportElements.AOSAppVersion.getString());
                 Report = Report + ReportElements.AOSAppVersion.getString();
-                Report = Report + Scan.scanText() + "\n";
+                Report = Report + Scan.scanAppVer() + "\n";
             }
             case "2" -> {
                 System.out.println(ReportElements.iOSAppVersion.getString());
                 Report = Report + ReportElements.iOSAppVersion.getString();
-                Report = Report + Scan.scanText() + "\n";
+                Report = Report + Scan.scanAppVer() + "\n";
             }
         }
     }
@@ -47,7 +48,7 @@ public class ReportMethods {
     public static void hubVer() {
         System.out.println(ReportElements.HubVer.getString());
         Report = Report + ReportElements.HubVer.getString();
-        Report = Report + Scan.scanText() + "\n";
+        Report = Report + Scan.scanHubVer() + "\n";
     }
 
     public static void device(String OS) {
@@ -112,7 +113,7 @@ public class ReportMethods {
     public static void hubName() {
         System.out.println(ReportElements.HubName.getString());
         Report = Report + ReportElements.HubName.getString();
-        Report = Report + Scan.scanText() + "\n\n";
+        Report = Report + Scan.scanHubName() + "\n\n";
     }
 
     public static void preconditions() {
