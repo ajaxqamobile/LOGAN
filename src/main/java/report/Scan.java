@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Scan {
 
     public static String scanHubName() {
+        String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         if (text.equals("")) {
@@ -21,18 +22,16 @@ public class Scan {
         } if (text.equals("last")&& lastData.hubName.equals("null")) {
             System.out.println("Вы ранее не сохраняли имя хаба, введите актуальное имя");
             scanHubName();
-        }  if (text.equals("last")&& !(lastData.hubName.equals("null"))) {
-            text = lastData.hubName;
+        } else if (text.equals("last")) {
+            ret =  lastData.hubName;
+        } else {
+            ret = text;
         }
-        if (lastData.hubName.equals("null")) {
-            return lastData.hubName = text;
-        }
-        else {
-            return lastData.hubName;
-        }
+        return ret;
     }
 
     public static String scanHubVer() {
+        String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         if (text.equals("")) {
@@ -43,20 +42,16 @@ public class Scan {
         }  if (text.equals("last")&& lastData.hubVer.equals("null")) {
             System.out.println("Вы ранее не сохраняли версию хаба, введите актуальную версию хаба");
             scanHubVer();
-        }  if (text.equals("last")&& !(lastData.hubVer.equals("null"))) {
-            text = lastData.hubVer;
+        } else if (text.equals("last")) {
+            ret =  lastData.hubVer;
+        } else {
+            ret = text;
         }
-
-
-        if (lastData.hubVer.equals("null")) {
-            return lastData.hubVer = text;
-        }
-        else {
-            return lastData.hubVer;
-        }
+        return ret;
     }
 
     public static String scanAppVer() {
+        String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         if (text.equals("")) {
@@ -64,19 +59,15 @@ public class Scan {
             scanAppVer();
         } else if (text.equals("reboot")) {
             Main.retry();
-        } if (text.equals("last")&& lastData.appVer.equals("null")) {
+        } else if (text.equals("last")&& lastData.appVer.equals("null")) {
             System.out.println("Вы ранее не сохраняли версию приложения, введите актуальную версию приложения");
             scanAppVer();
-        }  if (text.equals("last")&& !(lastData.appVer.equals("null"))) {
-            text = lastData.appVer;
+        } else if (text.equals("last")) {
+            ret =  lastData.appVer;
+        } else {
+            ret = text;
         }
-
-        if (lastData.appVer.equals("null")) {
-            return lastData.appVer = text;
-        }
-        else {
-            return lastData.appVer;
-        }
+        return ret;
     }
 
     public static String scanText() {

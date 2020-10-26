@@ -3,9 +3,9 @@ package main.java.report.enums;
 public enum ReportElements {
 
     Environment("Environment: "),
-    iOSversion("iOS version: "),
+    //iOSversion("iOS version: "),
     iOSAppVersion("iOS App version: "),
-    AOSversion("Android version: "),
+    //AOSversion("Android version: "),
     AOSAppVersion("Android App version: "),
     Server("Server: "),
     HubVer("Hub Version: "),
