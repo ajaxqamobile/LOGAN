@@ -52,7 +52,6 @@ public class GetData {
                 Main.retry();
             }
             case "reboot" -> Main.retry();
-
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 item = getBoC();

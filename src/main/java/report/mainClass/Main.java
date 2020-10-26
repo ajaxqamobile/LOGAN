@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("\nWelcome to LOGAN v1.1.4\n");
+        System.out.println("\nWelcome to LOGAN v1.1.5\n");
         retry();
     }
 
