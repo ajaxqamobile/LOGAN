@@ -6,9 +6,20 @@ public class Reporting {
 
     public static void getReport(String item, String OS) {
         switch (item) {
-            case "1" -> composeBug(OS);
-            case "2" -> composeComment(OS);
-            case "reboot" -> Main.retry();
+            case "1": {
+                composeBug(OS);
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                break;
+            }
+            case "2": {
+                composeComment(OS);
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                break;
+            }
+            case "reboot": {
+                Main.retry();
+                break;
+            }
 
         }
         getReport(GetData.getBoC(), GetData.getPlatform());
@@ -36,6 +47,8 @@ public class Reporting {
         ReportMethods.ER();
         ReportMethods.AI();
         ReportMethods.timestamp();
+        System.out.println("\n\n\n");
+
         ReportMethods.clipboard();
 
     }
@@ -52,6 +65,8 @@ public class Reporting {
         ReportMethods.commentDescription();
         ReportMethods.AI();
         ReportMethods.evidence();
+        System.out.println("\n\n\n");
+
         ReportMethods.clipboard();
     }
 

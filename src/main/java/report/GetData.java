@@ -34,14 +34,17 @@ public class GetData {
             case "1", "2" -> item = BoC;
             case "3" -> {
                 qaReport();
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 item = getBoC();
             }
             case "4" -> {
                 ReportMethods.clipboardIndex("Done!✅");
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 item = getBoC();
             }
             case "5" -> {
                 ReportMethods.clipboardIndex("Fail❌");
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 item = getBoC();
             }
             case "9" -> {
