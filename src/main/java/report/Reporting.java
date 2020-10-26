@@ -7,21 +7,17 @@ public class Reporting {
 
     public static void getReport(String item, String OS) {
         switch (item) {
-            case "1": {
+            case "1" -> {
                 composeBug(OS);
                 System.out.println(ReportElements.Space50.getString());
-                break;
             }
-            case "2": {
+            case "2" -> {
                 composeComment(OS);
                 System.out.println(ReportElements.Space50.getString());
-                break;
             }
-            case "reboot": {
+            case "reboot" -> {
                 Main.retry();
-                break;
             }
-
         }
         getReport(GetData.getBoC(), GetData.getPlatform());
     }

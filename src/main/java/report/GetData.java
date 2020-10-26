@@ -32,16 +32,24 @@ public class GetData {
         String BoC = scan.nextLine();
         String item = null;
         switch (BoC) {
-            case "1", "2" -> item = BoC;
+            case "1", "2" -> {
+                item = BoC;
+                System.out.println("\n\n");
+            }
             case "3" -> {
                 qaReport();
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
+                System.out.println("\n\n");
+
+
             }
             case "4" -> {
                 ReportMethods.clipboardIndex("Done!✅");
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
+                System.out.println("\n\n");
+
             }
             case "5" -> {
                 ReportMethods.clipboardIndex("Fail❌");
