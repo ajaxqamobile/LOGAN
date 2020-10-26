@@ -1,5 +1,6 @@
 package main.java.report;
 
+import main.java.report.enums.ReportElements;
 import main.java.report.lists.HubTypes;
 import main.java.report.lists.Phones;
 import main.java.report.lists.lastData;
@@ -82,9 +83,11 @@ public class Scan {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         if (text.equals("")) {
+            System.out.println(ReportElements.Space50.getString());
             System.out.println("Значение не может быть пустое, попробуйте еще раз");
             scanText();
         } else if (text.equals("reboot")) {
+            System.out.println(ReportElements.Space50.getString());
             Main.retry();
         }
         return text;
@@ -100,6 +103,7 @@ public class Scan {
                 System.out.println("Значение не может быть пустое, попробуйте еще раз");
                 scanHubType(count);
             } else if (text.equals("reboot")) {
+                System.out.println(ReportElements.Space50.getString());
                 Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
             } else {
                 currentType = HubTypes.hubTypes[i - 1];

@@ -28,7 +28,8 @@ public enum ReportElements {
     ER("✅ Expected Result: "),
     AI("Additional Information: "),
     Timestamp("Timestamp: "),
-    SystemLog("System Log: ");
+    SystemLog("System Log: "),
+    Space50("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
     private final String text;
 

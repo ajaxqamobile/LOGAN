@@ -3,12 +3,13 @@ package main.java.report.mainClass;
 import main.java.report.GetData;
 import main.java.report.Reporting;
 import main.java.report.Scan;
+import main.java.report.enums.ReportElements;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("\nWelcome to LOGAN v1.1.5\n");
+        System.out.println("\nWelcome to LOGAN v1.1.6\n");
         retry();
     }
 
@@ -19,6 +20,7 @@ public class Main {
             System.out.println("\n");
             Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
         } else {
+            System.out.println(ReportElements.Space50.getString());
             System.out.println("\nSorry, wrong password! Try again.\n");
             retry();
         }

@@ -1,5 +1,6 @@
 package main.java.report;
 
+import main.java.report.enums.ReportElements;
 import main.java.report.mainClass.Main;
 
 public class Reporting {
@@ -8,12 +9,12 @@ public class Reporting {
         switch (item) {
             case "1": {
                 composeBug(OS);
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.println(ReportElements.Space50.getString());
                 break;
             }
             case "2": {
                 composeComment(OS);
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.println(ReportElements.Space50.getString());
                 break;
             }
             case "reboot": {

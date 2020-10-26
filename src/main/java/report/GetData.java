@@ -1,5 +1,6 @@
 package main.java.report;
 
+import main.java.report.enums.ReportElements;
 import main.java.report.mainClass.Main;
 
 import java.text.SimpleDateFormat;
@@ -34,25 +35,27 @@ public class GetData {
             case "1", "2" -> item = BoC;
             case "3" -> {
                 qaReport();
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
             case "4" -> {
                 ReportMethods.clipboardIndex("Done!✅");
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
             case "5" -> {
                 ReportMethods.clipboardIndex("Fail❌");
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
             case "9" -> {
+                System.out.println(ReportElements.Space50.getString());
                 System.out.println("Слава Mobile Team, QA слава");
                 Main.retry();
             }
             case "reboot" -> Main.retry();
             default -> {
+                System.out.println(ReportElements.Space50.getString());
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 item = getBoC();
             }
