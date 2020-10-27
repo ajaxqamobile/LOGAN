@@ -25,7 +25,7 @@ public class Scan {
         } else if (text.equals("last")) {
             ret =  lastData.hubName;
         } else {
-            ret = text;
+            ret = lastData.hubName = text;
         }
         return ret;
     }
@@ -45,7 +45,7 @@ public class Scan {
         } else if (text.equals("last")) {
             ret =  lastData.hubVer;
         } else {
-            ret = text;
+            ret = lastData.hubVer = text;
         }
         return ret;
     }
@@ -65,7 +65,7 @@ public class Scan {
         } else if (text.equals("last")) {
             ret =  lastData.appVer;
         } else {
-            ret = text;
+            ret = lastData.appVer = text;
         }
         return ret;
     }
