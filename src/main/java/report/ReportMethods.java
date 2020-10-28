@@ -244,9 +244,8 @@ public class ReportMethods {
         String itemE = Scan.scanText();
         switch (itemE) {
             case "+" -> lastData.evidence = ReportElements.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
-            case "-" -> {lastData.evidence = "";}
-            case "back" -> {
-                System.out.println("test");
+            case "-" -> {
+                lastData.evidence = "";
             }
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
@@ -290,14 +289,6 @@ public class ReportMethods {
         System.out.println("\n\n");
         lastData.systemLog = res;
     }
-
-//    public static void clipboard() {
-//        System.out.println(Report);
-//        StringSelection stringSelection = new StringSelection(Report);
-//        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-//        clipboard.setContents(stringSelection, null);
-//        System.out.println("\n\n");
-//    }
 
     public static void clipboardBugReport() {
         String finalRepor =

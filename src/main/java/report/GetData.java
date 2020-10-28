@@ -17,10 +17,6 @@ public class GetData {
         switch (BoC) {
             case "1", "2" -> item = BoC;
             case "reboot" -> Main.retry();
-            case "back" -> {
-                System.out.println("test");
-            }
-
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 item = getPlatform();
@@ -65,9 +61,6 @@ public class GetData {
                 Main.retry();
             }
             case "reboot" -> Main.retry();
-            case "back" -> {
-                System.out.println("test");
-            }
             default -> {
                 System.out.println(ReportElements.Space50.getString());
                 System.out.println("Не правильное значение, попробуйте еще раз");

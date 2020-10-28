@@ -18,7 +18,7 @@ public class Phones {
                     "Prestigio (PSP7505DUO)",
                     "Meizu PRO 6",
                     "Huawei P Smart",
-            "Samsung Galaxy A51"};
+                    "Samsung Galaxy A51"};
 
     public static String[] androidOS =
             {"Android version: 10.0",
@@ -31,7 +31,7 @@ public class Phones {
                     "Android version: 4.4.2",
                     "Android version: 6.0",
                     "Android version: 9.0",
-            "Android version: 10.0"};
+                    "Android version: 10.0"};
 
     public static String[] iOSPhones =
             {"Apple Watch 1",
