@@ -25,9 +25,9 @@ public class Scan {
             System.out.println("Вы ранее не сохраняли имя хаба, введите актуальное имя");
             scanHubName();
         } else if (lastBool) {
-            ret = lastData.hubName;
+            ret = lastData.hubNameNum;
         } else {
-            ret = lastData.hubName = text;
+            ret = lastData.hubNameNum = text;
         }
         return ret;
     }
@@ -47,9 +47,9 @@ public class Scan {
             System.out.println("Вы ранее не сохраняли версию хаба, введите актуальную версию хаба");
             scanHubVer();
         } else if (lastBool) {
-            ret = lastData.hubVer;
+            ret = lastData.hubVerNum;
         } else {
-            ret = lastData.hubVer = text;
+            ret = lastData.hubVerNum = text;
         }
         return ret;
     }
@@ -69,9 +69,9 @@ public class Scan {
             System.out.println("Вы ранее не сохраняли версию приложения, введите актуальную версию приложения");
             scanAppVer();
         } else if (lastBool) {
-            ret = lastData.appVer;
+            ret = lastData.appVerNum;
         } else {
-            ret = lastData.appVer = text;
+            ret = lastData.appVerNum = text;
         }
         return ret;
     }

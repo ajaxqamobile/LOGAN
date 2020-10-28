@@ -11,8 +11,6 @@ import java.awt.datatransfer.StringSelection;
 
 public class ReportMethods {
 
-    private static String Report;
-
     public static void enviroment() {
         String res = null;
         System.out.println(ReportElements.Environment.getString() + "\n");
@@ -111,15 +109,13 @@ public class ReportMethods {
     }
 
     public static void testAccount() {
-        String res = null;
         System.out.println(ReportElements.TestAccount.getString());
-        res = ReportElements.TestAccount.getString() + "\n";
+        lastData.testAccount = ReportElements.TestAccount.getString() + "\n";
         System.out.println("\n\n");
-        lastData.testAccount = res;
     }
 
     public static void email() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Email.getString());
         String itemE = Scan.scanText();
         if (itemE.equals("-")) {
@@ -134,7 +130,7 @@ public class ReportMethods {
     }
 
     public static void password() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Pass.getString());
         String itemPass = Scan.scanText();
         if (itemPass.equals("-")) {
@@ -164,9 +160,11 @@ public class ReportMethods {
         if (!itemP.equals("-")) {
             res = ReportElements.Preconditions.getString();
             res = res + itemP + "\n\n";
+            lastData.preconditions = res;
+        } else {
+            lastData.preconditions = "";
         }
         System.out.println("\n\n");
-        lastData.preconditions = res;
     }
 
     public static void description() {
@@ -185,10 +183,11 @@ public class ReportMethods {
         if (!itemD.equals("-")) {
             res = ReportElements.Description.getString();
             res = res + itemD + "\n\n";
+            System.out.println("\n\n");
+            lastData.commentDescription = res;
+        } else {
+            lastData.commentDescription = "";
         }
-        System.out.println("\n\n");
-        lastData.commentDescription = res;
-
     }
 
     public static void testStatus() {
@@ -201,7 +200,7 @@ public class ReportMethods {
     }
 
     public static void stepsToReproduce() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.StepsToReproduce.getString());
         res = ReportElements.StepsToReproduce.getString() + "\n\n";
         String space = "-";
@@ -212,13 +211,14 @@ public class ReportMethods {
             if (!scan.equals(space)) {
                 res = res + i + ": " + scan;
                 res = res + "\n";
+                lastData.stepsToReproduce = res;
             } else {
                 res = res + "\n";
+                lastData.stepsToReproduce = res;
                 break;
             }
         }
         System.out.println("\n\n");
-        lastData.stepsToReproduce = res;
     }
 
     public static void AR() {
@@ -240,45 +240,44 @@ public class ReportMethods {
     }
 
     public static void evidence() {
-        String res = null;
         System.out.println(ReportElements.Evidence.getString());
         String itemE = Scan.scanText();
         switch (itemE) {
-            case "+" -> res = ReportElements.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
-            case "-" -> {
-            }
+            case "+" -> lastData.evidence = ReportElements.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
+            case "-" -> {lastData.evidence = "";}
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 evidence();
             }
         }
         System.out.println("\n\n");
-        lastData.evidence = res;
     }
 
     public static void AI() {
-        String res = null;
         System.out.println(ReportElements.AI.getString());
         String itemAI = Scan.scanText();
         if (!itemAI.equals("-")) {
-            res = ReportElements.AI.getString();
-            res = res + itemAI + "\n\n";
+            lastData.AI = ReportElements.AI.getString();
+            lastData.AI = lastData.AI + itemAI + "\n\n";
+        } else {
+            lastData.AI = "";
         }
         System.out.println("\n\n");
-        lastData.AI = res;
     }
 
     public static void timestamp() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Timestamp.getString());
         String itemT = Scan.scanText();
         if (!itemT.equals("-")) {
             res = ReportElements.Timestamp.getString();
             res = res + itemT + "\n";
             systemLog();
+            lastData.timestamp = res;
+        } else {
+            lastData.timestamp = "";
         }
         System.out.println("\n\n");
-        lastData.timestamp = res;
     }
 
     public static void systemLog() {
@@ -289,13 +288,13 @@ public class ReportMethods {
         lastData.systemLog = res;
     }
 
-    public static void clipboard() {
-        System.out.println(Report);
-        StringSelection stringSelection = new StringSelection(Report);
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-        clipboard.setContents(stringSelection, null);
-        System.out.println("\n\n");
-    }
+//    public static void clipboard() {
+//        System.out.println(Report);
+//        StringSelection stringSelection = new StringSelection(Report);
+//        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+//        clipboard.setContents(stringSelection, null);
+//        System.out.println("\n\n");
+//    }
 
     public static void clipboardBugReport() {
         String finalRepor =
@@ -308,7 +307,7 @@ public class ReportMethods {
                         lastData.repeated +
                         lastData.inRelease +
                         lastData.another +
-                        lastData.testStatus +
+                        lastData.testAccount +
                         lastData.email +
                         lastData.password +
                         lastData.hubName +
