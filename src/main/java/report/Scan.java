@@ -90,6 +90,67 @@ public class Scan {
         return text;
     }
 
+    public static String scanTextDescription() {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.nextLine();
+        if (text.equals("")) {
+            System.out.println(ReportElements.Space50.getString());
+            System.out.println("Значение не может быть пустое, попробуйте еще раз");
+            scanText();
+        } else if (text.equals("reboot")) {
+            System.out.println(ReportElements.Space50.getString());
+            Main.retry();
+        }
+        lastData.description = text;
+        return text;
+    }
+
+     public static String scanTextPreconditions() {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.nextLine();
+        if (text.equals("")) {
+            System.out.println(ReportElements.Space50.getString());
+            System.out.println("Значение не может быть пустое, попробуйте еще раз");
+            scanText();
+        } else if (text.equals("reboot")) {
+            System.out.println(ReportElements.Space50.getString());
+            Main.retry();
+        }
+        lastData.preconditions = text;
+        return text;
+    }
+
+
+        public static String scanTextPassword() {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.nextLine();
+        if (text.equals("")) {
+            System.out.println(ReportElements.Space50.getString());
+            System.out.println("Значение не может быть пустое, попробуйте еще раз");
+            scanText();
+        } else if (text.equals("reboot")) {
+            System.out.println(ReportElements.Space50.getString());
+            Main.retry();
+        }
+        lastData.password = text;
+        return text;
+    }
+
+    public static String scanTextEmail() {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.nextLine();
+        if (text.equals("")) {
+            System.out.println(ReportElements.Space50.getString());
+            System.out.println("Значение не может быть пустое, попробуйте еще раз");
+            scanText();
+        } else if (text.equals("reboot")) {
+            System.out.println(ReportElements.Space50.getString());
+            Main.retry();
+        }
+        lastData.email = text;
+        return text;
+    }
+
     public static String scanHubType(int count) {
         String currentType = "null";
         Scanner scan = new Scanner(System.in);
@@ -128,8 +189,9 @@ public class Scan {
                     case "2" -> currentPhone = Phones.iOSPhones[i] + "\n" + Phones.iOSOS[i];
                 }
             }
-        } catch (NumberFormatException e) {
-            Main.retry();
+        } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+            System.out.println("Не верное значение, попробуйте еще раз");
+            scanPhone(count, OS);
         }
         return currentPhone;
     }

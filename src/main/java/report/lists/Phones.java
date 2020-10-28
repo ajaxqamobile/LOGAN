@@ -80,6 +80,7 @@ public class Phones {
             }
             case "reboot" -> Main.retry();
         }
+        lastData.phone = currentPhone;
         return currentPhone;
     }
 }

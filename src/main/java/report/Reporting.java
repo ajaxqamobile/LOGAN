@@ -46,7 +46,7 @@ public class Reporting {
         ReportMethods.timestamp();
         System.out.println("\n\n\n");
 
-        ReportMethods.clipboard();
+        ReportMethods.clipboardBugReport();
 
     }
 
@@ -64,7 +64,7 @@ public class Reporting {
         ReportMethods.evidence();
         System.out.println("\n\n\n");
 
-        ReportMethods.clipboard();
+        ReportMethods.clipboardComment();
     }
 
 }
