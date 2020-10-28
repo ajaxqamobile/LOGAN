@@ -19,11 +19,13 @@ public class Scan {
             scanHubName();
         } else if (text.equals("reboot")) {
             Main.retry();
-        } if (text.equals("last")&& lastData.hubName.equals("null")) {
+        }
+        boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
+        if (lastBool && lastData.hubName.equals("null")) {
             System.out.println("Вы ранее не сохраняли имя хаба, введите актуальное имя");
             scanHubName();
-        } else if (text.equals("last")) {
-            ret =  lastData.hubName;
+        } else if (lastBool) {
+            ret = lastData.hubName;
         } else {
             ret = lastData.hubName = text;
         }
@@ -39,11 +41,13 @@ public class Scan {
             scanHubVer();
         } else if (text.equals("reboot")) {
             Main.retry();
-        }  if (text.equals("last")&& lastData.hubVer.equals("null")) {
+        }
+        boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
+        if (lastBool && lastData.hubVer.equals("null")) {
             System.out.println("Вы ранее не сохраняли версию хаба, введите актуальную версию хаба");
             scanHubVer();
-        } else if (text.equals("last")) {
-            ret =  lastData.hubVer;
+        } else if (lastBool) {
+            ret = lastData.hubVer;
         } else {
             ret = lastData.hubVer = text;
         }
@@ -59,11 +63,13 @@ public class Scan {
             scanAppVer();
         } else if (text.equals("reboot")) {
             Main.retry();
-        } else if (text.equals("last")&& lastData.appVer.equals("null")) {
+        }
+        boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
+        if (lastBool && lastData.appVer.equals("null")) {
             System.out.println("Вы ранее не сохраняли версию приложения, введите актуальную версию приложения");
             scanAppVer();
-        } else if (text.equals("last")) {
-            ret =  lastData.appVer;
+        } else if (lastBool) {
+            ret = lastData.appVer;
         } else {
             ret = lastData.appVer = text;
         }
