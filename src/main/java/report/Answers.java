@@ -13,7 +13,7 @@ public class Answers {
             case "2" -> Answer = "No";
             case "reboot" -> Main.retry();
             default -> {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 Answer = YesNo();
             }
         }
@@ -30,7 +30,7 @@ public class Answers {
             case "3" -> Answer = "Failed to retry";
             case "reboot" -> Main.retry();
             default -> {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 Answer = HowOften();
             }
         }
@@ -46,7 +46,7 @@ public class Answers {
             case "2" -> Answer = "Stage";
             case "reboot" -> Main.retry();
             default -> {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 Answer = Sever();
             }
         }
@@ -66,7 +66,7 @@ public class Answers {
             case "4" -> Answer = "In Progress!\uD83D\uDD53";
             case "reboot" -> Main.retry();
             default -> {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 Answer = TestStatus();
             }
         }

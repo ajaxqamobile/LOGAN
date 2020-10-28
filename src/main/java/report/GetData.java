@@ -18,7 +18,7 @@ public class GetData {
             case "1", "2" -> item = BoC;
             case "reboot" -> Main.retry();
             default -> {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 item = getPlatform();
             }
         }
@@ -55,7 +55,7 @@ public class GetData {
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
-            case "9" -> {
+            case "QA" -> {
                 System.out.println(ReportElements.Space50.getString());
                 System.out.println("Слава Mobile Team, QA слава");
                 Main.retry();
@@ -63,7 +63,7 @@ public class GetData {
             case "reboot" -> Main.retry();
             default -> {
                 System.out.println(ReportElements.Space50.getString());
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 item = getBoC();
             }
         }

@@ -9,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("\nWelcome to LOGAN v1.1.8\n");
+        System.out.print("\nWelcome to LOGAN v1.1.8\n");
+        System.out.println("When security is art!\n");
         retry();
     }
 
@@ -21,7 +22,7 @@ public class Main {
             Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
         } else {
             System.out.println(ReportElements.Space50.getString());
-            System.out.println("\nSorry, wrong password! Try again.\n");
+            System.out.println("\nSorry, wrong password! Try again!\n");
             retry();
         }
     }

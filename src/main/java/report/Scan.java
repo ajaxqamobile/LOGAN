@@ -15,14 +15,14 @@ public class Scan {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         if (text.equals("")) {
-            System.out.println("Не правильное значение, попробуйте еще раз");
+            System.out.println("Wrong value, please try again!");
             scanHubName();
         } else if (text.equals("reboot")) {
             Main.retry();
         }
         boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.hubName.equals("null")) {
-            System.out.println("Вы ранее не сохраняли имя хаба, введите актуальное имя");
+            System.out.println("You have not previously saved the hub name, enter the current name!");
             scanHubName();
         } else if (lastBool) {
             ret = lastData.hubNameNum;
@@ -38,14 +38,14 @@ public class Scan {
         String text = scan.nextLine();
         switch (text) {
             case "" -> {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 scanHubVer();
             }
             case "reboot" -> Main.retry();
         }
         boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.hubVer.equals("null")) {
-            System.out.println("Вы ранее не сохраняли версию хаба, введите актуальную версию хаба");
+            System.out.println("You have not previously saved the hub version, enter the current version");
             scanHubVer();
         } else if (lastBool) {
             ret = lastData.hubVerNum;
@@ -61,7 +61,7 @@ public class Scan {
         String text = scan.nextLine();
         switch (text) {
             case "" -> {
-                System.out.println("Значение не может быть пустое, попробуйте еще раз");
+                System.out.println("The value cannot be empty, please try again!");
                 scanAppVer();
             }
             case "reboot" -> Main.retry();
@@ -69,7 +69,7 @@ public class Scan {
 
         boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.appVer.equals("null")) {
-            System.out.println("Вы ранее не сохраняли версию приложения, введите актуальную версию приложения");
+            System.out.println("You have not previously saved the version of the application, enter the current version of the application!");
             scanAppVer();
         } else if (lastBool) {
             ret = lastData.appVerNum;
@@ -85,7 +85,7 @@ public class Scan {
         switch (text) {
             case "" -> {
                 System.out.println(ReportElements.Space50.getString());
-                System.out.println("Значение не может быть пустое, попробуйте еще раз");
+                System.out.println("The value cannot be empty, please try again!");
                 scanText();
             }
             case "reboot" -> {
@@ -103,7 +103,7 @@ public class Scan {
         try {
             int i = Integer.parseInt(text);
             if (text.equals("") || i < 0 || i > count) {
-                System.out.println("Значение не может быть пустое, попробуйте еще раз");
+                System.out.println("The value cannot be empty, please try again!");
                 scanHubType(count);
             } else if (text.equals("reboot")) {
                 System.out.println(ReportElements.Space50.getString());
@@ -112,7 +112,7 @@ public class Scan {
                 currentType = HubTypes.hubTypes[i - 1];
             }
         } catch (NumberFormatException e) {
-            System.out.println("Не правильное значение, попробуйте еще раз");
+            System.out.println("Wrong value, please try again!");
             currentType = scanHubType(count);
         }
         return currentType;
@@ -126,7 +126,7 @@ public class Scan {
         try {
             int i = Integer.parseInt(text);
             if (text.equals("") || i < 0 || i > count) {
-                System.out.println("Не правильное значение, попробуйте еще раз");
+                System.out.println("Wrong value, please try again!");
                 scanPhone(count, OS);
             } else {
                 i--;
@@ -136,7 +136,7 @@ public class Scan {
                 }
             }
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
-            System.out.println("Не верное значение, попробуйте еще раз");
+            System.out.println("Wrong value, please try again!");
            currentPhone = scanPhone(count, OS);
         }
         return currentPhone;

@@ -38,7 +38,7 @@ public class ReportMethods {
     }
 
     public static void server() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Server.getString());
         res = ReportElements.Server.getString();
         res = res + Answers.Sever() + "\n\n";
@@ -73,7 +73,7 @@ public class ReportMethods {
     }
 
     public static void commentDevice(String OS) {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Device.getString());
         res = ReportElements.Device.getString();
         res = res + Phones.getPhone(OS) + "\n";
@@ -82,7 +82,7 @@ public class ReportMethods {
     }
 
     public static void repeated() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Repeated.getString());
         res = "\n" + ReportElements.Repeated.getString();
         res = res + Answers.HowOften() + "\n";
@@ -91,7 +91,7 @@ public class ReportMethods {
     }
 
     public static void inRelease() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.inRelease.getString());
         res = ReportElements.inRelease.getString();
         res = res + Answers.YesNo() + "\n";
@@ -100,7 +100,7 @@ public class ReportMethods {
     }
 
     public static void another() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Another.getString());
         res = ReportElements.Another.getString();
         res = res + Answers.YesNo() + "\n\n";
@@ -118,9 +118,12 @@ public class ReportMethods {
         String res;
         System.out.println(ReportElements.Email.getString());
         String itemE = Scan.scanText();
-        if (itemE.equals("-")) {
+        if (itemE.equals("main")) {
             res = ReportElements.Email.getString();
             res = res + "qa.ajax+all@gmail.com" + "\n";
+        } else if (itemE.equals("pro")) {
+            res = ReportElements.Email.getString();
+            res = res + "qa.ajax.pro+all@gmail.com" + "\n";
         } else {
             res = ReportElements.Email.getString();
             res = res + itemE + "\n";
@@ -133,9 +136,12 @@ public class ReportMethods {
         String res;
         System.out.println(ReportElements.Pass.getString());
         String itemPass = Scan.scanText();
-        if (itemPass.equals("-")) {
+        if (itemPass.equals("main")) {
             res = ReportElements.Pass.getString();
             res = res + "ajaxtest" + "\n";
+        } else if (itemPass.equals("pro")) {
+            res = ReportElements.Pass.getString();
+            res = res + "qwe" + "\n";
         } else {
             res = ReportElements.Pass.getString();
             res = res + itemPass + "\n";
@@ -145,7 +151,7 @@ public class ReportMethods {
     }
 
     public static void hubName() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.HubName.getString());
         res = ReportElements.HubName.getString();
         res = res + Scan.scanHubName() + "\n\n";
@@ -154,7 +160,7 @@ public class ReportMethods {
     }
 
     public static void preconditions() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Preconditions.getString());
         String itemP = Scan.scanText();
         if (!itemP.equals("-")) {
@@ -168,7 +174,7 @@ public class ReportMethods {
     }
 
     public static void description() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Description.getString());
         res = ReportElements.Description.getString();
         res = res + Scan.scanText() + "\n\n";
@@ -177,7 +183,7 @@ public class ReportMethods {
     }
 
     public static void commentDescription() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Description.getString());
         String itemD = Scan.scanText();
         if (!itemD.equals("-")) {
@@ -191,7 +197,7 @@ public class ReportMethods {
     }
 
     public static void testStatus() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Case.getString() + ReportElements.TestStatus.getString());
         res = ReportElements.Case.getString() + ReportElements.TestStatus.getString();
         res = res + Answers.TestStatus() + "\n\n";
@@ -222,7 +228,7 @@ public class ReportMethods {
     }
 
     public static void AR() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.AR.getString());
         res = ReportElements.AR.getString();
         res = res + Scan.scanText() + "\n\n";
@@ -231,7 +237,7 @@ public class ReportMethods {
     }
 
     public static void ER() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.ER.getString());
         res = ReportElements.ER.getString();
         res = res + Scan.scanText() + "\n\n";
@@ -283,7 +289,7 @@ public class ReportMethods {
     }
 
     public static void systemLog() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.SystemLog.getString());
         res = ReportElements.SystemLog.getString() + "\n";
         System.out.println("\n\n");
