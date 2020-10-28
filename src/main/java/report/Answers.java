@@ -1,6 +1,4 @@
 package main.java.report;
-
-import main.java.report.lists.lastData;
 import main.java.report.mainClass.Main;
 
 public class Answers {
@@ -13,6 +11,9 @@ public class Answers {
             case "1" -> Answer = "Yes";
             case "2" -> Answer = "No";
             case "reboot" -> Main.retry();
+            case "back" -> {
+                System.out.println("test");
+            }
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 Answer = YesNo();
@@ -30,6 +31,9 @@ public class Answers {
             case "2" -> Answer = "Rarely";
             case "3" -> Answer = "Failed to retry";
             case "reboot" -> Main.retry();
+            case "back" -> {
+                System.out.println("test");
+            }
 
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
@@ -47,6 +51,9 @@ public class Answers {
             case "1" -> Answer = "Release";
             case "2" -> Answer = "Stage";
             case "reboot" -> Main.retry();
+            case "back" -> {
+                System.out.println("test");
+            }
 
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
@@ -68,6 +75,9 @@ public class Answers {
             case "3" -> Answer = "Not reproduced!✅";
             case "4" -> Answer = "In Progress!\uD83D\uDD53";
             case "reboot" -> Main.retry();
+            case "back" -> {
+                System.out.println("test");
+            }
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 Answer = TestStatus();

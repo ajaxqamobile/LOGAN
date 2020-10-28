@@ -12,7 +12,7 @@ import java.awt.datatransfer.StringSelection;
 public class ReportMethods {
 
     public static void enviroment() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Environment.getString() + "\n");
         res = ReportElements.Environment.getString() + "\n";
         System.out.println("\n\n");
@@ -47,7 +47,7 @@ public class ReportMethods {
     }
 
     public static void hubType() {
-        String res = null;
+        String res;
         System.out.println(res = ReportElements.HubType.getString());
         res = res + HubTypes.getType() + "\n";
         System.out.println("\n\n");
@@ -55,7 +55,7 @@ public class ReportMethods {
     }
 
     public static void hubVer() {
-        String res = null;
+        String res;
         System.out.println(ReportElements.HubVer.getString());
         res = ReportElements.HubVer.getString();
         res = res + Scan.scanHubVer() + "\n";
@@ -64,7 +64,7 @@ public class ReportMethods {
     }
 
     public static void device(String OS) {
-        String res = null;
+        String res;
         System.out.println(ReportElements.Device.getString());
         res = ReportElements.Device.getString();
         res = res + Phones.getPhone(OS) + "\n\n";
@@ -245,6 +245,9 @@ public class ReportMethods {
         switch (itemE) {
             case "+" -> lastData.evidence = ReportElements.Evidence.getString() + "\n\n\n\n\n\n\n\n\n";
             case "-" -> {lastData.evidence = "";}
+            case "back" -> {
+                System.out.println("test");
+            }
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 evidence();

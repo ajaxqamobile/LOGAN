@@ -18,6 +18,9 @@ public class Reporting {
             case "reboot" -> {
                 Main.retry();
             }
+            case "back" -> {
+                System.out.println("test");
+            }
         }
         getReport(GetData.getBoC(), GetData.getPlatform());
     }
