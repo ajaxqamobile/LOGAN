@@ -8,9 +8,7 @@ public class decToHex {
 
     public static String checkNull(String item) {
         String count = String.valueOf((String.valueOf(Math.abs(Integer.parseInt(item))).length()));
-        if (item.equals("0")) {
-            item = item + "0";
-        } else if (count.equals("1")) {
+        if (count.equals("1")) {
             item = "0" + item;
         }
 
