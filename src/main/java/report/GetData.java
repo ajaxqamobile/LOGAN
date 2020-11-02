@@ -10,12 +10,12 @@ import java.util.Scanner;
 public class GetData {
 
     public static String getPlatform() {
-        System.out.println("1 - AOS \n2 - iOS");
+        System.out.println("1 - AOS \n2 - iOS \n3 - Desktop");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item = null;
         switch (BoC) {
-            case "1", "2" -> item = BoC;
+            case "1", "2","3" -> item = BoC;
             case "reboot" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");

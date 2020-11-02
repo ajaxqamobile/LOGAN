@@ -32,6 +32,11 @@ public class ReportMethods {
                 res = ReportElements.iOSAppVersion.getString();
                 res = res + Scan.scanAppVer() + "\n";
             }
+            case "3" -> {
+                System.out.println(ReportElements.DesktopAppVersion.getString());
+                res = ReportElements.DesktopAppVersion.getString();
+                res = res + Scan.scanAppVer() + "\n";
+            }
         }
         System.out.println("\n\n");
         lastData.appVer = res;

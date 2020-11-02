@@ -20,6 +20,10 @@ public class Phones {
                     "Huawei P Smart",
                     "Samsung Galaxy A51"};
 
+    public static String[] desktopPhones =
+            {"MacBook Air/Pro",
+            "Windows PC"};
+
     public static String[] androidOS =
             {"Android version: 10.0",
                     "Android version: 9.0",
@@ -61,6 +65,10 @@ public class Phones {
                     "iOS version: 13.5.1",
                     "iOS version: 14.0"};
 
+    public static String[] desktopOS =
+            {"Desktop version: MacOS 10.15.17",
+            "Desktop version: Windows 10"};
+
     public static String getPhone(String OS) {
         int count = 1;
         switch (OS) {
@@ -78,6 +86,15 @@ public class Phones {
                 }
                 currentPhone = Scan.scanPhone(count, OS);
             }
+
+            case "3" -> {
+                for (String i : desktopPhones) {
+                    System.out.println(count + ": " + i);
+                    count++;
+                }
+                currentPhone = Scan.scanPhone(count, OS);
+            }
+
             case "reboot" -> Main.retry();
         }
         lastData.phone = currentPhone;

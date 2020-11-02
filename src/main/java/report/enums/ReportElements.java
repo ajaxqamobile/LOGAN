@@ -4,6 +4,7 @@ public enum ReportElements {
 
     Environment("Environment: "),
     iOSAppVersion("iOS App version: "),
+    DesktopAppVersion("Desktop App version: "),
     AOSAppVersion("Android App version: "),
     Server("Server: "),
     HubVer("Hub Version: "),

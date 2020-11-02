@@ -133,6 +133,7 @@ public class Scan {
                 switch (OS) {
                     case "1" -> currentPhone = Phones.androidPhones[i] + "\n" + Phones.androidOS[i];
                     case "2" -> currentPhone = Phones.iOSPhones[i] + "\n" + Phones.iOSOS[i];
+                    case "3" -> currentPhone = Phones.desktopPhones[i] + "\n" + Phones.desktopOS[i];
                 }
             }
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
