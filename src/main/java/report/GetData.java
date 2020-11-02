@@ -91,7 +91,7 @@ public class GetData {
                 System.out.println(link);
                 java.awt.Desktop.getDesktop().browse(java.net.URI.create(link));
                 ReportMethods.clipboardIndex(link);
-                Main.retry();
+                item = getBoC();
             }
 
 
