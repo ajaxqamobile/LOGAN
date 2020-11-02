@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.print("\nWelcome to LOGAN v1.2\n");
+        System.out.print("\nWelcome to LOGAN v1.3\n");
         System.out.println("When security is art!\n");
         retry();
     }
