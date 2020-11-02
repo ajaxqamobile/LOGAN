@@ -58,6 +58,12 @@ public class GetData {
 
             case "6" -> {
                 System.out.println("Enter the number to convert to HEX \n");
+                System.out.println("For set firmware the hub, you need to enter a value of this format -> 209113\n" +
+                        "We get this value for the hub -> 2.9.113\n");
+
+                System.out.println("For set firmware the device, you need to enter a value of this format -> 5420102\n" +
+                        "We get this value for the device -> 5.42.01.02\n");
+
                 int str = Integer.parseInt(Scan.scanText());
                 int count = String.valueOf(Math.abs(str)).length();
                 String readyHex = null;
