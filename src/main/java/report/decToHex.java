@@ -6,11 +6,20 @@ public class decToHex {
         return Integer.toHexString(num);
     }
 
-    public static String checkNull (String item){
-        if (item.equals("0")){
-            item = item+"0";
+    public static String checkNull(String item) {
+        String count = String.valueOf((String.valueOf(Math.abs(Integer.parseInt(item))).length()));
+        if (item.equals("0")) {
+            item = item + "0";
+        } else if (count.equals("1")) {
+            item = "0" + item;
         }
+
         return item;
+    }
+
+    public static String checkFirst(String item) {
+        int num = Integer.parseInt(item);
+        return String.valueOf(num);
     }
 
     public static String deviceToHex(int num) {
@@ -20,24 +29,14 @@ public class decToHex {
         int c = (num / 100) % 100;
         int d = num % 100;
 
-        System.out.println(a+"\n"+b+"\n"+c+"\n"+d);
+        System.out.println(a + "\n" + b + "\n" + c + "\n" + d);
 
-        String a_HEX = checkNull(Integer.toHexString(a));
+        String a_HEX = checkFirst(checkNull(Integer.toHexString(a)));
         String b_HEX = checkNull(Integer.toHexString(b));
         String c_HEX = checkNull(Integer.toHexString(c));
         String d_HEX = checkNull(Integer.toHexString(d));
 
-        if (a_HEX.equals("0")){
-            a_HEX = a_HEX+"0";
-        } else if (b_HEX.equals("0")){
-            b_HEX = b_HEX+"0";
-        }  else if (c_HEX.equals("0")){
-            c_HEX = c_HEX+"0";
-        }  else if (d_HEX.equals("0")){
-            d_HEX = d_HEX+"0";
-        }
-
-        return a_HEX+b_HEX+c_HEX+d_HEX;
+        return (a_HEX + b_HEX + c_HEX + d_HEX);
     }
 
 }
