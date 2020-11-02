@@ -6,11 +6,12 @@ import main.java.report.lists.Phones;
 import main.java.report.lists.lastData;
 import main.java.report.mainClass.Main;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Scan {
 
-    public static String scanHubName() {
+    public static String scanHubName() throws IOException {
         String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
@@ -32,7 +33,7 @@ public class Scan {
         return ret;
     }
 
-    public static String scanHubVer() {
+    public static String scanHubVer() throws IOException {
         String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
@@ -55,7 +56,7 @@ public class Scan {
         return ret;
     }
 
-    public static String scanAppVer() {
+    public static String scanAppVer() throws IOException {
         String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
@@ -79,7 +80,7 @@ public class Scan {
         return ret;
     }
 
-    public static String scanText() {
+    public static String scanText() throws IOException {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         switch (text) {
@@ -111,7 +112,7 @@ public class Scan {
             } else {
                 currentType = HubTypes.hubTypes[i - 1];
             }
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException | IOException e) {
             System.out.println("Wrong value, please try again!");
             currentType = scanHubType(count);
         }

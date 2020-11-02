@@ -3,9 +3,11 @@ package main.java.report;
 import main.java.report.enums.ReportElements;
 import main.java.report.mainClass.Main;
 
+import java.io.IOException;
+
 public class Reporting {
 
-    public static void getReport(String item, String OS) {
+    public static void getReport(String item, String OS) throws IOException {
         switch (item) {
             case "1" -> {
                 composeBug(OS);
@@ -21,7 +23,7 @@ public class Reporting {
         getReport(GetData.getBoC(), GetData.getPlatform());
     }
 
-    public static void composeBug(String OS) {
+    public static void composeBug(String OS) throws IOException {
 
         ReportMethods.enviroment();
         ReportMethods.appVersion(OS);
@@ -49,7 +51,7 @@ public class Reporting {
 
     }
 
-    public static void composeComment(String OS) {
+    public static void composeComment(String OS) throws IOException {
 
         ReportMethods.enviroment();
         ReportMethods.appVersion(OS);

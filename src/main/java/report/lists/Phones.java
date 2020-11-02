@@ -3,6 +3,8 @@ package main.java.report.lists;
 import main.java.report.Scan;
 import main.java.report.mainClass.Main;
 
+import java.io.IOException;
+
 public class Phones {
 
     public static String currentPhone;
@@ -69,7 +71,7 @@ public class Phones {
             {"Desktop version: MacOS 10.15.17",
             "Desktop version: Windows 10"};
 
-    public static String getPhone(String OS) {
+    public static String getPhone(String OS) throws IOException {
         int count = 1;
         switch (OS) {
             case "1" -> {

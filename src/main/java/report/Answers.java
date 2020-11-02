@@ -2,9 +2,11 @@ package main.java.report;
 
 import main.java.report.mainClass.Main;
 
+import java.io.IOException;
+
 public class Answers {
 
-    public static String YesNo() {
+    public static String YesNo() throws IOException {
         String Answer = null;
         System.out.println("1 - Yes \n2 - No");
         String scan = Scan.scanText();
@@ -20,7 +22,7 @@ public class Answers {
         return Answer;
     }
 
-    public static String HowOften() {
+    public static String HowOften() throws IOException {
         String Answer = null;
         System.out.println("1 - Always \n2 - Rarely \n3 - Failed to retry");
         String scan = Scan.scanText();
@@ -37,7 +39,7 @@ public class Answers {
         return Answer;
     }
 
-    public static String Sever() {
+    public static String Sever() throws IOException {
         String Answer = null;
         System.out.println("1 - Release \n2 - Stage");
         String scan = Scan.scanText();
@@ -55,7 +57,7 @@ public class Answers {
     }
 
 
-    public static String TestStatus() {
+    public static String TestStatus() throws IOException {
         String Answer = null;
         System.out.println("1 - Done!✅ \n2 - Fail❌ \n3 - Not reproduced!✅ \n4 - In Progress!\uD83D\uDD53");
         String scan = Scan.scanText();

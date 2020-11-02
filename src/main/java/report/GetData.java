@@ -3,13 +3,15 @@ package main.java.report;
 import main.java.report.enums.ReportElements;
 import main.java.report.mainClass.Main;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
 public class GetData {
 
-    public static String getPlatform() {
+    public static String getPlatform() throws IOException {
         System.out.println("1 - AOS \n2 - iOS \n3 - Desktop");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
@@ -25,8 +27,9 @@ public class GetData {
         return item;
     }
 
-    public static String getBoC() {
-        System.out.println("Make a choice: \n1 - 🔴 Bug  \n2 - \uD83D\uDD30 Comment  \n3 - 📅 QA Report  \n4 - ✅ Done!  \n5 - ❌ Fail \n6 - \uD83D\uDD00 Dec to Hex");
+    public static String getBoC() throws IOException {
+        System.out.println("Make a choice: \n1 - 🔴 Bug  \n2 - \uD83D\uDD30 Comment  \n3 - 📅 QA Report  \n4 - ✅ Done!  \n5 - ❌ Fail \n6 - \uD83D\uDD00 Dec to Hex" +
+                "\nUpdate - \uD83D\uDD04 Get update");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item = null;
@@ -83,6 +86,16 @@ public class GetData {
                 item = getBoC();
             }
 
+            case "Update","update","UPDATE","uPDATE" -> {
+                String link = "https://ajaxsystems.atlassian.net/wiki/spaces/AC/pages/2160657041/LOGAN.jar";
+                System.out.println(link);
+                java.awt.Desktop.getDesktop().browse(java.net.URI.create(link));
+                ReportMethods.clipboardIndex(link);
+                Main.retry();
+            }
+
+
+
             case "QA" -> {
                 System.out.println(ReportElements.Space50.getString());
                 System.out.println("Слава Mobile Team, QA слава");
@@ -109,6 +122,5 @@ public class GetData {
         String currentDate = formatForDateNow.format(date);
         return "Date\uD83D\uDCC5: " + currentDate + "\n\n" + "Fail❌: \n\n" + "Done!✅: \n\n";
     }
-
 
 }

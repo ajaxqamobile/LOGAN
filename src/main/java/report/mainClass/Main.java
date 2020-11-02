@@ -5,16 +5,18 @@ import main.java.report.Reporting;
 import main.java.report.Scan;
 import main.java.report.enums.ReportElements;
 
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         System.out.print("\nWelcome to LOGAN v1.3\n");
         System.out.println("When security is art!\n");
         retry();
     }
 
-    public static void retry() {
+    public static void retry() throws IOException {
         System.out.println("You have to enter the password: ");
         String pass = Scan.scanText();
         if (pass.equals("ajaxtest")) {
