@@ -1,6 +1,7 @@
 package main.java.report;
 
 import main.java.report.enums.ReportElements;
+import main.java.report.lists.devices;
 import main.java.report.mainClass.Main;
 
 import java.io.IOException;
@@ -8,10 +9,11 @@ import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.stream.Stream;
 
 public class GetData {
 
-    public static String getPlatform() throws IOException {
+    public static String getPlatform() throws IOException, InterruptedException {
         System.out.println("1 - AOS \n2 - iOS \n3 - Desktop");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
@@ -27,9 +29,15 @@ public class GetData {
         return item;
     }
 
-    public static String getBoC() throws IOException {
-        System.out.println("Make a choice: \n1 - 🔴 Bug  \n2 - \uD83D\uDD30 Comment  \n3 - 📅 QA Report  \n4 - ✅ Done!  \n5 - ❌ Fail \n6 - \uD83D\uDD00 Dec to Hex" +
-                "\nUpdate - \uD83D\uDD04 Get update");
+    public static String getBoC() throws IOException, InterruptedException {
+        System.out.println("Make a choice: \n1 - 🔴 Bug  " +
+                "\n2 - \uD83D\uDD30 Comment  " +
+                "\n3 - 📅 QA Report  " +
+                "\n4 - ✅ Done!  " +
+                "\n5 - ❌ Fail " +
+                "\n6 - \uD83D\uDD00 Dec to Hex" +
+                "\n7 - \uD83D\uDCDF JIMM" +
+                "\n\nUpdate - \uD83D\uDD04 Get update\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item = null;
@@ -67,21 +75,13 @@ public class GetData {
                 System.out.println("For set firmware the device, you need to enter a value of this format -> 5420102\n" +
                         "We get this value for the device -> 5.42.01.02\n");
 
-                int str = Integer.parseInt(Scan.scanText());
-                int count = String.valueOf(Math.abs(str)).length();
-                String readyHex = null;
-                if (count == 6) {
-                    readyHex = decToHex.hubToHex(str);
-                    ReportMethods.clipboardIndex(readyHex);
-                    System.out.println("This is your HEX = "+readyHex);
-                } else if (count == 7){
-                    readyHex = decToHex.deviceToHex(str);
-                    ReportMethods.clipboardIndex(readyHex);
-                    System.out.println("This is your HEX = "+readyHex);
-                } else {
-                    System.out.println(ReportElements.Space50.getString());
-                    System.out.println("\nSorry, wrong password! Try again!\n");
-                }
+                decToHex.startHEX();
+                item = getBoC();
+            }
+
+            case "7" -> {
+                System.out.println("Enter the type of sensor for which you want to generate a command!\n");
+                devices.checkType();
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
@@ -94,9 +94,6 @@ public class GetData {
                 ReportMethods.clipboardIndex(link);
                 item = getBoC();
             }
-
-
-
             case "QA" -> {
                 System.out.println(ReportElements.Space50.getString());
                 System.out.println("Слава Mobile Team, QA слава");

@@ -71,7 +71,7 @@ public class Phones {
             {"Desktop version: MacOS 10.15.17",
             "Desktop version: Windows 10"};
 
-    public static String getPhone(String OS) throws IOException {
+    public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;
         switch (OS) {
             case "1" -> {

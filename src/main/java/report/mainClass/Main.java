@@ -9,14 +9,14 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         System.out.print("\nWelcome to LOGAN v1.3\n");
         System.out.println("When security is art!\n");
         retry();
     }
 
-    public static void retry() throws IOException {
+    public static void retry() throws IOException, InterruptedException {
         System.out.println("You have to enter the password: ");
         String pass = Scan.scanText();
         if (pass.equals("ajaxtest")) {

@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Reporting {
 
-    public static void getReport(String item, String OS) throws IOException {
+    public static void getReport(String item, String OS) throws IOException, InterruptedException {
         switch (item) {
             case "1" -> {
                 composeBug(OS);
@@ -23,7 +23,7 @@ public class Reporting {
         getReport(GetData.getBoC(), GetData.getPlatform());
     }
 
-    public static void composeBug(String OS) throws IOException {
+    public static void composeBug(String OS) throws IOException, InterruptedException {
 
         ReportMethods.enviroment();
         ReportMethods.appVersion(OS);
@@ -51,7 +51,7 @@ public class Reporting {
 
     }
 
-    public static void composeComment(String OS) throws IOException {
+    public static void composeComment(String OS) throws IOException, InterruptedException {
 
         ReportMethods.enviroment();
         ReportMethods.appVersion(OS);

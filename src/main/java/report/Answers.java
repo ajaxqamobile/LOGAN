@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Answers {
 
-    public static String YesNo() throws IOException {
+    public static String YesNo() throws IOException, InterruptedException {
         String Answer = null;
         System.out.println("1 - Yes \n2 - No");
         String scan = Scan.scanText();
@@ -22,7 +22,7 @@ public class Answers {
         return Answer;
     }
 
-    public static String HowOften() throws IOException {
+    public static String HowOften() throws IOException, InterruptedException {
         String Answer = null;
         System.out.println("1 - Always \n2 - Rarely \n3 - Failed to retry");
         String scan = Scan.scanText();
@@ -39,7 +39,7 @@ public class Answers {
         return Answer;
     }
 
-    public static String Sever() throws IOException {
+    public static String Sever() throws IOException, InterruptedException {
         String Answer = null;
         System.out.println("1 - Release \n2 - Stage");
         String scan = Scan.scanText();
@@ -57,7 +57,7 @@ public class Answers {
     }
 
 
-    public static String TestStatus() throws IOException {
+    public static String TestStatus() throws IOException, InterruptedException {
         String Answer = null;
         System.out.println("1 - Done!✅ \n2 - Fail❌ \n3 - Not reproduced!✅ \n4 - In Progress!\uD83D\uDD53");
         String scan = Scan.scanText();

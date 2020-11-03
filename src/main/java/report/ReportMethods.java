@@ -20,7 +20,7 @@ public class ReportMethods {
         lastData.enviroment = res;
     }
 
-    public static void appVersion(String OS) throws IOException {
+    public static void appVersion(String OS) throws IOException, InterruptedException {
         String res = null;
         switch (OS) {
             case "1" -> {
@@ -43,7 +43,7 @@ public class ReportMethods {
         lastData.appVer = res;
     }
 
-    public static void server() throws IOException {
+    public static void server() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Server.getString());
         res = ReportElements.Server.getString();
@@ -60,7 +60,7 @@ public class ReportMethods {
         lastData.hubType = res;
     }
 
-    public static void hubVer() throws IOException {
+    public static void hubVer() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.HubVer.getString());
         res = ReportElements.HubVer.getString();
@@ -69,7 +69,7 @@ public class ReportMethods {
         lastData.hubVer = res;
     }
 
-    public static void device(String OS) throws IOException {
+    public static void device(String OS) throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Device.getString());
         res = ReportElements.Device.getString();
@@ -78,7 +78,7 @@ public class ReportMethods {
         lastData.phone = res;
     }
 
-    public static void commentDevice(String OS) throws IOException {
+    public static void commentDevice(String OS) throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Device.getString());
         res = ReportElements.Device.getString();
@@ -87,7 +87,7 @@ public class ReportMethods {
         lastData.phone = res;
     }
 
-    public static void repeated() throws IOException {
+    public static void repeated() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Repeated.getString());
         res = "\n" + ReportElements.Repeated.getString();
@@ -96,7 +96,7 @@ public class ReportMethods {
         lastData.repeated = res;
     }
 
-    public static void inRelease() throws IOException {
+    public static void inRelease() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.inRelease.getString());
         res = ReportElements.inRelease.getString();
@@ -105,7 +105,7 @@ public class ReportMethods {
         lastData.inRelease = res;
     }
 
-    public static void another() throws IOException {
+    public static void another() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Another.getString());
         res = ReportElements.Another.getString();
@@ -120,7 +120,7 @@ public class ReportMethods {
         System.out.println("\n\n");
     }
 
-    public static void email() throws IOException {
+    public static void email() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Email.getString());
         String itemE = Scan.scanText();
@@ -138,7 +138,7 @@ public class ReportMethods {
         lastData.email = res;
     }
 
-    public static void password() throws IOException {
+    public static void password() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Pass.getString());
         String itemPass = Scan.scanText();
@@ -156,7 +156,7 @@ public class ReportMethods {
         lastData.password = res;
     }
 
-    public static void hubName() throws IOException {
+    public static void hubName() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.HubName.getString());
         res = ReportElements.HubName.getString();
@@ -165,7 +165,7 @@ public class ReportMethods {
         lastData.hubName = res;
     }
 
-    public static void preconditions() throws IOException {
+    public static void preconditions() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Preconditions.getString());
         String itemP = Scan.scanText();
@@ -179,7 +179,7 @@ public class ReportMethods {
         System.out.println("\n\n");
     }
 
-    public static void description() throws IOException {
+    public static void description() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Description.getString());
         res = ReportElements.Description.getString();
@@ -188,7 +188,7 @@ public class ReportMethods {
         lastData.description = res;
     }
 
-    public static void commentDescription() throws IOException {
+    public static void commentDescription() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Description.getString());
         String itemD = Scan.scanText();
@@ -202,7 +202,7 @@ public class ReportMethods {
         }
     }
 
-    public static void testStatus() throws IOException {
+    public static void testStatus() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Case.getString() + ReportElements.TestStatus.getString());
         res = ReportElements.Case.getString() + ReportElements.TestStatus.getString();
@@ -211,7 +211,7 @@ public class ReportMethods {
         lastData.testStatus = res;
     }
 
-    public static void stepsToReproduce() throws IOException {
+    public static void stepsToReproduce() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.StepsToReproduce.getString());
         res = ReportElements.StepsToReproduce.getString() + "\n\n";
@@ -233,7 +233,7 @@ public class ReportMethods {
         System.out.println("\n\n");
     }
 
-    public static void AR() throws IOException {
+    public static void AR() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.AR.getString());
         res = ReportElements.AR.getString();
@@ -242,7 +242,7 @@ public class ReportMethods {
         lastData.AR = res;
     }
 
-    public static void ER() throws IOException {
+    public static void ER() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.ER.getString());
         res = ReportElements.ER.getString();
@@ -251,7 +251,7 @@ public class ReportMethods {
         lastData.ER = res;
     }
 
-    public static void evidence() throws IOException {
+    public static void evidence() throws IOException, InterruptedException {
         System.out.println(ReportElements.Evidence.getString());
         String itemE = Scan.scanText();
         switch (itemE) {
@@ -267,7 +267,7 @@ public class ReportMethods {
         System.out.println("\n\n");
     }
 
-    public static void AI() throws IOException {
+    public static void AI() throws IOException, InterruptedException {
         System.out.println(ReportElements.AI.getString());
         String itemAI = Scan.scanText();
         if (!itemAI.equals("-")) {
@@ -279,7 +279,7 @@ public class ReportMethods {
         System.out.println("\n\n");
     }
 
-    public static void timestamp() throws IOException {
+    public static void timestamp() throws IOException, InterruptedException {
         String res;
         System.out.println(ReportElements.Timestamp.getString());
         String itemT = Scan.scanText();

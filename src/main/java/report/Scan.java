@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Scan {
 
-    public static String scanHubName() throws IOException {
+    public static String scanHubName() throws IOException, InterruptedException {
         String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
@@ -33,7 +33,7 @@ public class Scan {
         return ret;
     }
 
-    public static String scanHubVer() throws IOException {
+    public static String scanHubVer() throws IOException, InterruptedException {
         String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
@@ -56,7 +56,7 @@ public class Scan {
         return ret;
     }
 
-    public static String scanAppVer() throws IOException {
+    public static String scanAppVer() throws IOException, InterruptedException {
         String ret = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
@@ -80,7 +80,7 @@ public class Scan {
         return ret;
     }
 
-    public static String scanText() throws IOException {
+    public static String scanText() throws IOException, InterruptedException {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         switch (text) {
@@ -112,9 +112,11 @@ public class Scan {
             } else {
                 currentType = HubTypes.hubTypes[i - 1];
             }
-        } catch (NumberFormatException | IOException e) {
+        } catch (NumberFormatException e) {
             System.out.println("Wrong value, please try again!");
             currentType = scanHubType(count);
+        }  catch (InterruptedException  | IOException e) {
+            e.printStackTrace();
         }
         return currentType;
     }
