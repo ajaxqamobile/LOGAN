@@ -81,7 +81,8 @@ public class GetData {
 
             case "7" -> {
                 System.out.println("Enter the type of sensor for which you want to generate a command!\n");
-                devices.checkType();
+                String type = Scan.scanText();
+                devices.checkType(type);
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
