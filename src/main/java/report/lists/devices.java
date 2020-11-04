@@ -47,13 +47,17 @@ public enum devices {
 
 
     public static void checkType(String type) throws IOException, InterruptedException {
-
+String checkType = "null";
         for (devices EnumTypes : devices.values()) {
             if ((EnumTypes.getString()).equals(type)) {
                 String command = "jwl3 add " + type + " 1110" + type + ";" + "jwl3 on 1110" + type;
                 ReportMethods.clipboardIndex(command);
+                checkType = type;
                 System.out.println(command);
             }
+        }
+        if (checkType.equals("null")){
+            System.out.println("\nYou entered the wrong sensor type, please try again!");
         }
     }
     }
