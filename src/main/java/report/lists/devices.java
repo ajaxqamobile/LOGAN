@@ -1,6 +1,7 @@
 package main.java.report.lists;
 
 import main.java.report.ReportMethods;
+import main.java.report.Scan;
 
 import java.io.IOException;
 
@@ -50,10 +51,27 @@ public enum devices {
 String checkType = "null";
         for (devices EnumTypes : devices.values()) {
             if ((EnumTypes.getString()).equals(type)) {
-                String command = "jwl3 add " + type + " 1110" + type + ";" + "jwl3 on 1110" + type;
-                ReportMethods.clipboardIndex(command);
-                checkType = type;
-                System.out.println(command);
+                System.out.println("\nDo you watch White ob Black color?\n\n" +
+                        "1 - While\n" +
+                        "2 - Black");
+                String color = Scan.scanText();
+                if (color.equals("1")){
+                    String command = "jwl3 add " + type + " 1110" + type + ";" + "jwl3 on 1110" + type;
+                    ReportMethods.clipboardIndex(command);
+                    checkType = type;
+                    System.out.println(command);
+                    String QRlinkWhite = "http://qrcoder.ru/code/?1110"+type+type+"1&10&0";
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(QRlinkWhite));
+                } else if (color.equals("2")){
+                    String command = "jwl3 add " + type + " 2220" + type + ";" + "jwl3 on 2220" + type;
+                    ReportMethods.clipboardIndex(command);
+                    checkType = type;
+                    System.out.println(command);
+                    String QRlinkBlack = "http://qrcoder.ru/code/?2220"+type+type+"2&10&0";
+                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(QRlinkBlack));
+                } else {
+                    System.out.println("\nYou entered the wrong value, please try again!");
+                }
             }
         }
         if (checkType.equals("null")){
