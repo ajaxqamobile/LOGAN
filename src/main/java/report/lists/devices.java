@@ -36,6 +36,7 @@ public enum devices {
     WallSwitch("1f"),
     DoubleButton("42");
 
+
     private final String text;
 
     devices(String A) {

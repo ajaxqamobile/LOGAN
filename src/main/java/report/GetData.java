@@ -1,6 +1,7 @@
 package main.java.report;
 
 import main.java.report.enums.ReportElements;
+import main.java.report.lists.descDevices;
 import main.java.report.lists.devices;
 import main.java.report.mainClass.Main;
 
@@ -81,6 +82,7 @@ public class GetData {
 
             case "7" -> {
                 System.out.println("Enter the type of sensor for which you want to generate a command!\n");
+                descDevices.getAllDevices();
                 String type = Scan.scanText();
                 devices.checkType(type);
                 System.out.println(ReportElements.Space50.getString());
