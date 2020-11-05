@@ -56,22 +56,33 @@ String checkType = "null";
                         "1 - While\n" +
                         "2 - Black");
                 String color = Scan.scanText();
-                if (color.equals("1")){
-                    String command = "jwl3 add " + type + " 1110" + type + ";" + "jwl3 on 1110" + type;
-                    ReportMethods.clipboardIndex(command);
-                    checkType = type;
-                    System.out.println(command);
-                    String QRlinkWhite = "http://qrcoder.ru/code/?1110"+type+type+"1&10&0";
-                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(QRlinkWhite));
-                } else if (color.equals("2")){
-                    String command = "jwl3 add " + type + " 2220" + type + ";" + "jwl3 on 2220" + type;
-                    ReportMethods.clipboardIndex(command);
-                    checkType = type;
-                    System.out.println(command);
-                    String QRlinkBlack = "http://qrcoder.ru/code/?2220"+type+type+"2&10&0";
-                    java.awt.Desktop.getDesktop().browse(java.net.URI.create(QRlinkBlack));
-                } else {
-                    System.out.println("\nYou entered the wrong value, please try again!");
+                switch (color) {
+                    case "1": {
+                        String command = "jwl3 add " + type + " 1110" + type + ";" + "jwl3 on 1110" + type;
+                        ReportMethods.clipboardIndex(command);
+                        checkType = type;
+                        System.out.println(command);
+                        String QRlinkWhite = "http://qrcoder.ru/code/?1110" + type + type + "1&10&0";
+                        java.awt.Desktop.getDesktop().browse(java.net.URI.create(QRlinkWhite));
+                        checkType(type);
+                        break;
+                    }
+                    case "2": {
+                        String command = "jwl3 add " + type + " 2220" + type + ";" + "jwl3 on 2220" + type;
+                        ReportMethods.clipboardIndex(command);
+                        checkType = type;
+                        System.out.println(command);
+                        String QRlinkBlack = "http://qrcoder.ru/code/?2220" + type + type + "2&10&0";
+                        java.awt.Desktop.getDesktop().browse(java.net.URI.create(QRlinkBlack));
+                        checkType(type);
+                        break;
+                    }
+                    case "-":
+
+                        break;
+                    default:
+                        System.out.println("\nYou entered the wrong value, please try again!");
+                        break;
                 }
             }
         }
