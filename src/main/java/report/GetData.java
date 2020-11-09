@@ -38,6 +38,7 @@ public class GetData {
                 "\n5 - ❌ Fail " +
                 "\n6 - \uD83D\uDD00 Dec to Hex" +
                 "\n7 - \uD83D\uDCDF JIMM" +
+                "\n8 - \uD83D\uDD04 Обработано "+
                 "\n\nUpdate - \uD83D\uDD04 Get update\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
@@ -88,7 +89,14 @@ public class GetData {
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
-
+            case "8" -> {
+                String str = "Проблема обработана и зафиксирована \uD83D\uDD04 \n";
+                System.out.println(str);
+                ReportMethods.clipboardIndex(str);
+                System.out.println(ReportElements.Space50.getString());
+                item = getBoC();
+                System.out.println("\n\n");
+            }
             case "Update","update","UPDATE","uPDATE" -> {
                 String link = "https://ajaxsystems.atlassian.net/wiki/spaces/AC/pages/2160657041/LOGAN.jar";
                 String Dlink = "https://api.media.atlassian.com/file/8620083d-e666-40e3-beed-83b3c2a25f79/binary?client=121a5fd6-7295-49fa-8b0b-836b04406a9b&collection=contentId-2160657041&dl=true&max-age=2592000&token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMjFhNWZkNi03Mjk1LTQ5ZmEtOGIwYi04MzZiMDQ0MDZhOWIiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpjb2xsZWN0aW9uOmNvbnRlbnRJZC0yMTYwNjU3MDQxIjpbInJlYWQiXX0sImV4cCI6MTYwNDMzNDY1NCwibmJmIjoxNjA0MzMxNzE0fQ.VYBy41kfVVWzlnhuIR9b-MMEw7rJP-ThexmWof1aCMQ";
