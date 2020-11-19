@@ -1,8 +1,8 @@
 package main.java.report.mainClass;
 
-import main.java.report.GetData;
-import main.java.report.Reporting;
-import main.java.report.Scan;
+import main.java.report.other.GetData;
+import main.java.report.other.Reporting;
+import main.java.report.other.Scan;
 import main.java.report.enums.ReportElements;
 
 import java.io.IOException;
@@ -10,7 +10,6 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException {
-
         System.out.print("\nWelcome to LOGAN v1.4\n");
         System.out.println("When security is art!\n");
         retry();

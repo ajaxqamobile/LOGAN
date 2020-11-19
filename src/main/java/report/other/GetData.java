@@ -1,16 +1,15 @@
-package main.java.report;
+package main.java.report.other;
 
 import main.java.report.enums.ReportElements;
 import main.java.report.lists.descDevices;
 import main.java.report.lists.devices;
+import main.java.report.lists.lastData;
 import main.java.report.mainClass.Main;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class GetData {
 
@@ -111,6 +110,11 @@ public class GetData {
                 Main.retry();
             }
             case "reboot" -> Main.retry();
+            case "last" -> {
+                ReportMethods.clipboardIndex(lastData.lastReport);
+                System.out.println(ReportElements.Space50.getString());
+                item = getBoC();
+            }
             default -> {
                 System.out.println(ReportElements.Space50.getString());
                 System.out.println("Wrong value, please try again!");

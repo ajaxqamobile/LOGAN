@@ -1,4 +1,4 @@
-package main.java.report;
+package main.java.report.other;
 
 import main.java.report.enums.ReportElements;
 
