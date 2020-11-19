@@ -1,6 +1,7 @@
 package main.java.report.lists;
 
 import main.java.report.Scan;
+import main.java.report.enums.qaPhones;
 import main.java.report.mainClass.Main;
 
 import java.io.IOException;
@@ -10,22 +11,22 @@ public class Phones {
     public static String currentPhone;
 
     public static String[] androidPhones =
-            {"Samsung Galaxy S9",
-                    "Xiaomi Redmi Note 7",
-                    "Samsung Galaxy A5",
-                    "Google Pixel 3a",
-                    "Samsung Galaxy S4",
-                    "Xiaomi MI A2",
-                    "Nexus P6",
-                    "Prestigio (PSP7505DUO)",
-                    "Meizu PRO 6",
-                    "Huawei P Smart",
-                    "Samsung Galaxy A51",
-            "Vivo 1920"};
+            {qaPhones.GalaxyS9.getString(),
+                    qaPhones.XiaomiRedmiNote7.getString(),
+                    qaPhones.SamsungGalaxyA5.getString(),
+                    qaPhones.GooglePixel3a.getString(),
+                    qaPhones.SamsungGalaxyS4.getString(),
+                    qaPhones.XiaomiMIA2.getString(),
+                    qaPhones.NexusP6.getString(),
+                    qaPhones.Prestigio.getString(),
+                    qaPhones.MeizuPRO6.getString(),
+                    qaPhones.HuaweiPSmart.getString(),
+                    qaPhones.SamsungGalaxyA51.getString(),
+                    qaPhones.Vivo1920.getString()};
 
     public static String[] desktopPhones =
             {"MacBook Air/Pro",
-            "Windows PC"};
+                    "Windows PC"};
 
     public static String[] androidOS =
             {"Android version: 10.0",
@@ -42,36 +43,39 @@ public class Phones {
                     "Android version: 10.0"};
 
     public static String[] iOSPhones =
-            {"Apple Watch 1",
-                    "Apple Watch 3",
-                    "Apple Watch 5",
-                    "iPhone 7",
-                    "iPhone 4s",
-                    "iPhone SE",
-                    "iPhone X",
-                    "iPhone XS",
-                    "iPhone 6",
-                    "iPhone 6s",
-                    "iPhone SE 2020",
-                    "iPhone 8 Plus"};
+            {qaPhones.AppleWatch1.getString(),
+                    qaPhones.AppleWatch3.getString(),
+                    qaPhones.AppleWatch5.getString(),
+                    qaPhones.iPhone7.getString(),
+                    qaPhones.iPhone4s.getString(),
+                    qaPhones.iPhoneSE.getString(),
+                    qaPhones.iPhoneX.getString(),
+                    qaPhones.iPhoneXS.getString(),
+                    qaPhones.iPhone6.getString(),
+                    qaPhones.iPhone6s.getString(),
+                    qaPhones.iPhoneSE2020.getString(),
+                    qaPhones.iPhone8Plus.getString(),
+                    qaPhones.iPhoneXR.getString(),
+            };
 
     public static String[] iOSOS =
             {"WatchOS version: 4.3.2",
                     "WatchOS version: 7.0",
-                    "WatchOS version: 7.1 Beta",
+                    "WatchOS version: 7.2 Beta",
                     "iOS version: 13.5.1",
                     "iOS version: 9.3.5",
                     "iOS version: 13.6.1",
                     "iOS version: 13.6",
-                    "iOS version: 14.2 Beta",
+                    "iOS version: 14.3 Beta",
                     "iOS version: 12.4.1",
                     "iOS version: 12.4",
                     "iOS version: 13.5.1",
-                    "iOS version: 14.0"};
+                    "iOS version: 14.2",
+                    "iOS version: 14.2"};
 
     public static String[] desktopOS =
-            {"Desktop version: MacOS 10.15.17",
-            "Desktop version: Windows 10"};
+            {"Desktop version: macOS Big Sur 11",
+                    "Desktop version: Windows 10"};
 
     public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;
