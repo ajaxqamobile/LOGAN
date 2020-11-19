@@ -1,7 +1,7 @@
 package main.java.report.lists;
 
-import main.java.report.other.ReportMethods;
-import main.java.report.other.Scan;
+import main.java.report.ReportMethods;
+import main.java.report.Scan;
 
 import java.io.IOException;
 

@@ -29,7 +29,5 @@ public class lastData {
     public static String inRelease = "null";
     public static String another = "null";
     public static String systemLog = "null";
-    public static String lastReport = "null";
-
 
 }

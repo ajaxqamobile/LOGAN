@@ -1,4 +1,4 @@
-package main.java.report.other;
+package main.java.report;
 
 import main.java.report.enums.ReportElements;
 import main.java.report.lists.HubTypes;
@@ -9,8 +9,6 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
-
-import static main.java.report.lists.lastData.lastReport;
 
 public class ReportMethods {
 
@@ -305,7 +303,7 @@ public class ReportMethods {
     }
 
     public static void clipboardBugReport() {
-        lastReport =
+        String finalRepor =
                 lastData.enviroment +
                         lastData.appVer +
                         lastData.phone +
@@ -326,15 +324,15 @@ public class ReportMethods {
                         lastData.ER +
                         lastData.AI +
                         lastData.timestamp;
-        System.out.println(lastReport);
-        StringSelection stringSelection = new StringSelection(lastReport);
+        System.out.println(finalRepor);
+        StringSelection stringSelection = new StringSelection(finalRepor);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
         System.out.println("\n\n");
     }
 
     public static void clipboardComment() {
-        lastReport =
+        String finalRepor =
                 lastData.enviroment +
                         lastData.appVer +
                         lastData.phone +
@@ -346,8 +344,8 @@ public class ReportMethods {
                         lastData.AI +
                         lastData.evidence;
 
-        System.out.println(lastReport);
-        StringSelection stringSelection = new StringSelection(lastReport);
+        System.out.println(finalRepor);
+        StringSelection stringSelection = new StringSelection(finalRepor);
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
         System.out.println("\n\n");

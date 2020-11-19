@@ -1,6 +1,6 @@
 package main.java.report.lists;
 
-import main.java.report.other.Scan;
+import main.java.report.Scan;
 
 public class HubTypes {
 

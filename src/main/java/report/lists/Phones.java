@@ -1,6 +1,6 @@
 package main.java.report.lists;
 
-import main.java.report.other.Scan;
+import main.java.report.Scan;
 import main.java.report.mainClass.Main;
 
 import java.io.IOException;
@@ -39,7 +39,7 @@ public class Phones {
                     "Android version: 6.0",
                     "Android version: 9.0",
                     "Android version: 10.0",
-            "Android version: 10.0"};
+                    "Android version: 10.0"};
 
     public static String[] iOSPhones =
             {"Apple Watch 1",

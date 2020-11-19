@@ -1,4 +1,4 @@
-package main.java.report.other;
+package main.java.report;
 
 import main.java.report.enums.ReportElements;
 import main.java.report.lists.HubTypes;
