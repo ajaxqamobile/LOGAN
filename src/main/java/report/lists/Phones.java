@@ -1,6 +1,7 @@
 package main.java.report.lists;
 
 import main.java.report.Scan;
+import main.java.report.enums.mobileOS;
 import main.java.report.enums.qaPhones;
 import main.java.report.mainClass.Main;
 
@@ -25,22 +26,22 @@ public class Phones {
                     qaPhones.Vivo1920.getString()};
 
     public static String[] desktopPhones =
-            {"MacBook Air/Pro",
-                    "Windows PC"};
+            {qaPhones.MacBook.getString(),
+                    qaPhones.WindowsPC.getString()};
 
     public static String[] androidOS =
-            {"Android version: 10.0",
-                    "Android version: 9.0",
-                    "Android version: 5.1.1",
-                    "Android version: 11.0 Beta",
-                    "Android version: 5.1",
-                    "Android version: 9.0",
-                    "Android version: 10.0",
-                    "Android version: 4.4.2",
-                    "Android version: 6.0",
-                    "Android version: 9.0",
-                    "Android version: 10.0",
-                    "Android version: 10.0"};
+            {mobileOS.AndroidOS.getString("10.0"),
+                    mobileOS.AndroidOS.getString("9.0"),
+                    mobileOS.AndroidOS.getString("5.1.1"),
+                    mobileOS.AndroidOS.getString("11.0 Beta"),
+                    mobileOS.AndroidOS.getString("5.1"),
+                    mobileOS.AndroidOS.getString("9.0"),
+                    mobileOS.AndroidOS.getString("10.0"),
+                    mobileOS.AndroidOS.getString("4.4.2"),
+                    mobileOS.AndroidOS.getString("6.0"),
+                    mobileOS.AndroidOS.getString("9.0"),
+                    mobileOS.AndroidOS.getString("10.0"),
+                    mobileOS.AndroidOS.getString("10.0")};
 
     public static String[] iOSPhones =
             {qaPhones.AppleWatch1.getString(),
@@ -59,23 +60,23 @@ public class Phones {
             };
 
     public static String[] iOSOS =
-            {"WatchOS version: 4.3.2",
-                    "WatchOS version: 7.0",
-                    "WatchOS version: 7.2 Beta",
-                    "iOS version: 13.5.1",
-                    "iOS version: 9.3.5",
-                    "iOS version: 13.6.1",
-                    "iOS version: 13.6",
-                    "iOS version: 14.3 Beta",
-                    "iOS version: 12.4.1",
-                    "iOS version: 12.4",
-                    "iOS version: 13.5.1",
-                    "iOS version: 14.2",
-                    "iOS version: 14.2"};
+            {mobileOS.WatchOS.getString("4.3.2"),
+                    mobileOS.WatchOS.getString("7.0"),
+                    mobileOS.WatchOS.getString("7.3 Beta"),
+                    mobileOS.iOS.getString("13.5.1"),
+                    mobileOS.iOS.getString("9.3.5"),
+                    mobileOS.iOS.getString("13.6.1"),
+                    mobileOS.iOS.getString("13.6"),
+                    mobileOS.iOS.getString("14.3 Beta"),
+                    mobileOS.iOS.getString("12.4.1"),
+                    mobileOS.iOS.getString("12.4"),
+                    mobileOS.iOS.getString("13.5.1"),
+                    mobileOS.iOS.getString("14.2"),
+                    mobileOS.iOS.getString("14.2")};
 
     public static String[] desktopOS =
-            {"Desktop version: macOS Big Sur 11",
-                    "Desktop version: Windows 10"};
+            {mobileOS.MacOS.getString("11"),
+                    mobileOS.WindowsOS.getString("10")};
 
     public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;

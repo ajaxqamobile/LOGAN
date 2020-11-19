@@ -26,7 +26,9 @@ public enum qaPhones {
     iPhone6s("iPhone 6s"),
     iPhoneSE2020("iPhone SE 2020"),
     iPhoneXR("iPhone XR"),
-    iPhone8Plus("iPhone 8 Plus");
+    iPhone8Plus("iPhone 8 Plus"),
+    MacBook("MacBook Air/Pro"),
+    WindowsPC("Windows PC");
 
     private final String text;
 
