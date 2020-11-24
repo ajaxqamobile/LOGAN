@@ -11,7 +11,6 @@ public class decToHex {
     }
 
 
-
     public static String checkNull(String item) {
         String count = String.valueOf((String.valueOf(Math.abs(Integer.parseInt(item))).length()));
         if (count.equals("1")) {
@@ -44,21 +43,25 @@ public class decToHex {
     }
 
     public static void startHEX() throws IOException, InterruptedException {
-        int str = Integer.parseInt(Scan.scanText());
-        int count = String.valueOf(Math.abs(str)).length();
-        String readyHex = null;
-        if (count == 6) {
-            readyHex = decToHex.hubToHex(str);
-            ReportMethods.clipboardIndex(readyHex);
-            System.out.println("This is your HEX = "+readyHex);
-        } else if (count == 7){
-            readyHex = decToHex.deviceToHex(str);
-            ReportMethods.clipboardIndex(readyHex);
-            System.out.println("This is your HEX = "+readyHex);
-        } else {
+        try {
+            int str = Integer.parseInt(Scan.scanText());
+            int count = String.valueOf(Math.abs(str)).length();
+            String readyHex = null;
+            if (count == 6) {
+                readyHex = decToHex.hubToHex(str);
+                ReportMethods.clipboardIndex(readyHex);
+                System.out.println("This is your HEX = " + readyHex);
+            } else if (count == 7) {
+                readyHex = decToHex.deviceToHex(str);
+                ReportMethods.clipboardIndex(readyHex);
+                System.out.println("This is your HEX = " + readyHex);
+            } else {
+                System.out.println(ReportElements.Space50.getString());
+                System.out.println("\nSorry, wrong password! Try again!\n");
+            }
             System.out.println(ReportElements.Space50.getString());
-            System.out.println("\nSorry, wrong password! Try again!\n");
+        } catch (Exception e) {
+          // System.out.println(e);
         }
-        System.out.println(ReportElements.Space50.getString());
     }
 }
