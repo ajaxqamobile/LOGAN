@@ -6,11 +6,9 @@ import main.java.report.lists.devices;
 import main.java.report.mainClass.Main;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class GetData {
 
@@ -78,6 +76,7 @@ public class GetData {
                         "We get this value for the device -> 5.42.01.02\n");
 
                 decToHex.startHEX();
+                decToHex.startHEX();
                 item = getBoC();
             }
 
@@ -99,9 +98,10 @@ public class GetData {
             }
             case "Update","update","UPDATE","uPDATE" -> {
                 String link = "https://ajaxsystems.atlassian.net/wiki/spaces/AC/pages/2160657041/LOGAN.jar";
-                String Dlink = "https://api.media.atlassian.com/file/8620083d-e666-40e3-beed-83b3c2a25f79/binary?client=121a5fd6-7295-49fa-8b0b-836b04406a9b&collection=contentId-2160657041&dl=true&max-age=2592000&token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMjFhNWZkNi03Mjk1LTQ5ZmEtOGIwYi04MzZiMDQ0MDZhOWIiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpjb2xsZWN0aW9uOmNvbnRlbnRJZC0yMTYwNjU3MDQxIjpbInJlYWQiXX0sImV4cCI6MTYwNDMzNDY1NCwibmJmIjoxNjA0MzMxNzE0fQ.VYBy41kfVVWzlnhuIR9b-MMEw7rJP-ThexmWof1aCMQ";
+               // String Dlink = "https://api.media.atlassian.com/file/8620083d-e666-40e3-beed-83b3c2a25f79/binary?client=121a5fd6-7295-49fa-8b0b-836b04406a9b&collection=contentId-2160657041&dl=true&max-age=2592000&token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIxMjFhNWZkNi03Mjk1LTQ5ZmEtOGIwYi04MzZiMDQ0MDZhOWIiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpjb2xsZWN0aW9uOmNvbnRlbnRJZC0yMTYwNjU3MDQxIjpbInJlYWQiXX0sImV4cCI6MTYwNDMzNDY1NCwibmJmIjoxNjA0MzMxNzE0fQ.VYBy41kfVVWzlnhuIR9b-MMEw7rJP-ThexmWof1aCMQ";
                 System.out.println(link);
-                java.awt.Desktop.getDesktop().browse(java.net.URI.create(Dlink));
+               // java.awt.Desktop.getDesktop().browse(java.net.URI.create(Dlink));
+                System.out.println("The link has already been copied to the clipboard");
                 ReportMethods.clipboardIndex(link);
                 item = getBoC();
             }
