@@ -23,7 +23,9 @@ public class Phones {
                     qaPhones.MeizuPRO6.getString(),
                     qaPhones.HuaweiPSmart.getString(),
                     qaPhones.SamsungGalaxyA51.getString(),
-                    qaPhones.Vivo1920.getString()};
+                    qaPhones.Vivo1920.getString(),
+            qaPhones.HuaweiNova5T.getString(),
+            qaPhones.GalaxyA20s.getString()};
 
     public static String[] desktopPhones =
             {qaPhones.MacBook.getString(),
@@ -41,6 +43,8 @@ public class Phones {
                     mobileOS.AndroidOS.getString("6.0"),
                     mobileOS.AndroidOS.getString("9.0"),
                     mobileOS.AndroidOS.getString("10.0"),
+                    mobileOS.AndroidOS.getString("10.0"),
+                    mobileOS.AndroidOS.getString("9.0"),
                     mobileOS.AndroidOS.getString("10.0")};
 
     public static String[] iOSPhones =

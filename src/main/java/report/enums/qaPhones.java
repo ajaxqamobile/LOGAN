@@ -27,6 +27,8 @@ public enum qaPhones {
     iPhoneSE2020("iPhone SE 2020"),
     iPhoneXR("iPhone XR"),
     iPhone8Plus("iPhone 8 Plus"),
+    HuaweiNova5T("Huawei Nova 5T"),
+    GalaxyA20s("Samsung Galaxy A20s"),
     MacBook("MacBook Air/Pro"),
     WindowsPC("Windows PC");
 
