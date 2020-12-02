@@ -45,8 +45,7 @@ public class Phones {
                     mobileOS.AndroidOS.getString("10.0"),
                     mobileOS.AndroidOS.getString("10.0"),
                     mobileOS.AndroidOS.getString("9.0"),
-some                     mobileOS.AndroidOS.getString("10.0")
-
+                    mobileOS.AndroidOS.getString("10.0")
             };
 
     public static String[] iOSPhones =
