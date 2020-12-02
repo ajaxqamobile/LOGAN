@@ -22,7 +22,7 @@ public enum descDevices {
     StreetSiren("14 - StreetSiren"),
     HomeSiren("15 - HomeSiren"),
     MotionCamOutdoor("18 - Motion Cam Outdoor"),
-    KeypadPlus("19 - KeypadP lus"),
+    KeypadPlus("19 - Keypad Plus"),
     DualCurtainOutdoor("1a - Dual Curtain Outdoor"),
     DoubleDeck("1b - DoubleDeck"),
     MultiTransmitter("1c - MultiTransmitter"),
