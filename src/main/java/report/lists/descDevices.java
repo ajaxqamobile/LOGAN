@@ -1,6 +1,7 @@
 package main.java.report.lists;
 
 public enum descDevices {
+
     Door("01 - Door"),
     Motion("02 - Motion"),
     Fire("03 - Fire"),
@@ -39,7 +40,6 @@ public enum descDevices {
     public String getString() {
         return text;
     }
-
 
     public static void getAllDevices (){
         for (descDevices DeviceTypes : descDevices.values()) {

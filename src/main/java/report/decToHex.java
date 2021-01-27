@@ -16,7 +16,6 @@ public class decToHex {
         if (count.equals("1")) {
             item = "0" + item;
         }
-
         return item;
     }
 
@@ -34,10 +33,10 @@ public class decToHex {
 
         System.out.println(a + "\n" + b + "\n" + c + "\n" + d);
 
-        String a_HEX = checkFirst(checkNull(Integer.toHexString(a)));
-        String b_HEX = checkNull(Integer.toHexString(b));
-        String c_HEX = checkNull(Integer.toHexString(c));
-        String d_HEX = checkNull(Integer.toHexString(d));
+        String a_HEX = checkFirst((Integer.toHexString(a)));
+        String b_HEX = (Integer.toHexString(b));
+        String c_HEX = (Integer.toHexString(c));
+        String d_HEX = (Integer.toHexString(d));
 
         return (a_HEX + b_HEX + c_HEX + d_HEX);
     }
@@ -46,7 +45,7 @@ public class decToHex {
         try {
             int str = Integer.parseInt(Scan.scanText());
             int count = String.valueOf(Math.abs(str)).length();
-            String readyHex = null;
+            String readyHex;
             if (count == 6) {
                 readyHex = decToHex.hubToHex(str);
                 ReportMethods.clipboardIndex(readyHex);
@@ -60,8 +59,20 @@ public class decToHex {
                 System.out.println("\nSorry, wrong password! Try again!\n");
             }
             System.out.println(ReportElements.Space50.getString());
-        } catch (Exception e) {
-          // System.out.println(e);
+        } catch (Exception ignored) {
         }
     }
 }
+//
+// class IntegerDemo {
+//
+//    public static void main(String[] args) {
+//
+//        int i = 170;
+//        System.out.println("Number = " + i);
+//
+//      /* returns the string representation of the unsigned integer value
+//         represented by the argument in hexadecimal (base 16) */
+//        System.out.println("Hex = " + Integer.toHexString(i));
+//    }
+//}

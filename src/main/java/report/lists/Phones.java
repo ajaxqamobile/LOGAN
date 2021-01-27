@@ -62,7 +62,8 @@ public class Phones {
                     qaPhones.iPhoneSE2020.getString(),
                     qaPhones.iPhone8Plus.getString(),
                     qaPhones.iPhoneXR.getString(),
-            };
+                    qaPhones.iPhone12mini.getString(),
+                    qaPhones.iPhone12ProMax.getString()};
 
     public static String[] iOSOS =
             {mobileOS.WatchOS.getString("4.3.2"),
@@ -77,7 +78,9 @@ public class Phones {
                     mobileOS.iOS.getString("12.4"),
                     mobileOS.iOS.getString("13.5.1"),
                     mobileOS.iOS.getString("14.2"),
-                    mobileOS.iOS.getString("14.2")};
+                    mobileOS.iOS.getString("14.2"),
+                    mobileOS.iOS.getString("14.3"),
+                    mobileOS.iOS.getString("14.3")};
 
     public static String[] desktopOS =
             {mobileOS.MacOS.getString("11"),

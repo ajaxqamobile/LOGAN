@@ -3,12 +3,15 @@ package main.java.report;
 import main.java.report.enums.ReportElements;
 import main.java.report.lists.descDevices;
 import main.java.report.lists.devices;
+import main.java.report.lists.lastData;
 import main.java.report.mainClass.Main;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
+
+import static main.java.report.ReportMethods.clipboardComment;
 
 public class GetData {
 
@@ -51,22 +54,18 @@ public class GetData {
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
                 System.out.println("\n\n");
-
-
             }
             case "4" -> {
                 ReportMethods.clipboardIndex("Done!✅");
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
                 System.out.println("\n\n");
-
             }
             case "5" -> {
                 ReportMethods.clipboardIndex("Fail❌");
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
-
             case "6" -> {
                 System.out.println("Enter the number to convert to HEX \n");
                 System.out.println("For set firmware the hub, you need to enter a value of this format -> 209113\n" +
@@ -75,7 +74,6 @@ public class GetData {
                 System.out.println("For set firmware the device, you need to enter a value of this format -> 5420102\n" +
                         "We get this value for the device -> 5.42.01.02\n");
 
-                decToHex.startHEX();
                 decToHex.startHEX();
                 item = getBoC();
             }
@@ -111,6 +109,14 @@ public class GetData {
                 Main.retry();
             }
             case "reboot" -> Main.retry();
+            case "last" ->  {
+                if (!(lastData.appVer.equals("null"))){
+                    clipboardComment();
+                } else {
+                    System.out.println("There are no saved values, you need to fill out the comment again!\n\n");
+                }
+                item = getBoC();
+            }
             default -> {
                 System.out.println(ReportElements.Space50.getString());
                 System.out.println("Wrong value, please try again!");
