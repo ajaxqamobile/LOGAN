@@ -21,7 +21,7 @@ public class Scan {
         } else if (text.equals("reboot")) {
             Main.retry();
         }
-        boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
+        boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д")|| text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.hubName.equals("null")) {
             System.out.println("You have not previously saved the hub name, enter the current name!");
             scanHubName();
@@ -44,7 +44,7 @@ public class Scan {
             }
             case "reboot" -> Main.retry();
         }
-        boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
+        boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.hubVer.equals("null")) {
             System.out.println("You have not previously saved the hub version, enter the current version");
             scanHubVer();
@@ -68,7 +68,7 @@ public class Scan {
             case "reboot" -> Main.retry();
         }
 
-        boolean lastBool = text.equals("last") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
+        boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.appVer.equals("null")) {
             System.out.println("You have not previously saved the version of the application, enter the current version of the application!");
             scanAppVer();
