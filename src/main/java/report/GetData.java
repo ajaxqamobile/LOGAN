@@ -109,7 +109,7 @@ public class GetData {
                 Main.retry();
             }
             case "reboot" -> Main.retry();
-            case "last" ->  {
+            case "last","l","д","Д","L" ->  {
                 if (!(lastData.appVer.equals("null"))){
                     clipboardComment();
                 } else {
