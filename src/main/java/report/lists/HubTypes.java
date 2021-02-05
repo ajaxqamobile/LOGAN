@@ -6,10 +6,13 @@ public class HubTypes {
 
     public static String currentHubType;
 
-    public static String[] hubTypes = {"Hub 1",
+    public static String[] hubTypes = {
+            "Hub 1",
             "Hub Plus",
             "Hub 2",
             "Hub 2 Plus",
+            "Hub 3",
+            "Hub 3 Plus",
             "Yavir",
             "Yavir Plus"};
 

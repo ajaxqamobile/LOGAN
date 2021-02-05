@@ -1,7 +1,6 @@
 package main.java.report.lists;
 
 import main.java.report.Scan;
-import main.java.report.enums.mobileOS;
 import main.java.report.enums.qaPhones;
 import main.java.report.mainClass.Main;
 
@@ -18,6 +17,7 @@ public class Phones {
                     qaPhones.GooglePixel3a.getString(),
                     qaPhones.SamsungGalaxyS4.getString(),
                     qaPhones.XiaomiMIA2.getString(),
+                    qaPhones.MeizuM6T.getString(),
                     qaPhones.NexusP6.getString(),
                     qaPhones.Prestigio.getString(),
                     qaPhones.MeizuPRO6.getString(),
@@ -25,27 +25,42 @@ public class Phones {
                     qaPhones.SamsungGalaxyA51.getString(),
                     qaPhones.Vivo1920.getString(),
             qaPhones.HuaweiNova5T.getString(),
-            qaPhones.GalaxyA20s.getString()};
+            qaPhones.GalaxyA20s.getString(),
+            qaPhones.XiaomiRedmiNote2.getString(),
+            qaPhones.Lenovo.getString(),
+            qaPhones.Nokia5_3.getString(),
+            qaPhones.MotoG8.getString(),
+            qaPhones.SamsungGalaxyM21.getString(),
+
+
+            };
 
     public static String[] desktopPhones =
             {qaPhones.MacBook.getString(),
                     qaPhones.WindowsPC.getString()};
 
     public static String[] androidOS =
-            {mobileOS.AndroidOS.getString("10.0"),
-                    mobileOS.AndroidOS.getString("9.0"),
-                    mobileOS.AndroidOS.getString("5.1.1"),
-                    mobileOS.AndroidOS.getString("11.0 Beta"),
-                    mobileOS.AndroidOS.getString("5.1"),
-                    mobileOS.AndroidOS.getString("9.0"),
-                    mobileOS.AndroidOS.getString("10.0"),
-                    mobileOS.AndroidOS.getString("4.4.2"),
-                    mobileOS.AndroidOS.getString("6.0"),
-                    mobileOS.AndroidOS.getString("9.0"),
-                    mobileOS.AndroidOS.getString("10.0"),
-                    mobileOS.AndroidOS.getString("10.0"),
-                    mobileOS.AndroidOS.getString("9.0"),
-                    mobileOS.AndroidOS.getString("10.0")
+            {qaPhones.GalaxyS9_OS.getString(),
+                    qaPhones.XiaomiRedmiNote7_OS.getString(),
+                    qaPhones.SamsungGalaxyA5_OS.getString(),
+                    qaPhones.GooglePixel3a_OS.getString(),
+                    qaPhones.SamsungGalaxyS4_OS.getString(),
+                    qaPhones.XiaomiMIA2_OS.getString(),
+                    qaPhones.MeizuM6T_OS.getString(),
+                    qaPhones.NexusP6_OS.getString(),
+                    qaPhones.Prestigio_OS.getString(),
+                    qaPhones.MeizuPRO6_OS.getString(),
+                    qaPhones.HuaweiPSmart_OS.getString(),
+                    qaPhones.SamsungGalaxyA51_OS.getString(),
+                    qaPhones.Vivo1920_OS.getString(),
+                    qaPhones.HuaweiNova5T_OS.getString(),
+                    qaPhones.GalaxyA20s_OS.getString(),
+                    qaPhones.XiaomiRedmiNote2_OS.getString(),
+                    qaPhones.Lenovo_OS.getString(),
+                    qaPhones.Nokia5_3_OS.getString(),
+                    qaPhones.MotoG8_OS.getString(),
+                    qaPhones.SamsungGalaxyM21_OS.getString(),
+
             };
 
     public static String[] iOSPhones =
@@ -66,25 +81,25 @@ public class Phones {
                     qaPhones.iPhone12ProMax.getString()};
 
     public static String[] iOSOS =
-            {mobileOS.WatchOS.getString("4.3.2"),
-                    mobileOS.WatchOS.getString("7.0"),
-                    mobileOS.WatchOS.getString("7.3 Beta"),
-                    mobileOS.iOS.getString("13.5.1"),
-                    mobileOS.iOS.getString("9.3.5"),
-                    mobileOS.iOS.getString("13.6.1"),
-                    mobileOS.iOS.getString("13.6"),
-                    mobileOS.iOS.getString("14.3 Beta"),
-                    mobileOS.iOS.getString("12.4.1"),
-                    mobileOS.iOS.getString("12.4"),
-                    mobileOS.iOS.getString("13.5.1"),
-                    mobileOS.iOS.getString("14.2"),
-                    mobileOS.iOS.getString("14.2"),
-                    mobileOS.iOS.getString("14.3"),
-                    mobileOS.iOS.getString("14.3")};
+            {qaPhones.AppleWatch1_OS.getString(),
+                    qaPhones.AppleWatch3_OS.getString(),
+                    qaPhones.AppleWatch5_OS.getString(),
+                    qaPhones.iPhone7_OS.getString(),
+                    qaPhones.iPhone4s_OS.getString(),
+                    qaPhones.iPhoneSE_OS.getString(),
+                    qaPhones.iPhoneX_OS.getString(),
+                    qaPhones.iPhoneXS_OS.getString(),
+                    qaPhones.iPhone6_OS.getString(),
+                    qaPhones.iPhone6s_OS.getString(),
+                    qaPhones.iPhoneSE2020_OS.getString(),
+                    qaPhones.iPhone8Plus_OS.getString(),
+                    qaPhones.iPhoneXR_OS.getString(),
+                    qaPhones.iPhone12mini_OS.getString(),
+                    qaPhones.iPhone12ProMax_OS.getString()};
 
     public static String[] desktopOS =
-            {mobileOS.MacOS.getString("11"),
-                    mobileOS.WindowsOS.getString("10")};
+            {qaPhones.MacBook_OS.getString(),
+                    qaPhones.WindowsPC_OS.getString()};
 
     public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;
