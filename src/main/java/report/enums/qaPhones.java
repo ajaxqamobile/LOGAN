@@ -44,7 +44,7 @@ public enum qaPhones {
     Lenovo_OS("Android version: 4.4"),
     Nokia5_3_OS("Android version: 10.0"),
     MotoG8_OS("Android version: 10.0"),
-    SamsungGalaxyM21_OS("Android version: 10.0"),
+    SamsungGalaxyM21_OS("Android version: 11.0"),
 
 
     // iPhone ==========================================================================================================
