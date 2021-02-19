@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        System.out.print("\nWelcome to LOGAN v1.8.1" +
+        System.out.print("\nWelcome to LOGAN v1.8.2" +
                 "" +
                 "\n");
         System.out.println("When security is art!\n");
