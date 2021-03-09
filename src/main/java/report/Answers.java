@@ -41,13 +41,14 @@ public class Answers {
 
     public static String Sever() throws IOException, InterruptedException {
         String Answer = null;
-        System.out.println("1 - Release \n2 - Stage A \n3 - Stage B \n4 - Stage C");
+        System.out.println("1 - Release \n2 - Stage A \n3 - Stage B \n4 - Stage C \n5 - Custom|Meteora");
         String scan = Scan.scanText();
         switch (scan) {
             case "1" -> Answer = "Release";
             case "2" -> Answer = "Stage A";
             case "3" -> Answer = "Stage B";
             case "4" -> Answer = "Stage C";
+            case "5" -> Answer = "Custom|Meteora";
             case "reboot" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");

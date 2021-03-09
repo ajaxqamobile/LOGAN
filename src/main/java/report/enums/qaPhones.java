@@ -23,6 +23,10 @@ public enum qaPhones {
     Nokia5_3("Nokia 5.3"),
     MotoG8("Moto G8"),
     SamsungGalaxyM21("Samsung Galaxy M21"),
+    SamsungGalaxyS20("Samsung Galaxy S20 FE"),
+    RedmiNote9Pro("Redmi Note 9 Pro"),
+    HuaweiP40("Huawei P40"),
+
 
     // Android OS
     GalaxyS9_OS("Android version: 10.0"),
@@ -45,6 +49,10 @@ public enum qaPhones {
     Nokia5_3_OS("Android version: 10.0"),
     MotoG8_OS("Android version: 10.0"),
     SamsungGalaxyM21_OS("Android version: 11.0"),
+    SamsungGalaxyS20_OS("Android version: 11.0 (One UI 3.0)"),
+    RedmiNote9Pro_OS("Android version: 10.0 (MIUI 12.0.2)"),
+    HuaweiP40_OS("Android version: 10.0"),
+
 
 
     // iPhone ==========================================================================================================

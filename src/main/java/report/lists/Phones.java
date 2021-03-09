@@ -24,14 +24,16 @@ public class Phones {
                     qaPhones.HuaweiPSmart.getString(),
                     qaPhones.SamsungGalaxyA51.getString(),
                     qaPhones.Vivo1920.getString(),
-            qaPhones.HuaweiNova5T.getString(),
-            qaPhones.GalaxyA20s.getString(),
-            qaPhones.XiaomiRedmiNote2.getString(),
-            qaPhones.Lenovo.getString(),
-            qaPhones.Nokia5_3.getString(),
-            qaPhones.MotoG8.getString(),
-            qaPhones.SamsungGalaxyM21.getString(),
-
+                    qaPhones.HuaweiNova5T.getString(),
+                    qaPhones.GalaxyA20s.getString(),
+                    qaPhones.XiaomiRedmiNote2.getString(),
+                    qaPhones.Lenovo.getString(),
+                    qaPhones.Nokia5_3.getString(),
+                    qaPhones.MotoG8.getString(),
+                    qaPhones.SamsungGalaxyM21.getString(),
+                    qaPhones.SamsungGalaxyS20.getString(),
+                    qaPhones.RedmiNote9Pro.getString(),
+                    qaPhones.HuaweiP40.getString(),
 
             };
 
@@ -60,6 +62,9 @@ public class Phones {
                     qaPhones.Nokia5_3_OS.getString(),
                     qaPhones.MotoG8_OS.getString(),
                     qaPhones.SamsungGalaxyM21_OS.getString(),
+                    qaPhones.SamsungGalaxyS20_OS.getString(),
+                    qaPhones.RedmiNote9Pro_OS.getString(),
+                    qaPhones.HuaweiP40_OS.getString(),
 
             };
 
