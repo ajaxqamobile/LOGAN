@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        System.out.print("\nWelcome to LOGAN v1.8.3" +
+        System.out.print("\nWelcome to LOGAN v1.8.4" +
                 "" +
                 "\n");
         System.out.println("When security is art!\n");
