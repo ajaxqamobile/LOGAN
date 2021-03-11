@@ -29,7 +29,10 @@ public enum descDevices {
     MultiTransmitter("1c - MultiTransmitter"),
     Socket("1e - Socket"),
     WallSwitch("1f - WallSwitch"),
-    DoubleButton("42 - DoubleButton");
+    DoubleButton("42 - DoubleButton"),
+    KeypadCombi("43 - Keypad Combi"),
+    LightSwitch("44 - LightSwitch"),
+    vhfBrigde("45 - vhfBrigde");
 
     private final String text;
 

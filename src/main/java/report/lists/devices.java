@@ -35,7 +35,10 @@ public enum devices {
     MultiTransmitter("1c"),
     Socket("1e"),
     WallSwitch("1f"),
-    DoubleButton("42");
+    DoubleButton("42"),
+    KeypadCombi("43"),
+    LightSwitch("44"),
+    vhfBrigde("45");
 
 
     private final String text;
