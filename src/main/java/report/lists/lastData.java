@@ -2,32 +2,34 @@ package main.java.report.lists;
 
 public class lastData {
 
-    public static String enviroment = "null";
-    public static String appVer = "null";
-    public static String appVerNum = "null";
-    public static String phone = "null";
-    public static String sever = "null";
-    public static String hubType = "null";
-    public static String hubVer = "null";
-    public static String hubVerNum = "null";
-    public static String testAccount = "null";
-    public static String email = "null";
-    public static String password = "null";
-    public static String hubName = "null";
-    public static String hubNameNum = "null";
-    public static String preconditions = "null";
-    public static String description = "null";
-    public static String stepsToReproduce = "null";
-    public static String AR = "null";
-    public static String ER = "null";
-    public static String AI = "null";
-    public static String timestamp = "null";
-    public static String commentDescription = "null";
-    public static String evidence = "null";
-    public static String testStatus = "null";
-    public static String repeated = "null";
-    public static String inRelease = "null";
-    public static String another = "null";
-    public static String systemLog = "null";
+    private static final String Default = "Unknown";
+
+    public static String enviroment = Default;
+    public static String appVer = Default;
+    public static String appVerNum = Default;
+    public static String phone = Default;
+    public static String sever = Default;
+    public static String hubType = Default;
+    public static String hubVer = Default;
+    public static String hubVerNum = Default;
+    public static String testAccount = Default;
+    public static String email = Default;
+    public static String password = Default;
+    public static String hubName = Default;
+    public static String hubNameNum = Default;
+    public static String preconditions = Default;
+    public static String description = Default;
+    public static String stepsToReproduce = Default;
+    public static String AR = Default;
+    public static String ER = Default;
+    public static String AI = Default;
+    public static String timestamp = Default;
+    public static String commentDescription = Default;
+    public static String evidence = Default;
+    public static String testStatus = Default;
+    public static String repeated = Default;
+    public static String inRelease = Default;
+    public static String another = Default;
+    public static String systemLog = Default;
 
 }

@@ -44,12 +44,11 @@ public enum descDevices {
         return text;
     }
 
+
     public static void getAllDevices (){
         for (descDevices DeviceTypes : descDevices.values()) {
             System.out.println(DeviceTypes.getString());
         }
         System.out.println("");
     }
-
-
 }

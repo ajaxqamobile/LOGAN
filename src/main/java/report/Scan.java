@@ -47,7 +47,7 @@ public class Scan {
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.hubVer.equals("null")) {
             System.out.println("You have not previously saved the hub version, enter the current version");
-            scanHubVer();
+            ret = scanHubVer();
         } else if (lastBool) {
             ret = lastData.hubVerNum;
         } else {
@@ -98,14 +98,14 @@ public class Scan {
     }
 
     public static String scanHubType(int count) {
-        String currentType = "null";
+        String currentType = null;
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         try {
             int i = Integer.parseInt(text);
             if (text.equals("") || i < 0 || i > count) {
                 System.out.println("The value cannot be empty, please try again!");
-                scanHubType(count);
+                currentType = scanHubType(count);
             } else if (text.equals("reboot")) {
                 System.out.println(ReportElements.Space50.getString());
                 Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
@@ -122,7 +122,7 @@ public class Scan {
     }
 
 
-    public static String scanPhone(int count, String OS) {
+    public static String scanPhone(int count, String OS) throws IOException, InterruptedException {
         Scanner scan = new Scanner(System.in);
         String text = scan.nextLine();
         String currentPhone = null;
@@ -130,7 +130,7 @@ public class Scan {
             int i = Integer.parseInt(text);
             if (text.equals("") || i < 0 || i > count) {
                 System.out.println("Wrong value, please try again!");
-                scanPhone(count, OS);
+                currentPhone = scanPhone(count, OS);
             } else {
                 i--;
                 switch (OS) {
@@ -140,8 +140,20 @@ public class Scan {
                 }
             }
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
-            System.out.println("Wrong value, please try again!");
-           currentPhone = scanPhone(count, OS);
+            switch (OS) {
+                case "1" -> {
+                    System.out.println("\n"+ReportElements.AOSVer.getString());
+                    currentPhone = text +"\n"+ReportElements.AOSVer.getString()+scanText();
+                }
+                case "2" -> {
+                    System.out.println("\n"+ReportElements.iOSVer.getString());
+                    currentPhone = text +"\n"+ReportElements.iOSVer.getString()+scanText();
+                }
+                case "3" -> {
+                    System.out.println("\n"+ReportElements.DesktopVer.getString());
+                    currentPhone = text +"\n"+ReportElements.DesktopVer.getString()+scanText();
+                }
+            }
         }
         return currentPhone;
     }

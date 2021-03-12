@@ -75,7 +75,7 @@ public enum qaPhones {
     //iOS
     AppleWatch1_OS("WatchOS version: 4.3.2"),
     AppleWatch3_OS("WatchOS version: 7.3"),
-    AppleWatch5_OS("WatchOS version: 7.4 Beta"),
+    AppleWatch5_OS("WatchOS version: Latest beta version of WatchOS"),
     iPhone7_OS("iOS version: 14.4"),
     iPhone4s_OS("iOS version: 9.3.5"),
     iPhone12ProMax_OS("iOS version: 14.4"),
@@ -84,7 +84,7 @@ public enum qaPhones {
     iPhoneXS_OS("iOS version: 14.5 Beta"),
     iPhone6_OS("iOS version: 12.4.1"),
     iPhone6s_OS("iOS version: 12.4"),
-    iPhone12mini_OS("iOS version: 14.5 Beta"),
+    iPhone12mini_OS("iOS version: Latest beta version of iOS"),
     iPhoneSE2020_OS("iOS version: 13.5.1"),
     iPhoneXR_OS("iOS version: 14.2"),
     iPhone8Plus_OS("iOS version: 14.2"),
@@ -94,7 +94,7 @@ public enum qaPhones {
     WindowsPC("Windows PC"),
 
     // PC OS
-    MacBook_OS("Desktop version: macOS Big Sur 12 Beta"),
+    MacBook_OS("Desktop version: Latest beta version of macOS Big Sur"),
     WindowsPC_OS("Desktop version: Windows 10");
 
     //==================================================================================================================
