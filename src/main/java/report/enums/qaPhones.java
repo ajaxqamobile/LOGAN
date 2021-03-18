@@ -26,6 +26,7 @@ public enum qaPhones {
     SamsungGalaxyS20("Samsung Galaxy S20 FE"),
     RedmiNote9Pro("Redmi Note 9 Pro"),
     HuaweiP40("Huawei P40"),
+    XiaomiRedmi3s("Xiaomi Redmi 3s"),
 
 
     // Android OS
@@ -52,6 +53,7 @@ public enum qaPhones {
     SamsungGalaxyS20_OS("Android version: 11.0 (One UI 3.0)"),
     RedmiNote9Pro_OS("Android version: 10.0 (MIUI 12.0.2)"),
     HuaweiP40_OS("Android version: 10.0"),
+    XiaomiRedmi3s_OS("Android version: 6.0.1"),
 
 
 
@@ -60,7 +62,7 @@ public enum qaPhones {
     AppleWatch3("Apple Watch 3"),
     AppleWatch5("Apple Watch 5"),
     iPhone7("iPhone 7"),
-    iPhone4s("iPhone 4s"),
+    iPhone4("iPhone 4s"),
     iPhone12ProMax("iPhone 12 Pro Max"),
     iPhoneSE("iPhone SE"),
     iPhoneX("iPhone X"),
@@ -71,13 +73,14 @@ public enum qaPhones {
     iPhoneSE2020("iPhone SE 2020"),
     iPhoneXR("iPhone XR"),
     iPhone8Plus("iPhone 8 Plus"),
+    iPhone5s("iPhone 5S"),
 
     //iOS
     AppleWatch1_OS("WatchOS version: 4.3.2"),
     AppleWatch3_OS("WatchOS version: 7.3"),
     AppleWatch5_OS("WatchOS version: Latest beta version of WatchOS"),
     iPhone7_OS("iOS version: 14.4"),
-    iPhone4s_OS("iOS version: 9.3.5"),
+    iPhone4_OS("iOS version: 9.3.5"),
     iPhone12ProMax_OS("iOS version: 14.4"),
     iPhoneSE_OS("iOS version: 13.6.1"),
     iPhoneX_OS("iOS version: 13.6"),
@@ -88,6 +91,7 @@ public enum qaPhones {
     iPhoneSE2020_OS("iOS version: 13.5.1"),
     iPhoneXR_OS("iOS version: 14.2"),
     iPhone8Plus_OS("iOS version: 14.2"),
+    iPhone5s_OS("iOS version: 12.5.1"),
 
     // PC ==============================================================================================================
     MacBook("MacBook Air/Pro"),

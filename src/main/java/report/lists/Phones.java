@@ -34,6 +34,7 @@ public class Phones {
                     qaPhones.SamsungGalaxyS20.getString(),
                     qaPhones.RedmiNote9Pro.getString(),
                     qaPhones.HuaweiP40.getString(),
+                    qaPhones.XiaomiRedmi3s.getString(),
 
             };
 
@@ -65,6 +66,7 @@ public class Phones {
                     qaPhones.SamsungGalaxyS20_OS.getString(),
                     qaPhones.RedmiNote9Pro_OS.getString(),
                     qaPhones.HuaweiP40_OS.getString(),
+                    qaPhones.XiaomiRedmi3s_OS.getString(),
 
             };
 
@@ -73,7 +75,7 @@ public class Phones {
                     qaPhones.AppleWatch3.getString(),
                     qaPhones.AppleWatch5.getString(),
                     qaPhones.iPhone7.getString(),
-                    qaPhones.iPhone4s.getString(),
+                    qaPhones.iPhone4.getString(),
                     qaPhones.iPhoneSE.getString(),
                     qaPhones.iPhoneX.getString(),
                     qaPhones.iPhoneXS.getString(),
@@ -83,14 +85,16 @@ public class Phones {
                     qaPhones.iPhone8Plus.getString(),
                     qaPhones.iPhoneXR.getString(),
                     qaPhones.iPhone12mini.getString(),
-                    qaPhones.iPhone12ProMax.getString()};
+                    qaPhones.iPhone12ProMax.getString(),
+                    qaPhones.iPhone5s.getString()
+            };
 
     public static String[] iOSOS =
             {qaPhones.AppleWatch1_OS.getString(),
                     qaPhones.AppleWatch3_OS.getString(),
                     qaPhones.AppleWatch5_OS.getString(),
                     qaPhones.iPhone7_OS.getString(),
-                    qaPhones.iPhone4s_OS.getString(),
+                    qaPhones.iPhone4_OS.getString(),
                     qaPhones.iPhoneSE_OS.getString(),
                     qaPhones.iPhoneX_OS.getString(),
                     qaPhones.iPhoneXS_OS.getString(),
@@ -100,7 +104,9 @@ public class Phones {
                     qaPhones.iPhone8Plus_OS.getString(),
                     qaPhones.iPhoneXR_OS.getString(),
                     qaPhones.iPhone12mini_OS.getString(),
-                    qaPhones.iPhone12ProMax_OS.getString()};
+                    qaPhones.iPhone12ProMax_OS.getString(),
+                    qaPhones.iPhone5s_OS.getString()
+            };
 
     public static String[] desktopOS =
             {qaPhones.MacBook_OS.getString(),
