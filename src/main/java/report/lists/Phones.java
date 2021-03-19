@@ -138,7 +138,7 @@ public class Phones {
                 currentPhone = Scan.scanPhone(count, OS);
             }
 
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
         }
         lastData.phone = currentPhone;
         return currentPhone;

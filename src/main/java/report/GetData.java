@@ -22,7 +22,7 @@ public class GetData {
         String item = null;
         switch (BoC) {
             case "1", "2", "3" -> item = BoC;
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");
                 item = getPlatform();
@@ -100,7 +100,7 @@ public class GetData {
                 System.out.println("Слава Mobile Team, QA слава");
                 Main.retry();
             }
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
             case "last","l","д","Д","L" ->  {
                 if (!(lastData.appVer.equals("null"))){
                     clipboardComment();

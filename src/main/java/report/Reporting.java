@@ -17,7 +17,7 @@ public class Reporting {
                 composeComment(OS);
                 System.out.println(ReportElements.Space50.getString());
             }
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
 
         }
         getReport(GetData.getBoC(), GetData.getPlatform());

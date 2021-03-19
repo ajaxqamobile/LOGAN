@@ -13,7 +13,7 @@ public class Answers {
         switch (scan) {
             case "1" -> Answer = "Yes";
             case "2" -> Answer = "No";
-            case "reboot" -> Main.retry();
+            case "reboot","r" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");
                 Answer = YesNo();
@@ -30,7 +30,7 @@ public class Answers {
             case "1" -> Answer = "Always";
             case "2" -> Answer = "Rarely";
             case "3" -> Answer = "Failed to retry";
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");
                 Answer = HowOften();
@@ -50,7 +50,7 @@ public class Answers {
             case "4" -> Answer = "Stage C";
             case "5" -> Answer = "Custom|Meteora";
             case "l","Д","д","L" -> Answer = "Custom|Meteora [10.10.20.233:2020]";
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");
                 Answer = Sever();
@@ -70,7 +70,7 @@ public class Answers {
             case "2" -> Answer = "Fail❌";
             case "3" -> Answer = "Not reproduced!✅";
             case "4" -> Answer = "In Progress!\uD83D\uDD53";
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");
                 Answer = TestStatus();

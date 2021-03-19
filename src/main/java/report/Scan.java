@@ -18,7 +18,7 @@ public class Scan {
         if (text.equals("")) {
             System.out.println("Wrong value, please try again!");
             scanHubName();
-        } else if (text.equals("reboot")) {
+        } else if (text.equals("reboot")||text.equals("r")) {
             Main.retry();
         }
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д")|| text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
@@ -42,7 +42,7 @@ public class Scan {
                 System.out.println("Wrong value, please try again!");
                 scanHubVer();
             }
-            case "reboot" -> Main.retry();
+            case "reboot","r" -> Main.retry();
         }
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
         if (lastBool && lastData.hubVer.equals("null")) {
@@ -65,7 +65,7 @@ public class Scan {
                 System.out.println("The value cannot be empty, please try again!");
                 scanAppVer();
             }
-            case "reboot" -> Main.retry();
+            case "reboot","r" -> Main.retry();
         }
 
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
@@ -89,7 +89,7 @@ public class Scan {
                 System.out.println("The value cannot be empty, please try again!");
                 scanText();
             }
-            case "reboot" -> {
+            case "reboot","r" -> {
                 System.out.println(ReportElements.Space50.getString());
                 Main.retry();
             }
@@ -106,7 +106,7 @@ public class Scan {
             if (text.equals("") || i < 0 || i > count) {
                 System.out.println("The value cannot be empty, please try again!");
                 currentType = scanHubType(count);
-            } else if (text.equals("reboot")) {
+            } else if (text.equals("reboot")||text.equals("r")) {
                 System.out.println(ReportElements.Space50.getString());
                 Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
             } else {

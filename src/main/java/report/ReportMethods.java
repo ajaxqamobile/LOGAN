@@ -39,7 +39,7 @@ public class ReportMethods {
                 res = ReportElements.DesktopAppVersion.getString();
                 res = res + Scan.scanAppVer() + "\n";
             }
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
         }
         System.out.println("\n\n");
         lastData.appVer = res;
@@ -261,7 +261,7 @@ public class ReportMethods {
             case "-" -> {
                 lastData.evidence = "";
             }
-            case "reboot" -> Main.retry();
+            case "reboot", "r" -> Main.retry();
             default -> {
                 System.out.println("Не правильное значение, попробуйте еще раз");
                 evidence();

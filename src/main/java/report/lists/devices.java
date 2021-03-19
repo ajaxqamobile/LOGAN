@@ -83,7 +83,7 @@ String checkType = "null";
                     }
                     case "-":
                         break;
-                    case "reboot": Main.retry();
+                    case "reboot", "r": Main.retry();
                     break;
                     default:
                         System.out.println("\nYou entered the wrong value, please try again!");
