@@ -49,7 +49,7 @@ public class Answers {
             case "3" -> Answer = "Stage B";
             case "4" -> Answer = "Stage C";
             case "5" -> Answer = "Custom|Meteora";
-            case "l","Д","д","L" -> Answer = "Custom|Meteora [10.10.20.233:2022]";
+            case "l","Д","д","L" -> Answer = "Custom|Meteora [10.10.20.233:2020]";
             case "reboot" -> Main.retry();
             default -> {
                 System.out.println("Wrong value, please try again!");
