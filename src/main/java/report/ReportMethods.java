@@ -146,7 +146,7 @@ public class ReportMethods {
         String itemPass = Scan.scanText();
         if (itemPass.equals("main")) {
             res = ReportElements.Pass.getString();
-            res = res + "ajaxtest" + "\n";
+            res = res + "qwe" + "\n";
         } else if (itemPass.equals("pro")) {
             res = ReportElements.Pass.getString();
             res = res + "qwe" + "\n";
