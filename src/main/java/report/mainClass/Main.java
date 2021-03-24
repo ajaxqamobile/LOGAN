@@ -8,8 +8,10 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException {
+        String username = System.getProperty("user.name");
 
-        System.out.print("\nWelcome to LOGAN v1.8.7" +
+        System.out.print("\nWelcome " +username +
+                " to LOGAN v1.8.7" +
                 "" +
                 "\n");
         System.out.println("When security is art!\n");
