@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ajax_Bug_Report:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ajax_Bug_Report_jar</output-path>
+    <root id="archive" name="Ajax_Bug_Report.jar">
+      <element id="module-output" name="Ajax_Bug_Report" />
+    </root>
+  </artifact>
+</component>
