@@ -11,7 +11,7 @@ public class Main {
         String username = System.getProperty("user.name");
 
         System.out.print("\nWelcome " +username +
-                " to LOGAN v1.8.7" +
+                " to LOGAN v1.8.8" +
                 "" +
                 "\n");
         System.out.println("When security is art!\n");
