@@ -25,8 +25,10 @@ public enum qaPhones {
     SamsungGalaxyM21("Samsung Galaxy M21"),
     SamsungGalaxyS20("Samsung Galaxy S20 FE"),
     RedmiNote9Pro("Redmi Note 9 Pro"),
+    RedmiNote9("Redmi Note 9"),
     HuaweiP40("Huawei P40"),
     XiaomiRedmi3s("Xiaomi Redmi 3s"),
+    XiaomiMi11("Xiaomi Mi 11"),
 
 
     // Android OS
@@ -52,8 +54,10 @@ public enum qaPhones {
     SamsungGalaxyM21_OS("Android version: 11.0 (One UI 3.0)"),
     SamsungGalaxyS20_OS("Android version: 11.0 (One UI 3.0)"),
     RedmiNote9Pro_OS("Android version: 10.0 (MIUI 12.0.2)"),
+    RedmiNote9_OS("Android version: 10.0 (MIUI 13.0.3)"),
     HuaweiP40_OS("Android version: 10.0"),
     XiaomiRedmi3s_OS("Android version: 6.0.1"),
+    XiaomiMi11_OS("Android version: 11.0 (MIUI 12.0.3)"),
 
 
 
@@ -70,6 +74,7 @@ public enum qaPhones {
     iPhone6("iPhone 6"),
     iPhone6s("iPhone 6s"),
     iPhone12mini("iPhone 12 mini"),
+    iPhone11("iPhone 11"),
     iPhoneSE2020("iPhone SE 2020"),
     iPhoneXR("iPhone XR"),
     iPhone8Plus("iPhone 8 Plus"),
@@ -88,6 +93,7 @@ public enum qaPhones {
     iPhone6_OS("iOS version: 12.4.1"),
     iPhone6s_OS("iOS version: 12.4"),
     iPhone12mini_OS("iOS version: Latest beta version of iOS"),
+    iPhone11_OS("iOS version: 14.4.2"),
     iPhoneSE2020_OS("iOS version: 13.5.1"),
     iPhoneXR_OS("iOS version: 14.2"),
     iPhone8Plus_OS("iOS version: 14.2"),

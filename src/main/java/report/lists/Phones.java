@@ -33,8 +33,10 @@ public class Phones {
                     qaPhones.SamsungGalaxyM21.getString(),
                     qaPhones.SamsungGalaxyS20.getString(),
                     qaPhones.RedmiNote9Pro.getString(),
+                    qaPhones.RedmiNote9.getString(),
                     qaPhones.HuaweiP40.getString(),
                     qaPhones.XiaomiRedmi3s.getString(),
+                    qaPhones.XiaomiMi11.getString(),
 
             };
 
@@ -65,8 +67,10 @@ public class Phones {
                     qaPhones.SamsungGalaxyM21_OS.getString(),
                     qaPhones.SamsungGalaxyS20_OS.getString(),
                     qaPhones.RedmiNote9Pro_OS.getString(),
+                    qaPhones.RedmiNote9_OS.getString(),
                     qaPhones.HuaweiP40_OS.getString(),
                     qaPhones.XiaomiRedmi3s_OS.getString(),
+                    qaPhones.XiaomiMi11_OS.getString(),
 
             };
 
@@ -85,6 +89,7 @@ public class Phones {
                     qaPhones.iPhone8Plus.getString(),
                     qaPhones.iPhoneXR.getString(),
                     qaPhones.iPhone12mini.getString(),
+                    qaPhones.iPhone11.getString(),
                     qaPhones.iPhone12ProMax.getString(),
                     qaPhones.iPhone5s.getString()
             };
@@ -104,6 +109,7 @@ public class Phones {
                     qaPhones.iPhone8Plus_OS.getString(),
                     qaPhones.iPhoneXR_OS.getString(),
                     qaPhones.iPhone12mini_OS.getString(),
+                    qaPhones.iPhone11_OS.getString(),
                     qaPhones.iPhone12ProMax_OS.getString(),
                     qaPhones.iPhone5s_OS.getString()
             };
