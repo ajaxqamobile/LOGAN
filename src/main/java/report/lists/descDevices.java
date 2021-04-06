@@ -32,7 +32,18 @@ public enum descDevices {
     DoubleButton("42 - DoubleButton"),
     KeypadCombi("43 - Keypad Combi"),
     LightSwitch("44 - LightSwitch"),
-    vhfBrigde("45 - vhfBrigde");
+    vhfBrigde("45 - vhfBrigde"),
+    DoorFibra("61 - Door Fibra"),
+    MotionFibra("62 - Motion Fibra"),
+    GlassFibra("64 - Glass Fibra"),
+    CombiFibra("68 - Combi Fibra"),
+    KeypadFibra("6a - Keypad Fibra"),
+    MotionPlusFibra("6e - Motion Plus Fibra"),
+    DoorPlusFibra("6f - Door Plus Fibra"),
+    StreetSirenFibra("74 - Street Siren Fibra"),
+    HomeSirenFibra("75 - HomeSiren Fibra"),
+    DoubleDeckFibra("7b - DoubleDeck Fibra"),
+    ;
 
     private final String text;
 

@@ -38,7 +38,17 @@ public enum devices {
     DoubleButton("42"),
     KeypadCombi("43"),
     LightSwitch("44"),
-    vhfBrigde("45");
+    vhfBrigde("45"),
+    DoorFibra("61"),
+    MotionFibra("62"),
+    GlassFibra("64"),
+    CombiFibra("68"),
+    KeypadFibra("6a"),
+    MotionPlusFibra("6e"),
+    DoorPlusFibra("6f"),
+    StreetSirenFibra("74"),
+    HomeSirenFibra("75"),
+    DoubleDeckFibra("7b"),;
 
 
     private final String text;

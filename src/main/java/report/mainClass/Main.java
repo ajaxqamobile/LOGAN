@@ -12,7 +12,7 @@ public class Main {
         String username = System.getProperty("user.name");
 
         System.out.print("\nWelcome " +username +
-                " to LOGAN v1.8.9" +
+                " to LOGAN v1.9" +
                 "" +
                 "\n");
         System.out.println("When security is art!\n");
