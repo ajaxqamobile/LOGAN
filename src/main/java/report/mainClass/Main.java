@@ -3,6 +3,7 @@ package main.java.report.mainClass;
 import main.java.report.GetData;
 import main.java.report.Reporting;
 
+import javax.swing.*;
 import java.io.IOException;
 
 public class Main {

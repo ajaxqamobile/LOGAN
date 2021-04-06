@@ -13,8 +13,11 @@ public class HubTypes {
             "Hub 2 Plus",
             "Hub 3",
             "Hub 3 Plus",
+            "Hub Fibra",
             "Yavir",
-            "Yavir Plus"};
+            "Yavir Plus",
+
+    };
 
     public static String getType() {
         int count = 1;
