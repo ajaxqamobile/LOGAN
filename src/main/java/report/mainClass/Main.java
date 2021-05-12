@@ -12,7 +12,7 @@ public class Main {
         String username = System.getProperty("user.name");
 
         System.out.print("\nWelcome " +username +
-                " to LOGAN v1.9" +
+                " to LOGAN v2.0" +
                 "" +
                 "\n");
         System.out.println("When security is art!\n");
@@ -20,15 +20,6 @@ public class Main {
     }
 
     public static void retry() throws IOException, InterruptedException {
-//        System.out.println("You have to enter the password: ");
-//        String pass = Scan.scanText();
-//        if (pass.equals("ajaxtest")) {
-//            System.out.println("\n");
             Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
-//        } else {
-//            System.out.println(ReportElements.Space50.getString());
-//            System.out.println("\nSorry, wrong password! Try again!\n");
-//            retry();
-//        }
     }
 }
