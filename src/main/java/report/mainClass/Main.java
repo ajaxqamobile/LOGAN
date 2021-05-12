@@ -11,11 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         String username = System.getProperty("user.name");
 
-        System.out.print("\nWelcome " +username +
-                " to LOGAN v2.0" +
-                "" +
-                "\n");
-        System.out.println("When security is art!\n");
+        System.out.print("\nWelcome to LOGAN v2.0, "+username +"!\n\n");
         retry();
     }
 
