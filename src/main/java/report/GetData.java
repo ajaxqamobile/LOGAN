@@ -127,7 +127,7 @@ public class GetData {
         Date date = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy");
         String currentDate = formatForDateNow.format(date);
-        return "Date\uD83D\uDCC5: " + currentDate + "\n\n" + "Fail❌: \n\n" + "Done!✅: \n\n";
+        return "Date\uD83D\uDCC5: " + currentDate + "\n\n" + "Fail❌: \n\n" + "Done!✅: \n\n"+ "In Progress!\uD83D\uDD04: \n\n"+ "Blocked!\uD83D\uDE31: \n\n";
     }
 
 }
