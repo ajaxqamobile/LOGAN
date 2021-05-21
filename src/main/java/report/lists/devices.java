@@ -39,6 +39,7 @@ public enum devices {
     KeypadCombi("43"),
     LightSwitch("44"),
     vhfBrigde("45"),
+    ReX2("46"),
     DoorFibra("61"),
     MotionFibra("62"),
     GlassFibra("64"),

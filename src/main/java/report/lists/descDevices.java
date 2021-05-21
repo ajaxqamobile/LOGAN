@@ -33,6 +33,7 @@ public enum descDevices {
     KeypadCombi("43 - Keypad Combi"),
     LightSwitch("44 - LightSwitch"),
     vhfBrigde("45 - vhfBrigde"),
+    ReX2("46 - ReX2"),
     DoorFibra("61 - Door Fibra"),
     MotionFibra("62 - Motion Fibra"),
     GlassFibra("64 - Glass Fibra"),
