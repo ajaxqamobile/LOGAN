@@ -22,7 +22,7 @@ public class Scan {
             Main.retry();
         }
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д")|| text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
-        if (lastBool && lastData.hubName.equals("null")) {
+        if (lastBool && lastData.hubName.equals("Unknown")) {
             System.out.println("You have not previously saved the hub name, enter the current name!");
             scanHubName();
         } else if (lastBool) {
@@ -45,7 +45,7 @@ public class Scan {
             case "reboot","r" -> Main.retry();
         }
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
-        if (lastBool && lastData.hubVer.equals("null")) {
+        if (lastBool && lastData.hubVer.equals("Unknown")) {
             System.out.println("You have not previously saved the hub version, enter the current version");
             ret = scanHubVer();
         } else if (lastBool) {
@@ -69,7 +69,7 @@ public class Scan {
         }
 
         boolean lastBool = text.equals("last") || text.equals("l")|| text.equals("L")|| text.equals("д")|| text.equals("Д") || text.equals("Last") || text.equals("lAST") || text.equals("LAST") || text.equals("дфые") || text.equals("ДФЫЕ") || text.equals("Дфые") || text.equals("дФЫЕ");
-        if (lastBool && lastData.appVer.equals("null")) {
+        if (lastBool && lastData.appVer.equals("Unknown")) {
             System.out.println("You have not previously saved the version of the application, enter the current version of the application!");
             scanAppVer();
         } else if (lastBool) {
