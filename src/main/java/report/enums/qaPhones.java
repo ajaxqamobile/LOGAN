@@ -59,7 +59,7 @@ public enum qaPhones {
     HuaweiP40_OS("Android version: 10.0"),
     XiaomiRedmi3s_OS("Android version: 6.0.1"),
     XiaomiMi11_OS("Android version: 11.0 (MIUI 12.0.3)"),
-    One_Plus_8T_OS("Android version: 11.0 (MIUI 12.0.3)"),
+    One_Plus_8T_OS("Android version: 11.0 (Oxygen 11.0.8.12.KB05AA)"),
 
 
 
