@@ -29,6 +29,7 @@ public enum qaPhones {
     HuaweiP40("Huawei P40"),
     XiaomiRedmi3s("Xiaomi Redmi 3s"),
     XiaomiMi11("Xiaomi Mi 11"),
+    One_Plus_8T("One Plus 8T"),
 
 
     // Android OS
@@ -58,6 +59,7 @@ public enum qaPhones {
     HuaweiP40_OS("Android version: 10.0"),
     XiaomiRedmi3s_OS("Android version: 6.0.1"),
     XiaomiMi11_OS("Android version: 11.0 (MIUI 12.0.3)"),
+    One_Plus_8T_OS("Android version: 11.0 (MIUI 12.0.3)"),
 
 
 
@@ -92,7 +94,7 @@ public enum qaPhones {
     iPhoneXS_OS("iOS version: 14.5 Beta"),
     iPhone6_OS("iOS version: 12.4.1"),
     iPhone6s_OS("iOS version: 12.4"),
-    iPhone12mini_OS("iOS version: Latest beta version of iOS"),
+    iPhone12mini_OS("iOS version: 15 Beta"),
     iPhone11_OS("iOS version: 14.4.2"),
     iPhoneSE2020_OS("iOS version: 13.5.1"),
     iPhoneXR_OS("iOS version: 14.2"),
