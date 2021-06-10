@@ -31,6 +31,7 @@ public enum qaPhones {
     XiaomiMi11("Xiaomi Mi 11"),
     One_Plus_8T("One Plus 8T"),
     Alcatel("Alcatel Joy 1"),
+    SamsungGalaxyM12("Samsung Galaxy M12"),
 
 
     // Android OS
@@ -62,6 +63,7 @@ public enum qaPhones {
     XiaomiMi11_OS("Android version: 11.0 (MIUI 12.0.3)"),
     One_Plus_8T_OS("Android version: 11.0 (Oxygen 11.0.8.12.KB05AA)"),
     Alcatel_OS("Android version: 8.1.0"),
+    SamsungGalaxyM12_OS("Android version: 11 (One UI 3.1)"),
 
 
 

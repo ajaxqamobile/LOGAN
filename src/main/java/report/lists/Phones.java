@@ -39,6 +39,7 @@ public class Phones {
                     qaPhones.XiaomiMi11.getString(),
                     qaPhones.One_Plus_8T.getString(),
                     qaPhones.Alcatel.getString(),
+                    qaPhones.SamsungGalaxyM12.getString(),
 
             };
 
@@ -75,6 +76,7 @@ public class Phones {
                     qaPhones.XiaomiMi11_OS.getString(),
                     qaPhones.One_Plus_8T_OS.getString(),
                     qaPhones.Alcatel_OS.getString(),
+                    qaPhones.SamsungGalaxyM12_OS.getString(),
 
             };
 
