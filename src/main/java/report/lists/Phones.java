@@ -40,6 +40,7 @@ public class Phones {
                     qaPhones.One_Plus_8T.getString(),
                     qaPhones.Alcatel.getString(),
                     qaPhones.SamsungGalaxyM12.getString(),
+                    qaPhones.SonyXperia10.getString(),
 
             };
 
@@ -77,6 +78,7 @@ public class Phones {
                     qaPhones.One_Plus_8T_OS.getString(),
                     qaPhones.Alcatel_OS.getString(),
                     qaPhones.SamsungGalaxyM12_OS.getString(),
+                    qaPhones.SonyXperia10_OS.getString(),
 
             };
 
@@ -96,6 +98,7 @@ public class Phones {
                     qaPhones.iPhoneXR.getString(),
                     qaPhones.iPhone12mini.getString(),
                     qaPhones.iPhone11.getString(),
+                    qaPhones.iPhone11Pro.getString(),
                     qaPhones.iPhone12ProMax.getString(),
                     qaPhones.iPhone5s.getString()
             };
@@ -116,6 +119,7 @@ public class Phones {
                     qaPhones.iPhoneXR_OS.getString(),
                     qaPhones.iPhone12mini_OS.getString(),
                     qaPhones.iPhone11_OS.getString(),
+                    qaPhones.iPhone11Pro_OS.getString(),
                     qaPhones.iPhone12ProMax_OS.getString(),
                     qaPhones.iPhone5s_OS.getString()
             };

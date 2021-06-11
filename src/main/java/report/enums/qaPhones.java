@@ -32,6 +32,7 @@ public enum qaPhones {
     One_Plus_8T("One Plus 8T"),
     Alcatel("Alcatel Joy 1"),
     SamsungGalaxyM12("Samsung Galaxy M12"),
+    SonyXperia10("Sony Xperia 10 II"),
 
 
     // Android OS
@@ -64,6 +65,7 @@ public enum qaPhones {
     One_Plus_8T_OS("Android version: 11.0 (Oxygen 11.0.8.12.KB05AA)"),
     Alcatel_OS("Android version: 8.1.0"),
     SamsungGalaxyM12_OS("Android version: 11 (One UI 3.1)"),
+    SonyXperia10_OS("Android version: 10"),
 
 
 
@@ -81,6 +83,7 @@ public enum qaPhones {
     iPhone6s("iPhone 6s"),
     iPhone12mini("iPhone 12 mini"),
     iPhone11("iPhone 11"),
+    iPhone11Pro("iPhone 11 Pro"),
     iPhoneSE2020("iPhone SE 2020"),
     iPhoneXR("iPhone XR"),
     iPhone8Plus("iPhone 8 Plus"),
@@ -100,6 +103,7 @@ public enum qaPhones {
     iPhone6s_OS("iOS version: 12.4"),
     iPhone12mini_OS("iOS version: 14.6"),
     iPhone11_OS("iOS version: 14.4.2"),
+    iPhone11Pro_OS("iOS version: 13.7"),
     iPhoneSE2020_OS("iOS version: 13.5.1"),
     iPhoneXR_OS("iOS version: 14.2"),
     iPhone8Plus_OS("iOS version: 14.2"),
