@@ -65,7 +65,7 @@ public enum qaPhones {
     One_Plus_8T_OS("Android version: 11.0 (Oxygen 11.0.8.12.KB05AA)"),
     Alcatel_OS("Android version: 8.1.0"),
     SamsungGalaxyM12_OS("Android version: 11 (One UI 3.1)"),
-    SonyXperia10_OS("Android version: 10"),
+    SonyXperia10_OS("Android version: 11"),
 
 
 
