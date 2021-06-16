@@ -128,10 +128,10 @@ public class ReportMethods {
         String itemE = Scan.scanText();
         if (itemE.equals("main")) {
             res = ReportElements.Email.getString();
-            res = res + "qa.ajax+535@gmail.com" + "\n";
+            res = res + "qa.ajax.alex@gmail.com" + "\n";
         } else if (itemE.equals("pro")) {
             res = ReportElements.Email.getString();
-            res = res + "qa.ajax+555@gmail.com" + "\n";
+            res = res + "qa.ajax.alex@gmail.com" + "\n";
         } else {
             res = ReportElements.Email.getString();
             res = res + itemE + "\n";
@@ -146,10 +146,10 @@ public class ReportMethods {
         String itemPass = Scan.scanText();
         if (itemPass.equals("main")) {
             res = ReportElements.Pass.getString();
-            res = res + "qwe" + "\n";
+            res = res + "qwer" + "\n";
         } else if (itemPass.equals("pro")) {
             res = ReportElements.Pass.getString();
-            res = res + "qwe" + "\n";
+            res = res + "qwer" + "\n";
         } else {
             res = ReportElements.Pass.getString();
             res = res + itemPass + "\n";
