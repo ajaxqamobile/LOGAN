@@ -149,7 +149,8 @@ public class ReportMethods {
             res = res + "qwer" + "\n";
         } else if (itemPass.equals("pro")) {
             res = ReportElements.Pass.getString();
-            res = res + "qwer" + "\n";
+            res = res + "qwer2" +
+                    "" + "\n";
         } else {
             res = ReportElements.Pass.getString();
             res = res + itemPass + "\n";
