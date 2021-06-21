@@ -57,7 +57,7 @@ public enum qaPhones {
     MotoG8_OS("Android version: 10.0"),
     SamsungGalaxyM21_OS("Android version: 11.0 (One UI 3.0)"),
     SamsungGalaxyS20_OS("Android version: 11.0 (One UI 3.0)"),
-    RedmiNote9Pro_OS("Android version: 10.0 (MIUI 12.0.2)"),
+    RedmiNote9Pro_OS("Android version: 11.0 (MIUI 12.0.1)"),
     RedmiNote9_OS("Android version: 10.0 (MIUI 13.0.3)"),
     HuaweiP40_OS("Android version: 10.0"),
     XiaomiRedmi3s_OS("Android version: 6.0.1"),
