@@ -30,6 +30,7 @@ public enum ReportElements {
     ER("✅ Expected Result: "),
     AI("Additional Information: "),
     Timestamp("Timestamp: "),
+    Meteora("JSON for Meteora:"),
     SystemLog("System Log: "),
     Space50("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 

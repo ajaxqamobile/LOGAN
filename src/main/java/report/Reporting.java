@@ -45,6 +45,7 @@ public class Reporting {
         ReportMethods.ER();
         ReportMethods.AI();
         ReportMethods.timestamp();
+        ReportMethods.meteora();
         System.out.println("\n\n\n");
 
         ReportMethods.clipboardBugReport();
@@ -62,6 +63,7 @@ public class Reporting {
         ReportMethods.testStatus();
         ReportMethods.commentDescription();
         ReportMethods.AI();
+        ReportMethods.meteora();
         ReportMethods.evidence();
         System.out.println("\n\n\n");
 

@@ -298,6 +298,23 @@ public class ReportMethods {
         System.out.println("\n\n");
     }
 
+    public static void meteora() throws IOException, InterruptedException {
+        System.out.println(ReportElements.Meteora.getString());
+        String itemE = Scan.scanText();
+        switch (itemE) {
+            case "+" -> lastData.meteora = ReportElements.Meteora.getString() + "\n\n\n\n\n\n\n\n\n";
+            case "-" -> {
+                lastData.meteora = "";
+            }
+            case "reboot", "r" -> Main.retry();
+            default -> {
+                System.out.println("Не правильное значение, попробуйте еще раз");
+                evidence();
+            }
+        }
+        System.out.println("\n\n");
+    }
+
     public static void systemLog() {
         String res;
         System.out.println(ReportElements.SystemLog.getString());
@@ -327,6 +344,7 @@ public class ReportMethods {
                         lastData.AR +
                         lastData.ER +
                         lastData.AI +
+                        lastData.meteora+
                         lastData.timestamp;
         System.out.println(finalRepor);
         StringSelection stringSelection = new StringSelection(finalRepor);
@@ -346,6 +364,7 @@ public class ReportMethods {
                         lastData.testStatus +
                         lastData.commentDescription +
                         lastData.AI +
+                        lastData.meteora+
                         lastData.evidence;
 
         System.out.println(finalRepor);

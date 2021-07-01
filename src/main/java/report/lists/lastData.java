@@ -31,5 +31,6 @@ public class lastData {
     public static String inRelease = Default;
     public static String another = Default;
     public static String systemLog = Default;
+    public static String meteora = Default;
 
 }
