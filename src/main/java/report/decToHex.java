@@ -41,7 +41,7 @@ public class decToHex {
         return (a_HEX + b_HEX + c_HEX + d_HEX);
     }
 
-    public static void startHEX() throws IOException, InterruptedException {
+    public static void startHEX() {
         try {
             int str = Integer.parseInt(Scan.scanText());
             int count = String.valueOf(Math.abs(str)).length();
