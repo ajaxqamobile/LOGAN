@@ -129,10 +129,7 @@ public class GetData {
         String currentDate = formatForDateNow.format(date);
         return "Date\uD83D\uDCC5: " + currentDate + "\n\n" +
                 "Fail❌: \n\n" +
-                "Done!✅: \n\n"+
-                "In Progress!\uD83D\uDD04: \n\n"+
-                "Blocked!\uD83D\uDE31: \n\n"+
-                "Need More Info!\uD83D\uDD51: \n\n";
+                "Done!✅: \n\n";
     }
 
 }
