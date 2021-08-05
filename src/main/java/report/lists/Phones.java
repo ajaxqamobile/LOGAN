@@ -41,6 +41,7 @@ public class Phones {
                     qaPhones.Alcatel.getString(),
                     qaPhones.SamsungGalaxyM12.getString(),
                     qaPhones.SonyXperia10.getString(),
+                    qaPhones.OppoReno4Pro.getString(),
 
             };
 
@@ -79,6 +80,7 @@ public class Phones {
                     qaPhones.Alcatel_OS.getString(),
                     qaPhones.SamsungGalaxyM12_OS.getString(),
                     qaPhones.SonyXperia10_OS.getString(),
+                    qaPhones.OppoReno4Pro_OS.getString(),
 
             };
 

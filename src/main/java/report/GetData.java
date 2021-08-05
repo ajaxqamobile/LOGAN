@@ -131,5 +131,4 @@ public class GetData {
                 "Fail❌: \n\n" +
                 "Done!✅: \n\n";
     }
-
 }

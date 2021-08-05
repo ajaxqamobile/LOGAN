@@ -33,6 +33,7 @@ public enum qaPhones {
     Alcatel("Alcatel Joy 1"),
     SamsungGalaxyM12("Samsung Galaxy M12"),
     SonyXperia10("Sony Xperia 10 II"),
+    OppoReno4Pro("Oppo Reno4 Pro"),
 
 
     // Android OS
@@ -66,6 +67,7 @@ public enum qaPhones {
     Alcatel_OS("Android version: 8.1.0"),
     SamsungGalaxyM12_OS("Android version: 11 (One UI 3.1)"),
     SonyXperia10_OS("Android version: 11"),
+    OppoReno4Pro_OS("Android version: 11"),
 
 
 
