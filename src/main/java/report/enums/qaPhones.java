@@ -103,7 +103,7 @@ public enum qaPhones {
     iPhoneXS_OS("iOS version: 14.5 Beta"),
     iPhone6_OS("iOS version: 12.4.1"),
     iPhone6s_OS("iOS version: 12.4"),
-    iPhone12mini_OS("iOS version: 14.6"),
+    iPhone12mini_OS("iOS version: 15 Beta"),
     iPhone11_OS("iOS version: 14.4.2"),
     iPhone11Pro_OS("iOS version: 13.7"),
     iPhoneSE2020_OS("iOS version: 13.5.1"),
