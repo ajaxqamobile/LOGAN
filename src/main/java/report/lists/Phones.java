@@ -102,7 +102,8 @@ public class Phones {
                     qaPhones.iPhone11.getString(),
                     qaPhones.iPhone11Pro.getString(),
                     qaPhones.iPhone12ProMax.getString(),
-                    qaPhones.iPhone5s.getString()
+                    qaPhones.iPhone5s.getString(),
+                    qaPhones.iPhone12.getString()
             };
 
     public static String[] iOSOS =
@@ -123,7 +124,8 @@ public class Phones {
                     qaPhones.iPhone11_OS.getString(),
                     qaPhones.iPhone11Pro_OS.getString(),
                     qaPhones.iPhone12ProMax_OS.getString(),
-                    qaPhones.iPhone5s_OS.getString()
+                    qaPhones.iPhone5s_OS.getString(),
+                    qaPhones.iPhone12_OS.getString()
             };
 
     public static String[] desktopOS =

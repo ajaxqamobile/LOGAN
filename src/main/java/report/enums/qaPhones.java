@@ -90,6 +90,7 @@ public enum qaPhones {
     iPhoneXR("iPhone XR"),
     iPhone8Plus("iPhone 8 Plus"),
     iPhone5s("iPhone 5S"),
+    iPhone12("iPhone 12"),
 
     //iOS
     AppleWatch1_OS("WatchOS version: 4.3.2"),
@@ -110,6 +111,7 @@ public enum qaPhones {
     iPhoneXR_OS("iOS version: 14.2"),
     iPhone8Plus_OS("iOS version: 14.2"),
     iPhone5s_OS("iOS version: 12.5.1"),
+    iPhone12_OS("iOS version: 14.7.1"),
 
     // PC ==============================================================================================================
     MacBook("MacBook Air/Pro"),
