@@ -34,6 +34,7 @@ public enum qaPhones {
     SamsungGalaxyM12("Samsung Galaxy M12"),
     SonyXperia10("Sony Xperia 10 II"),
     OppoReno4Pro("Oppo Reno4 Pro"),
+    OppoReno5Lite("Oppo Reno5 Lite"),
 
 
     // Android OS
@@ -68,6 +69,7 @@ public enum qaPhones {
     SamsungGalaxyM12_OS("Android version: 11 (One UI 3.1)"),
     SonyXperia10_OS("Android version: 11"),
     OppoReno4Pro_OS("Android version: 11 (Color OS 11.1)"),
+    OppoReno5Lite_OS("Android version: 11 (Color OS 11.1)"),
 
 
 
