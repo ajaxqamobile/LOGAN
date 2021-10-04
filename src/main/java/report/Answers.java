@@ -67,7 +67,7 @@ public class Answers {
         String scan = Scan.scanText();
         switch (scan) {
             case "1" -> Answer = "Done!✅";
-            case "2" -> Answer = "Fail❌";
+            case "2" -> Answer = "Fail!❌";
             case "3" -> Answer = "Not reproduced!✅";
             case "4" -> Answer = "In Progress!\uD83D\uDD53";
             case "reboot", "r" -> Main.retry();
