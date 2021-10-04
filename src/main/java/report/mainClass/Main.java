@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         String username = System.getProperty("user.name");
 
-        System.out.print("\nWelcome to LOGAN v2.0.7, "+username +"!\n\n");
+        System.out.print("\nWelcome to LOGAN v2.1, "+username +"!\n\n");
         retry();
     }
 
