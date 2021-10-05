@@ -16,6 +16,7 @@ public class HubTypes {
             "Hub Fibra",
             "Yavir",
             "Yavir Plus",
+            "Hub LTE (4G)",
 
     };
 
