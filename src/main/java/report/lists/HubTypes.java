@@ -13,10 +13,11 @@ public class HubTypes {
             "Hub 2 Plus",
             "Hub 3",
             "Hub 3 Plus",
-            "Hub Fibra",
+            "Hub Hybrid",
+            "Hub Hybrid (4G)",
+            "Hub Lite",
             "Yavir",
             "Yavir Plus",
-            "Hub LTE (4G)",
 
     };
 
