@@ -63,7 +63,7 @@ public class Answers {
 
     public static String TestStatus() throws IOException, InterruptedException {
         String Answer = null;
-        System.out.println("1 - Done!✅ \n2 - Fail❌ \n3 - Not reproduced!✅ \n4 - In Progress!\uD83D\uDD53");
+        System.out.println("1 - Done!✅ \n2 - Fail!❌ \n3 - Not reproduced!✅ \n4 - In Progress!\uD83D\uDD53");
         String scan = Scan.scanText();
         switch (scan) {
             case "1" -> Answer = "Done!✅";
