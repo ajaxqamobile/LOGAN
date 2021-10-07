@@ -115,15 +115,7 @@ public enum qaPhones {
     iPhoneXR_OS("iOS version: 14.4.2"),
     iPhone8Plus_OS("iOS version: 14.2"),
     iPhone5s_OS("iOS version: 12.5.1"),
-    iPhone12_OS("iOS version: 14.7.1"),
-
-    // PC ==============================================================================================================
-    MacBook("MacBook Air/Pro"),
-    WindowsPC("Windows PC"),
-
-    // PC OS
-    MacBook_OS("Desktop version: Latest beta version of macOS Big Sur"),
-    WindowsPC_OS("Desktop version: Windows 10");
+    iPhone12_OS("iOS version: 14.7.1");
 
     //==================================================================================================================
 

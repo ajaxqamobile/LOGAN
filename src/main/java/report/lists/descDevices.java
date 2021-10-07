@@ -43,8 +43,7 @@ public enum descDevices {
     DoorPlusFibra("6f - Door Plus Fibra"),
     StreetSirenFibra("74 - Street Siren Fibra"),
     HomeSirenFibra("75 - HomeSiren Fibra"),
-    DoubleDeckFibra("7b - DoubleDeck Fibra"),
-    ;
+    DoubleDeckFibra("7b - DoubleDeck Fibra");
 
     private final String text;
 
@@ -61,6 +60,5 @@ public enum descDevices {
         for (descDevices DeviceTypes : descDevices.values()) {
             System.out.println(DeviceTypes.getString());
         }
-        System.out.println("");
     }
 }

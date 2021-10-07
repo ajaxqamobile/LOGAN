@@ -34,11 +34,6 @@ public class ReportMethods {
                 res = ReportElements.iOSAppVersion.getString();
                 res = res + Scan.scanAppVer() + "\n";
             }
-            case "3" -> {
-                System.out.println(ReportElements.DesktopAppVersion.getString());
-                res = ReportElements.DesktopAppVersion.getString();
-                res = res + Scan.scanAppVer() + "\n";
-            }
             case "reboot", "r" -> Main.retry();
         }
         System.out.println("\n\n");
@@ -149,7 +144,7 @@ public class ReportMethods {
             res = res + "qwer" + "\n";
         } else if (itemPass.equals("pro")) {
             res = ReportElements.Pass.getString();
-            res = res + "qwer2" +
+            res = res + "qwer" +
                     "" + "\n";
         } else {
             res = ReportElements.Pass.getString();

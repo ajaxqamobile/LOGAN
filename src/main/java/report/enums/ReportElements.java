@@ -4,7 +4,6 @@ public enum ReportElements {
 
     Environment("Environment: "),
     iOSAppVersion("iOS App version: "),
-    DesktopAppVersion("Desktop App version: "),
     AOSAppVersion("Android App version: "),
     Server("Server: "),
     HubVer("Hub Version: "),
@@ -15,7 +14,6 @@ public enum ReportElements {
     Device("Device: "),
     AOSVer("Android version: "),
     iOSVer("iOS version: "),
-    DesktopVer("Desktop version: "),
     Repeated("How often is repeated: "),
     inRelease("The issue exists in the release app: "),
     Another("Reproduce on another platform: "),

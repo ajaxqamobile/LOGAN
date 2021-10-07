@@ -7,6 +7,7 @@ public class HubTypes {
     public static String currentHubType;
 
     public static String[] hubTypes = {
+
             "Hub",
             "Hub Plus",
             "Hub 2",

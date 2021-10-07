@@ -15,7 +15,7 @@ public class Answers {
             case "2" -> Answer = "No";
             case "reboot","r" -> Main.retry();
             default -> {
-                System.out.println("Wrong value, please try again!");
+                System.out.println("Неверное значение, попробуйте еще раз!");
                 Answer = YesNo();
             }
         }
@@ -32,7 +32,7 @@ public class Answers {
             case "3" -> Answer = "Failed to retry";
             case "reboot", "r" -> Main.retry();
             default -> {
-                System.out.println("Wrong value, please try again!");
+                System.out.println("Неверное значение, попробуйте еще раз!");
                 Answer = HowOften();
             }
         }
@@ -41,7 +41,7 @@ public class Answers {
 
     public static String Sever() throws IOException, InterruptedException {
         String Answer = null;
-        System.out.println("1 - Release \n2 - Stage A \n3 - Stage B \n4 - Stage C \n5 - Custom|Meteora \n6 - My Custom|Meteora");
+        System.out.println("1 - Release \n2 - Stage A \n3 - Stage B \n4 - Stage C \n5 - Custom|Meteora");
         String scan = Scan.scanText();
         switch (scan) {
             case "1" -> Answer = "Release";
@@ -49,10 +49,9 @@ public class Answers {
             case "3" -> Answer = "Stage B";
             case "4" -> Answer = "Stage C";
             case "5" -> Answer = "Custom|Meteora";
-            case "6" -> Answer = "Custom|Meteora [10.10.20.243:2020 | 10.10.20.243:6666]";
             case "reboot", "r" -> Main.retry();
             default -> {
-                System.out.println("Wrong value, please try again!");
+                System.out.println("Неверное значение, попробуйте еще раз!");
                 Answer = Sever();
             }
         }
@@ -72,7 +71,7 @@ public class Answers {
             case "4" -> Answer = "In Progress!\uD83D\uDD53";
             case "reboot", "r" -> Main.retry();
             default -> {
-                System.out.println("Wrong value, please try again!");
+                System.out.println("Неверное значение, попробуйте еще раз!");
                 Answer = TestStatus();
             }
         }

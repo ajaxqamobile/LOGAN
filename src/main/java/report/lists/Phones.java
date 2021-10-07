@@ -47,9 +47,6 @@ public class Phones {
 
             };
 
-    public static String[] desktopPhones =
-            {qaPhones.MacBook.getString(),
-                    qaPhones.WindowsPC.getString()};
 
     public static String[] androidOS =
             {qaPhones.GalaxyS9_OS.getString(),
@@ -131,11 +128,6 @@ public class Phones {
                     qaPhones.iPhone5s_OS.getString(),
                     qaPhones.iPhone12_OS.getString()
             };
-
-    public static String[] desktopOS =
-            {qaPhones.MacBook_OS.getString(),
-                    qaPhones.WindowsPC_OS.getString()};
-
     public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;
         switch (OS) {
@@ -153,15 +145,6 @@ public class Phones {
                 }
                 currentPhone = Scan.scanPhone(count, OS);
             }
-
-            case "3" -> {
-                for (String i : desktopPhones) {
-                    System.out.println(count + ": " + i);
-                    count++;
-                }
-                currentPhone = Scan.scanPhone(count, OS);
-            }
-
             case "reboot", "r" -> Main.retry();
         }
         lastData.phone = currentPhone;

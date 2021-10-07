@@ -10,15 +10,6 @@ public class decToHex {
         return Integer.toHexString(num);
     }
 
-
-    public static String checkNull(String item) {
-        String count = String.valueOf((String.valueOf(Math.abs(Integer.parseInt(item))).length()));
-        if (count.equals("1")) {
-            item = "0" + item;
-        }
-        return item;
-    }
-
     public static String checkFirst(String item) {
         int num = Integer.parseInt(item);
         return String.valueOf(num);
@@ -49,14 +40,14 @@ public class decToHex {
             if (count == 6) {
                 readyHex = decToHex.hubToHex(str);
                 ReportMethods.clipboardIndex(readyHex);
-                System.out.println("This is your HEX = " + readyHex);
+                System.out.println("Это твой HEX = " + readyHex);
             } else if (count == 7) {
                 readyHex = decToHex.deviceToHex(str);
                 ReportMethods.clipboardIndex(readyHex);
-                System.out.println("This is your HEX = " + readyHex);
+                System.out.println("Это твой HEX = " + readyHex);
             } else {
                 System.out.println(ReportElements.Space50.getString());
-                System.out.println("\nSorry, wrong password! Try again!\n");
+                System.out.println("\nНеверный пароль, попробуйте еще раз!\n");
             }
             System.out.println(ReportElements.Space50.getString());
         } catch (Exception ignored) {

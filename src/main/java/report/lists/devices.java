@@ -67,9 +67,9 @@ public enum devices {
 String checkType = "null";
         for (devices EnumTypes : devices.values()) {
             if ((EnumTypes.getString()).equals(type)) {
-                System.out.println("\nDo you watch White ob Black color?\n\n" +
-                        "1 - While\n" +
-                        "2 - Black");
+                System.out.println("\nТы хочешь создать белый цвет устройства и черный цвет устройства?\n\n" +
+                        "1 - Белый\n" +
+                        "2 - Черный");
                 String color = Scan.scanText();
                 switch (color) {
                     case "1": {
@@ -97,13 +97,13 @@ String checkType = "null";
                     case "reboot", "r": Main.retry();
                     break;
                     default:
-                        System.out.println("\nYou entered the wrong value, please try again!");
+                        System.out.println("\nВы ввели неправильное значение, попробуйте еще раз!\n");
                         break;
                 }
             }
         }
         if (checkType.equals("null")){
-            System.out.println("\nYou entered the wrong sensor type, please try again!");
+            System.out.println("\nВы ввели неправильный тип датчика, попробуйте еще раз!\n");
         }
     }
     }
