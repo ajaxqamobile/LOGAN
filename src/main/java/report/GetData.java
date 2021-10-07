@@ -11,6 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
+import static java.lang.System.exit;
 import static main.java.report.ReportMethods.clipboardComment;
 
 public class GetData {
@@ -32,13 +33,15 @@ public class GetData {
     }
 
     public static String getBoC() throws IOException, InterruptedException {
-        System.out.println("Сделайте выбор: \n1 - 🔴 Баг  " +
+        System.out.println("Сделайте выбор: " +
+                "\n1 - 🔴 Баг  " +
                 "\n2 - \uD83D\uDD30 Комментарий  " +
                 "\n3 - 📅 QA Report  " +
                 "\n4 - ✅ Статус: Done  " +
                 "\n5 - ❌ Статус: Fail " +
                 "\n6 - \uD83D\uDD00 Конвертация версий: ASCII to Hex" +
                 "\n7 - \uD83D\uDCDF Генерация QR для JIMM" +
+                "\n8 - \uD83D\uDEA8 Закрыть программу" +
                 "\n\nUpdate - \uD83D\uDD04 Получить обновление\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
@@ -84,6 +87,9 @@ public class GetData {
                 devices.checkType(type);
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
+            }
+            case "8" -> {
+              exit(0);
             }
 
             case "Update","update","UPDATE","uPDATE" -> {
