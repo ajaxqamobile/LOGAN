@@ -111,7 +111,7 @@ public enum qaPhones {
     iPhone12mini_OS("iOS version: 15.1 Beta"),
     iPhone11_OS("iOS version: 14.4.2"),
     iPhone11Pro_OS("iOS version: 13.7"),
-    iPhoneSE2020_OS("iOS version: 13.5.1"),
+    iPhoneSE2020_OS("iOS version: 14.8"),
     iPhoneXR_OS("iOS version: 14.4.2"),
     iPhone8Plus_OS("iOS version: 14.2"),
     iPhone5s_OS("iOS version: 12.5.1"),
