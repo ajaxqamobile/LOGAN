@@ -4,6 +4,8 @@ import main.java.report.GetData;
 import main.java.report.Reporting;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main {
 
@@ -12,14 +14,23 @@ public class Main {
 
         String majorVersion = "2";
         String minorVersion = "1";
-        String trivialVersion = "2";
+        String trivialVersion = "3";
 
 
-        System.out.print("\nДобро пожаловать в LOGAN [v"+majorVersion+"."+minorVersion+"."+trivialVersion+"], "+username +"!\n\n");
+        System.out.print("\nДобро пожаловать в LOGAN [v"+majorVersion+"."+minorVersion+"."+trivialVersion+"], "+username +"!\n");
+        System.out.println(getDate());
         retry();
     }
 
     public static void retry() throws IOException, InterruptedException {
             Reporting.getReport(GetData.getBoC(), GetData.getPlatform());
     }
+
+    public static String getDate() {
+        Date date = new Date();
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy");
+        String currentDate = formatForDateNow.format(date);
+        return "Текущая дата \uD83D\uDCC5: " + currentDate + "\n";
+    }
+
 }
