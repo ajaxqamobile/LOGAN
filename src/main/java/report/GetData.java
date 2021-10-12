@@ -42,6 +42,7 @@ public class GetData {
                 "\n6 - \uD83D\uDD00 Конвертация версий: ASCII to Hex" +
                 "\n7 - \uD83D\uDCDF Генерация QR для JIMM" +
                 "\n8 - \uD83D\uDEA8 Закрыть программу" +
+                "\n9 - \uD83D\uDE91 Отрепортить проблему" +
                 "\n\nUpdate - \uD83D\uDD04 Получить обновление\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
@@ -90,6 +91,14 @@ public class GetData {
             }
             case "8" -> {
               exit(0);
+            }
+
+            case "9" -> {
+                System.out.println("Если были найдены проблемы в работе утилиты, прошу написать данным людям в телеграм:");
+                System.out.println("https://t.me/borunov_alexey - Алексей");
+                System.out.println("https://t.me/sernetskiy_v - Валера\n");
+                item = getBoC();
+                System.out.println("\n\n");
             }
 
             case "Update","update","UPDATE","uPDATE" -> {

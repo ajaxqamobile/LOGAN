@@ -12,13 +12,11 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         String username = System.getProperty("user.name");
 
-        String majorVersion = "2";
-        String minorVersion = "1";
-        String trivialVersion = "3";
+        String version = "2.1.5";
 
-
-        System.out.print("\nДобро пожаловать в LOGAN [v"+majorVersion+"."+minorVersion+"."+trivialVersion+"], "+username +"!\n");
+        System.out.print("\nДобро пожаловать в LOGAN [v"+version+"], "+username +"!\n");
         System.out.println(getDate());
+        System.out.println("Хорошего рабочего дня :)\n");
         retry();
     }
 
@@ -30,7 +28,7 @@ public class Main {
         Date date = new Date();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy");
         String currentDate = formatForDateNow.format(date);
-        return "Текущая дата \uD83D\uDCC5: " + currentDate + "\n";
+        return "Текущая дата \uD83D\uDCC5: " + currentDate;
     }
 
 }
