@@ -42,7 +42,7 @@ public class GetData {
                 "\n6 - \uD83D\uDD00 Конвертация версий: ASCII to Hex" +
                 "\n7 - \uD83D\uDCDF Генерация QR для JIMM" +
                 "\n8 - \uD83D\uDEA8 Закрыть программу" +
-                "\n9 - \uD83D\uDE91 Отрепортить проблему" +
+                "\n9 - \uD83D\uDE91 Зарепортить проблему" +
                 "\n\nUpdate - \uD83D\uDD04 Получить обновление\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
