@@ -56,7 +56,7 @@ public enum qaPhones {
     HuaweiNova5T_OS("Android version: 10.0 (EMUI version 10.1.0)"),
     GalaxyA20s_OS("Android version: 10.0 (One UI 2.0)"),
     Lenovo_OS("Android version: 4.4"),
-    Nokia5_3_OS("Android version: 10.0"),
+    Nokia5_3_OS("Android version: 11.0"),
     MotoG8_OS("Android version: 10.0"),
     SamsungGalaxyM21_OS("Android version: 11.0 (One UI 3.0)"),
     SamsungGalaxyS20_OS("Android version: 11.0 (One UI 3.0)"),
