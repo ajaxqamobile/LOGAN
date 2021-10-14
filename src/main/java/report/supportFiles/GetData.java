@@ -43,12 +43,12 @@ public class GetData {
                 "\n5 - ❌ Статус: Fail " +
                 "\n6 - \uD83D\uDD00 Конвертация версий: ASCII to Hex" +
                 "\n7 - \uD83D\uDCDF Генерация QR для JIMM" +
-                "\n8 - \uD83D\uDEA8 Закрыть программу" +
                 "\n9 - \uD83D\uDE91 Зарепортить проблему" +
                 "\n10 - \uD83E\uDD5A Пасхалка" +
                 "\n11 - \uD83D\uDCC1 Сгенерировать JSON файлы" +
                 "\n12 - \uD83E\uDD16 Бот для парсинга логов" +
-                "\n\nUpdate - \uD83D\uDD04 Получить обновление\n\n");
+                "\n\nUpdate - \uD83D\uDD04 Получить обновление"+
+                "\nExit - \uD83D\uDEA8 Закрыть программу\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
         String item = null;
@@ -94,14 +94,14 @@ public class GetData {
                 System.out.println(ReportElements.Space50.getString());
                 item = getBoC();
             }
-            case "8" -> {
+            case "Exit","EXIT", "eXIT", "exit" -> {
               exit(0);
             }
 
             case "9" -> {
                 System.out.println("Если были найдены проблемы в работе утилиты, прошу написать данным людям в телеграм:");
                 System.out.println("https://t.me/borunov_alexey - Алексей");
-                System.out.println("https://t.me/sernetskiy_v - Валера\n");
+                System.out.println("https://t.me/sernetskiy_v - Валерий\n");
                 item = getBoC();
                 System.out.println("\n\n");
             }
