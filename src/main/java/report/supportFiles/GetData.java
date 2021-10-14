@@ -47,7 +47,7 @@ public class GetData {
                 "\n9 - \uD83D\uDE91 Зарепортить проблему" +
                 "\n10 - \uD83E\uDD5A Пасхалка" +
                 "\n11 - \uD83D\uDCC1 Сгенерировать JSON файлы" +
-                "\n12 - \uD83D\uDCC1 Бот для парсинга логов" +
+                "\n12 - \uD83E\uDD16 Бот для парсинга логов" +
                 "\n\nUpdate - \uD83D\uDD04 Получить обновление\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
