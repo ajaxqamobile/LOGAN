@@ -1,11 +1,12 @@
-package main.java.report.supportFiles;
+package report.supportFiles;
 
-import main.java.report.enums.ReportElements;
-import main.java.report.lists.descDevices;
-import main.java.report.lists.devices;
-import main.java.report.lists.lastData;
-import main.java.report.mainClass.Main;
-import main.java.report.makeJSON.MakeJSON;
+import com.ajax.AjaxBotHelper.AjaxBotHelperApplication;
+import report.enums.ReportElements;
+import report.lists.descDevices;
+import report.lists.devices;
+import report.lists.lastData;
+import report.mainClass.Main;
+import report.makeJSON.MakeJSON;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -13,7 +14,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import static java.lang.System.exit;
-import static main.java.report.supportFiles.ReportMethods.clipboardComment;
+import static report.supportFiles.ReportMethods.clipboardComment;
 
 public class GetData {
 
@@ -46,6 +47,7 @@ public class GetData {
                 "\n9 - \uD83D\uDE91 Зарепортить проблему" +
                 "\n10 - \uD83E\uDD5A Пасхалка" +
                 "\n11 - \uD83D\uDCC1 Сгенерировать новые JSON файлы" +
+                "\n12 - \uD83D\uDCC1 Бот для парсинга логов (на случай если основной умер)" +
                 "\n\nUpdate - \uD83D\uDD04 Получить обновление\n\n");
         Scanner scan = new Scanner(System.in);
         String BoC = scan.nextLine();
@@ -115,6 +117,12 @@ public class GetData {
                 System.out.println("\n\n\n\n");
                 item = getBoC();
                 System.out.println("\n\n");
+            }
+
+            case "12" -> {
+                  AjaxBotHelperApplication.startBot();
+                item = getBoC();
+
             }
 
             case "0a", "0A" -> {

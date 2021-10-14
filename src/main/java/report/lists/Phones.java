@@ -1,8 +1,8 @@
-package main.java.report.lists;
+package report.lists;
 
-import main.java.report.supportFiles.Scan;
-import main.java.report.enums.qaPhones;
-import main.java.report.mainClass.Main;
+import report.supportFiles.Scan;
+import report.enums.qaPhones;
+import report.mainClass.Main;
 
 import java.io.IOException;
 

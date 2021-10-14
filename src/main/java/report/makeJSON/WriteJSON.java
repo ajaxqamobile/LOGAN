@@ -1,4 +1,4 @@
-package main.java.report.makeJSON;
+package report.makeJSON;
 
 import java.io.File;
 import java.io.FileWriter;

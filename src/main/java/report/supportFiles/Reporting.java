@@ -1,7 +1,7 @@
-package main.java.report.supportFiles;
+package report.supportFiles;
 
-import main.java.report.enums.ReportElements;
-import main.java.report.mainClass.Main;
+import report.enums.ReportElements;
+import report.mainClass.Main;
 
 import java.io.IOException;
 
@@ -25,27 +25,27 @@ public class Reporting {
 
     public static void composeBug(String OS) throws IOException, InterruptedException {
 
-        ReportMethods.enviroment();
-        ReportMethods.appVersion(OS);
-        ReportMethods.device(OS);
-        ReportMethods.server();
-        ReportMethods.hubType();
-        ReportMethods.hubVer();
-        ReportMethods.repeated();
-        ReportMethods.inRelease();
-        ReportMethods.another();
-        ReportMethods.testAccount();
-        ReportMethods.email();
-        ReportMethods.password();
-        ReportMethods.hubName();
-        ReportMethods.preconditions();
-        ReportMethods.description();
-        ReportMethods.stepsToReproduce();
-        ReportMethods.AR();
-        ReportMethods.ER();
-        ReportMethods.AI();
-        ReportMethods.timestamp();
-        ReportMethods.meteora();
+       ReportMethods.enviroment();
+       ReportMethods.appVersion(OS);
+       ReportMethods.device(OS);
+       ReportMethods.server();
+       ReportMethods.hubType();
+       ReportMethods.hubVer();
+       ReportMethods.repeated();
+       ReportMethods.inRelease();
+       ReportMethods.another();
+       ReportMethods.testAccount();
+       ReportMethods.email();
+       ReportMethods.password();
+       ReportMethods.hubName();
+       ReportMethods.preconditions();
+       ReportMethods.description();
+       ReportMethods.stepsToReproduce();
+       ReportMethods.AR();
+       ReportMethods.ER();
+       ReportMethods.AI();
+       ReportMethods.timestamp();
+       ReportMethods.meteora();
         System.out.println("\n\n\n");
 
         ReportMethods.clipboardBugReport();

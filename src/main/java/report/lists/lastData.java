@@ -1,4 +1,4 @@
-package main.java.report.lists;
+package report.lists;
 
 public class lastData {
 

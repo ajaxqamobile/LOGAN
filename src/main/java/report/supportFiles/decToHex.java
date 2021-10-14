@@ -1,6 +1,6 @@
-package main.java.report.supportFiles;
+package report.supportFiles;
 
-import main.java.report.enums.ReportElements;
+import report.enums.ReportElements;
 
 public class decToHex {
 

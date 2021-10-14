@@ -1,4 +1,4 @@
-package main.java.report.makeJSON;
+package report.makeJSON;
 
 public class BUTTON_LONG_NAME {
 

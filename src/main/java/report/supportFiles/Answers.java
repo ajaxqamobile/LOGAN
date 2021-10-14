@@ -1,6 +1,6 @@
-package main.java.report.supportFiles;
+package report.supportFiles;
 
-import main.java.report.mainClass.Main;
+import report.mainClass.Main;
 
 import java.io.IOException;
 

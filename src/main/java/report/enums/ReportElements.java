@@ -1,4 +1,4 @@
-package main.java.report.enums;
+package report.enums;
 
 public enum ReportElements {
 

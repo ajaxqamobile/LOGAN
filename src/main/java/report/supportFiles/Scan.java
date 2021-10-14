@@ -1,10 +1,11 @@
-package main.java.report.supportFiles;
+package report.supportFiles;
 
-import main.java.report.enums.ReportElements;
-import main.java.report.lists.HubTypes;
-import main.java.report.lists.Phones;
-import main.java.report.lists.lastData;
-import main.java.report.mainClass.Main;
+import report.enums.ReportElements;
+import report.lists.HubTypes;
+import report.lists.Phones;
+import report.lists.lastData;
+import report.mainClass.Main;
+
 
 import java.io.IOException;
 import java.util.Scanner;

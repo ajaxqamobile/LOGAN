@@ -1,8 +1,8 @@
-package main.java.report.lists;
+package report.lists;
 
-import main.java.report.supportFiles.ReportMethods;
-import main.java.report.supportFiles.Scan;
-import main.java.report.mainClass.Main;
+import report.supportFiles.ReportMethods;
+import report.supportFiles.Scan;
+import report.mainClass.Main;
 
 import java.io.IOException;
 
