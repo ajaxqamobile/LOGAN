@@ -120,7 +120,7 @@ public class GetData {
             }
 
             case "12" -> {
-                  AjaxBotHelperApplication.startBot();
+                AjaxBotHelperApplication.startBot();
                 item = getBoC();
 
             }
