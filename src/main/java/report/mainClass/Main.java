@@ -1,7 +1,7 @@
 package main.java.report.mainClass;
 
-import main.java.report.GetData;
-import main.java.report.Reporting;
+import main.java.report.supportFiles.GetData;
+import main.java.report.supportFiles.Reporting;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         String username = System.getProperty("user.name");
 
-        String version = "2.1.9";
+        String version = "2.2.0";
 
         System.out.print("\nДобро пожаловать в LOGAN [v"+version+"], "+username +"!\n");
         System.out.println(getDate());

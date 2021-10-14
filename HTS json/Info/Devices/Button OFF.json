@@ -1,0 +1,2479 @@
+[
+  {
+    "name": ".",
+    "node_type": "add_hub",
+    "is_open": true,
+    "children": [
+      {
+        "name": "FAKE HUB",
+        "node_type": "minus",
+        "id": "77777777",
+        "type": "21",
+        "obj_type": "hub",
+        "can_delete": true,
+        "is_open": true,
+        "children": [
+          {
+            "name": "rooms",
+            "node_type": "add",
+            "obj_type": "rooms",
+            "is_open": true,
+            "children": [
+              {
+                "name": "fake room",
+                "node_type": "minus",
+                "id": "00000001",
+                "id_editable": false,
+                "type": "24",
+                "obj_type": "room",
+                "can_delete": true,
+                "children": [
+                  {
+                    "name": "00",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "66616b6520726f6f6d"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "groups",
+            "node_type": "add",
+            "obj_type": "groups",
+            "is_open": true,
+            "children": [
+              {
+                "name": "fake group",
+                "node_type": "minus",
+                "id": "00000001",
+                "id_editable": false,
+                "type": "23",
+                "obj_type": "group",
+                "can_delete": true,
+                "children": [
+                  {
+                    "name": "02",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "66616b652067726f7570"
+                  },
+                  {
+                    "name": "04",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "01"
+                  },
+                  {
+                    "name": "05",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "01"
+                  },
+                  {
+                    "name": "06",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "00"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "devices",
+            "node_type": "add",
+            "obj_type": "devices",
+            "is_open": true,
+            "children": [
+              {
+"name": "00ff0001",
+                "node_type": "minus",
+                "id": "00ff0001",
+                "id_editable": true,
+                "type": "01",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "444f4f525f50524f54454354"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        }
+ ]
+              },
+              {
+"name": "00ff0002",
+                "node_type": "minus",
+                "id": "00ff0002",
+                "id_editable": true,
+                "type": "02",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f50524f54454354"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "02"
+        }
+ ]
+              },
+              {
+"name": "00ff0003",
+                "node_type": "minus",
+                "id": "00ff0003",
+                "id_editable": true,
+                "type": "03",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "464952455f50524f54454354"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "03"
+        }
+ ]
+              },
+              {
+"name": "00ff0004",
+                "node_type": "minus",
+                "id": "00ff0004",
+                "id_editable": true,
+                "type": "04",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "474c4153535f50524f54454354"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "04"
+        }
+ ]
+              },
+              {
+"name": "00ff0005",
+                "node_type": "minus",
+                "id": "00ff0005",
+                "id_editable": true,
+                "type": "05",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4c45414b5f50524f54454354"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "05"
+        }
+ ]
+              },
+              {
+"name": "00ff0006",
+                "node_type": "minus",
+                "id": "00ff0006",
+                "id_editable": true,
+                "type": "06",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f50524f544543545f4355525441494e"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "06"
+        }
+ ]
+              },
+              {
+"name": "00ff0007",
+                "node_type": "minus",
+                "id": "00ff0007",
+                "id_editable": true,
+                "type": "07",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "52414e47455f455854454e444552"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "07"
+        }
+ ]
+              },
+              {
+"name": "00ff0008",
+                "node_type": "minus",
+                "id": "00ff0008",
+                "id_editable": true,
+                "type": "08",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "31",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "434f4d42495f50524f54454354"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "08"
+        }
+ ]
+              },
+              {
+"name": "00ff0009",
+                "node_type": "minus",
+                "id": "00ff0009",
+                "id_editable": true,
+                "type": "09",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "464952455f50524f544543545f504c5553"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09"
+        }
+ ]
+              },
+              {
+"name": "00ff000a",
+                "node_type": "minus",
+                "id": "00ff000a",
+                "id_editable": true,
+                "type": "0a",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4b4559424f415244"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0a"
+        }
+ ]
+              },
+              {
+"name": "00ff000b",
+                "node_type": "minus",
+                "id": "00ff000b",
+                "id_editable": true,
+                "type": "0b",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "53504143455f434f4e54524f4c"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0b"
+        }
+ ]
+              },
+              {
+"name": "00ff000c",
+                "node_type": "minus",
+                "id": "00ff000c",
+                "id_editable": true,
+                "type": "0c",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "425554544f4e0d0a"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0c"
+        }
+ ]
+              },
+              {
+"name": "00ff000d",
+                "node_type": "minus",
+                "id": "00ff000d",
+                "id_editable": true,
+                "type": "0d",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f43414d"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0d"
+        }
+ ]
+              },
+              {
+"name": "00ff000e",
+                "node_type": "minus",
+                "id": "00ff000e",
+                "id_editable": true,
+                "type": "0e",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f50524f544543545f504c5553"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0e"
+        }
+ ]
+              },
+              {
+"name": "00ff000f",
+                "node_type": "minus",
+                "id": "00ff000f",
+                "id_editable": true,
+                "type": "0f",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "444f4f525f50524f544543545f504c5553"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0f"
+        }
+ ]
+              },
+              {
+"name": "00ff0011",
+                "node_type": "minus",
+                "id": "00ff0011",
+                "id_editable": true,
+                "type": "11",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "34",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "5452414e534d4954544552"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "11"
+        }
+ ]
+              },
+              {
+"name": "00ff0012",
+                "node_type": "minus",
+                "id": "00ff0012",
+                "id_editable": true,
+                "type": "12",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "52454c4159"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "12"
+        }
+ ]
+              },
+              {
+"name": "00ff0013",
+                "node_type": "minus",
+                "id": "00ff0013",
+                "id_editable": true,
+                "type": "13",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f50524f544543545f4f5554444f4f52"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "13"
+        }
+ ]
+              },
+              {
+"name": "00ff0014",
+                "node_type": "minus",
+                "id": "00ff0014",
+                "id_editable": true,
+                "type": "14",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "5354524545545f534952454e"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "14"
+        }
+ ]
+              },
+              {
+"name": "00ff0015",
+                "node_type": "minus",
+                "id": "00ff0015",
+                "id_editable": true,
+                "type": "15",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "484f4d455f534952454e"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "15"
+        }
+ ]
+              },
+              {
+"name": "00ff001e",
+                "node_type": "minus",
+                "id": "00ff001e",
+                "id_editable": true,
+                "type": "1e",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "534f434b4554"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1e"
+        }
+ ]
+              },
+              {
+"name": "00ff001f",
+                "node_type": "minus",
+                "id": "00ff001f",
+                "id_editable": true,
+                "type": "1f",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "57414c4c5f535749544348"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1f"
+        }
+ ]
+              },
+              {
+"name": "00ff0042",
+                "node_type": "minus",
+                "id": "00ff0042",
+                "id_editable": true,
+                "type": "42",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "444f55424c455f425554544f4e"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "42"
+        }
+ ]
+              },
+              {
+"name": "00ff001c",
+                "node_type": "minus",
+                "id": "00ff001c",
+                "id_editable": true,
+                "type": "1c",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d554c54495f5452414e534d4954544552"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1c"
+        }
+ ]
+              },
+              {
+"name": "00ff001b",
+                "node_type": "minus",
+                "id": "00ff001b",
+                "id_editable": true,
+                "type": "1b",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "53535f4444"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1b"
+        }
+ ]
+              },
+              {
+"name": "00ff0019",
+                "node_type": "minus",
+                "id": "00ff0019",
+                "id_editable": true,
+                "type": "19",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4b5050"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "19"
+        }
+ ]
+              },
+              {
+"name": "00ff0043",
+                "node_type": "minus",
+                "id": "00ff0043",
+                "id_editable": true,
+                "type": "43",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4b5043"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "43"
+        }
+ ]
+              },
+              {
+"name": "00ff001A",
+                "node_type": "minus",
+                "id": "00ff001A",
+                "id_editable": true,
+                "type": "1A",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "44434f"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1A"
+        }
+ ]
+              },
+              {
+"name": "00ff0018",
+                "node_type": "minus",
+                "id": "00ff0018",
+                "id_editable": true,
+                "type": "18",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d434f"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "18"
+        }
+ ]
+              },
+              {
+"name": "00ff0045",
+                "node_type": "minus",
+                "id": "00ff0045",
+                "id_editable": true,
+                "type": "45",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "16",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "03",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "80"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "05",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "8000"
+        },
+ {
+        "name": "04",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "80"
+        },
+ {
+        "name": "31",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "80"
+        },
+ {
+        "name": "b7",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "5648465f425249444745"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "45"
+        }
+ ]
+              },
+              {
+"name": "00ff0061",
+                "node_type": "minus",
+                "id": "00ff0061",
+                "id_editable": true,
+                "type": "61",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "444f4f525f50524f544543545f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "61"
+        }
+ ]
+              },
+              {
+"name": "00ff0062",
+                "node_type": "minus",
+                "id": "00ff0062",
+                "id_editable": true,
+                "type": "62",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f50524f544543545f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "62"
+        }
+ ]
+              },
+              {
+"name": "00ff0064",
+                "node_type": "minus",
+                "id": "00ff0064",
+                "id_editable": true,
+                "type": "64",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "474c4153535f50524f544543545f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "64"
+        }
+ ]
+              },
+              {
+"name": "00ff0068",
+                "node_type": "minus",
+                "id": "00ff0068",
+                "id_editable": true,
+                "type": "68",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "434f4d42495f50524f544543545f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "68"
+        }
+ ]
+              },
+              {
+"name": "00ff006a",
+                "node_type": "minus",
+                "id": "00ff006a",
+                "id_editable": true,
+                "type": "6a",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4b4559424f4152445f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "6a"
+        }
+ ]
+              },
+              {
+"name": "00ff006e",
+                "node_type": "minus",
+                "id": "00ff006e",
+                "id_editable": true,
+                "type": "6e",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4d4f54494f4e5f50524f544543545f504c55535f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "6e"
+        }
+ ]
+              },
+              {
+"name": "00ff006f",
+                "node_type": "minus",
+                "id": "00ff006f",
+                "id_editable": true,
+                "type": "6f",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "444f4f525f50524f544543545f504c55535f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "6f"
+        }
+ ]
+              },
+              {
+"name": "00ff0074",
+                "node_type": "minus",
+                "id": "00ff0074",
+                "id_editable": true,
+                "type": "74",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "5354524545545f534952454e5f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "74"
+        }
+ ]
+              },
+              {
+"name": "00ff0075",
+                "node_type": "minus",
+                "id": "00ff0075",
+                "id_editable": true,
+                "type": "75",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "484f4d455f534952454e5f4649425241"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "75"
+        }
+ ]
+              },
+              {
+"name": "00ff007b",
+                "node_type": "minus",
+                "id": "00ff007b",
+                "id_editable": true,
+                "type": "7b",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "53535f44445f4649425441"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "7b"
+        }
+ ]
+              },
+              {
+"name": "00ff0046",
+                "node_type": "minus",
+                "id": "00ff0046",
+                "id_editable": true,
+                "type": "46",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "52414e47455f455854454e4445522032"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "46"
+        }
+ ]
+              },
+              {
+"name": "00aa011d",
+                "node_type": "minus",
+                "id": "00aa011d",
+                "id_editable": true,
+                "type": "1d",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "3c",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "001c"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "57495f4d545f494e54525553494f4e"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1d"
+        }
+ ]
+              },
+              {
+"name": "00aa021d",
+                "node_type": "minus",
+                "id": "00aa021d",
+                "id_editable": true,
+                "type": "1d",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "3c",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "001c"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "57495f4d545f46495245"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1d"
+        }
+ ]
+              },
+              {
+"name": "00aa031d",
+                "node_type": "minus",
+                "id": "00aa031d",
+                "id_editable": true,
+                "type": "1d",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "3c",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "001c"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "57495f4d545f4d45444943414c"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "02"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1d"
+        }
+ ]
+              },
+              {
+"name": "00aa041d",
+                "node_type": "minus",
+                "id": "00aa041d",
+                "id_editable": true,
+                "type": "1d",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "3c",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "001c"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "57495f4d545f50414e4943"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "03"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1d"
+        }
+ ]
+              },
+              {
+"name": "00aa051d",
+                "node_type": "minus",
+                "id": "00aa051d",
+                "id_editable": true,
+                "type": "1d",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "3c",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "001c"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "57495f4d545f474153"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "04"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1d"
+        }
+   ]
+              }
+            ]
+          },
+          {
+            "name": "users",
+            "node_type": "add",
+            "obj_type": "users",
+            "children": [
+              {
+                "name": "Misha",
+                "node_type": "minus",
+                "id": "66666666",
+                "id_editable": false,
+                "type": "22",
+                "obj_type": "user",
+                "can_delete": false,
+                "children": [
+                  {
+                    "name": "01",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "4d69736861"
+                  },
+                  {
+                    "name": "02",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "6b6f7a6c69756b2e6d40616a61782e73797374656d73"
+                  },
+                  {
+                    "name": "03",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "2b333830393339333738323436"
+                  },
+                  {
+                    "name": "09",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "07"
+                  },
+                  {
+                    "name": "0a",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "03"
+                  },
+                  {
+                    "name": "0b",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "03"
+                  },
+                  {
+                    "name": "0f",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "01f5"
+                  },
+                  {
+                    "name": "10",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "03"
+                  },
+                  {
+                    "name": "14",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "ffffffff"
+                  },
+                  {
+                    "name": "15",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "01"
+                  },
+                  {
+                    "name": "19",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "ffffffffffffffff"
+                  },
+                  {
+                    "name": "1a",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "ffffffffffffffff"
+                  },
+                  {
+                    "name": "21",
+                    "node_type": "param",
+                    "data_type": "hex",
+                    "value": "00000000"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "cards",
+            "node_type": "add",
+            "obj_type": "cards"
+          },
+          {
+            "name": "billing_companies",
+            "node_type": "add",
+            "obj_type": "billing_companies"
+          },
+          {
+            "name": "notifications",
+            "node_type": "add",
+            "obj_type": "notifications"
+          },
+          {
+            "name": "00",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "46414b4520485542"
+          },
+          {
+            "name": "37",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "00033c20"
+          },
+          {
+            "name": "75",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "06"
+          },
+          {
+            "name": "01",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "0064"
+          },
+          {
+            "name": "07",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "01"
+          },
+          {
+            "name": "08",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "00"
+          },
+          {
+            "name": "10",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "00"
+          },
+          {
+            "name": "23",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "05050505"
+          },
+          {
+            "name": "24",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "05050505"
+          },
+          {
+            "name": "25",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "05050505"
+          },
+          {
+            "name": "26",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "05050505"
+          },
+          {
+            "name": "c7",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "01"
+          },
+          {
+            "name": "49",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "01"
+          },
+          {
+            "name": "4a",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "00"
+          },
+          {
+            "name": "7e",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "01"
+          },
+          {
+            "name": "89",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "00"
+          }
+        ]
+      },
+      {
+        "name": "Misha",
+        "node_type": "minus",
+        "id": "66666666",
+        "id_editable": false,
+        "type": "22",
+        "obj_type": "logged_user",
+        "can_delete": false,
+        "children": [
+          {
+            "name": "01",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "4d69736861"
+          },
+          {
+            "name": "02",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "6b6f7a6c69756b2e6d40616a61782e73797374656d73"
+          },
+          {
+            "name": "03",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "2b333830393339333738323436"
+          },
+          {
+            "name": "09",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "07"
+          },
+          {
+            "name": "0a",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "03"
+          },
+          {
+            "name": "0b",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "03"
+          },
+          {
+            "name": "0f",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "01f5"
+          },
+          {
+            "name": "10",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "03"
+          },
+          {
+            "name": "14",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "ffffffff"
+          },
+          {
+            "name": "15",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "01"
+          },
+          {
+            "name": "19",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "ffffffffffffffff"
+          },
+          {
+            "name": "1a",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "ffffffffffffffff"
+          },
+          {
+            "name": "21",
+            "node_type": "param",
+            "data_type": "hex",
+            "value": "00000000"
+          }
+        ]
+      }
+    ]
+  }
+]
+
