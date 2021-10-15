@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         String username = System.getProperty("user.name");
 
-        String version = "2.3.3";
+        String version = "2.3.4";
 
         System.out.print("\nДобро пожаловать в LOGAN [v"+version+"], "+username +"!\n");
         System.out.println(getDate());
