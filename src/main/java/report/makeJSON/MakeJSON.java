@@ -6,9 +6,9 @@ public class MakeJSON {
     private static int mtIndex;
     private static int wiIndex;
 
-    public static void main(String[] args) {
-        startMakeJSON();
-}
+//      public static void main(String[] args) {
+//        startMakeJSON();
+//}
 
 public static void startMakeJSON() {
     for (int i = 0; i <= 6; i++) {
