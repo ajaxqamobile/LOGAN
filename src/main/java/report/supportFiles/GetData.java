@@ -121,8 +121,11 @@ public class GetData {
 
             case "12" -> {
                 AjaxBotHelperApplication.startBot();
-                item = getBoC();
-
+                Thread.sleep(1999999999);
+                Thread.sleep(1999999999);
+                Thread.sleep(1999999999);
+                Thread.sleep(1999999999);
+                Thread.sleep(1999999999);
             }
 
             case "0a", "0A" -> {
