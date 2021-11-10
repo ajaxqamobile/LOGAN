@@ -1813,6 +1813,12 @@
                 "is_open": true,
                 "children": [
  {
+        "name": "38",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "03"
+        },
+ {
         "name": "0a",
         "node_type": "param",
         "data_type": "hex",
@@ -2243,6 +2249,12 @@
                 "is_open": true,
                 "children": [
  {
+        "name": "38",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "03"
+        },
+ {
         "name": "0a",
         "node_type": "param",
         "data_type": "hex",
@@ -2333,6 +2345,12 @@
                 "can_delete": true,
                 "is_open": true,
                 "children": [
+ {
+        "name": "38",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "03"
+        },
  {
         "name": "0a",
         "node_type": "param",
