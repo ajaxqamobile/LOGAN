@@ -1,12 +1,7 @@
 <component name="libraryTable">
   <library name="Ajax-QAmobile-Report-Bot">
-    <CLASSES>
-      <root url="file://$PROJECT_DIR$/../Ajax-QAmobile-Report-Bot" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/../Ajax-QAmobile-Report-Bot/.mvn/wrapper" />
-      <root url="file://$PROJECT_DIR$/../Ajax-QAmobile-Report-Bot/src/main/java" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
