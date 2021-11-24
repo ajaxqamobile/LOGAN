@@ -44,6 +44,7 @@ public class Phones {
                     qaPhones.SonyXperia10.getString(),
                     qaPhones.OppoReno4Pro.getString(),
                     qaPhones.OppoReno5Lite.getString(),
+                    qaPhones.Fold2.getString(),
 
             };
 
@@ -82,6 +83,7 @@ public class Phones {
                     qaPhones.SonyXperia10_OS.getString(),
                     qaPhones.OppoReno4Pro_OS.getString(),
                     qaPhones.OppoReno5Lite_OS.getString(),
+                    qaPhones.Fold2_OS.getString(),
 
             };
 

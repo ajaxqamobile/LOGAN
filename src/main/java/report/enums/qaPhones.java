@@ -36,7 +36,7 @@ public enum qaPhones {
     SonyXperia10("Sony Xperia 10 II"),
     OppoReno4Pro("Oppo Reno4 Pro"),
     OppoReno5Lite("Oppo Reno5 Lite"),
-
+    Fold2("Samsung Galaxy Z Fold2 5G"),
 
     // Android OS
     GalaxyS9_OS("Android version: 10.0 (One UI 2.5)"),
@@ -72,6 +72,7 @@ public enum qaPhones {
     SonyXperia10_OS("Android version: 11"),
     OppoReno4Pro_OS("Android version: 11 (Color OS 11.1)"),
     OppoReno5Lite_OS("Android version: 11 (Color OS 11.1)"),
+    Fold2_OS("Android version: 11 (One UI 3.1.1)"),
 
 
 
