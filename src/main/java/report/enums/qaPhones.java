@@ -37,6 +37,9 @@ public enum qaPhones {
     OppoReno4Pro("Oppo Reno4 Pro"),
     OppoReno5Lite("Oppo Reno5 Lite"),
     Fold2("Samsung Galaxy Z Fold2 5G"),
+    SamsungGalaxyA50("Samsung Galaxy A50"),
+    TCL("TCL20SE"),
+    SamsungGalaxyA12("Samsung Galaxy A12"),
 
     // Android OS
     GalaxyS9_OS("Android version: 10.0 (One UI 2.5)"),
@@ -73,6 +76,9 @@ public enum qaPhones {
     OppoReno4Pro_OS("Android version: 11 (Color OS 11.1)"),
     OppoReno5Lite_OS("Android version: 11 (Color OS 11.1)"),
     Fold2_OS("Android version: 11 (One UI 3.1.1)"),
+    SamsungGalaxyA50_OS("Android version: 11 (One UI 3.1)"),
+    TCL_OS("Android version: 11 (TCL UI v3.0.2B.D.6)"),
+    SamsungGalaxyA12_OS("Android version: 11(One UI 3.1)"),
 
 
 

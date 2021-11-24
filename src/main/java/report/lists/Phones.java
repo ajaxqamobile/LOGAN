@@ -45,6 +45,9 @@ public class Phones {
                     qaPhones.OppoReno4Pro.getString(),
                     qaPhones.OppoReno5Lite.getString(),
                     qaPhones.Fold2.getString(),
+                    qaPhones.SamsungGalaxyA50.getString(),
+                    qaPhones.TCL.getString(),
+                    qaPhones.SamsungGalaxyA12.getString(),
 
             };
 
@@ -84,6 +87,9 @@ public class Phones {
                     qaPhones.OppoReno4Pro_OS.getString(),
                     qaPhones.OppoReno5Lite_OS.getString(),
                     qaPhones.Fold2_OS.getString(),
+                    qaPhones.SamsungGalaxyA50_OS.getString(),
+                    qaPhones.TCL_OS.getString(),
+                    qaPhones.SamsungGalaxyA12_OS.getString(),
 
             };
 
