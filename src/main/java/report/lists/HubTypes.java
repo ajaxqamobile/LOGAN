@@ -10,7 +10,7 @@ public class HubTypes {
 
             "Hub",
             "Hub Plus",
-            "Hub 2",
+            "Hub 2 (2G)",
             "Hub 2 (4G)",
             "Hub 2 Plus",
             "Hub 3",
