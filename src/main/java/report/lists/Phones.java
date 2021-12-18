@@ -112,7 +112,8 @@ public class Phones {
                     qaPhones.iPhone11Pro.getString(),
                     qaPhones.iPhone12ProMax.getString(),
                     qaPhones.iPhone5s.getString(),
-                    qaPhones.iPhone12.getString()
+                    qaPhones.iPhone12.getString(),
+                    qaPhones.iPhone13.getString()
             };
 
     public static String[] iOSOS =
@@ -134,7 +135,8 @@ public class Phones {
                     qaPhones.iPhone11Pro_OS.getString(),
                     qaPhones.iPhone12ProMax_OS.getString(),
                     qaPhones.iPhone5s_OS.getString(),
-                    qaPhones.iPhone12_OS.getString()
+                    qaPhones.iPhone12_OS.getString(),
+                    qaPhones.iPhone13_OS.getString()
             };
     public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;

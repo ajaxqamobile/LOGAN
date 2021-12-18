@@ -24,12 +24,13 @@ public class Answers {
 
     public static String HowOften() throws IOException, InterruptedException {
         String Answer = null;
-        System.out.println("1 - Always \n2 - Rarely \n3 - Failed to retry");
+        System.out.println("1 - Always \n2 - Rarely \n3 - Failed to retry \n4 - Once");
         String scan = Scan.scanText();
         switch (scan) {
             case "1" -> Answer = "Always";
             case "2" -> Answer = "Rarely";
             case "3" -> Answer = "Failed to retry";
+            case "4" -> Answer = "Once";
             case "reboot", "r" -> Main.retry();
             default -> {
                 System.out.println("Неверное значение, попробуйте еще раз!");

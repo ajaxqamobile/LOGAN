@@ -102,6 +102,7 @@ public enum qaPhones {
     iPhone8Plus("iPhone 8 Plus"),
     iPhone5s("iPhone 5S"),
     iPhone12("iPhone 12"),
+    iPhone13("iPhone 13"),
 
     //iOS
     AppleWatch1_OS("WatchOS version: 4.3.2"),
@@ -122,7 +123,8 @@ public enum qaPhones {
     iPhoneXR_OS("iOS version: 14.4.2"),
     iPhone8Plus_OS("iOS version: 15.0"),
     iPhone5s_OS("iOS version: 12.5.4"),
-    iPhone12_OS("iOS version: 15.1");
+    iPhone12_OS("iOS version: 15.1"),
+    iPhone13_OS("iOS Version: 15.1.1");
 
     //==================================================================================================================
 
