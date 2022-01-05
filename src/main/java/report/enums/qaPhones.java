@@ -40,6 +40,7 @@ public enum qaPhones {
     SamsungGalaxyA50("Samsung Galaxy A50"),
     TCL("TCL20SE"),
     SamsungGalaxyA12("Samsung Galaxy A12"),
+    Redmi9C("Xiaomi Redmi 9C"),
 
     // Android OS
     GalaxyS9_OS("Android version: 10.0 (One UI 2.5)"),
@@ -79,6 +80,7 @@ public enum qaPhones {
     SamsungGalaxyA50_OS("Android version: 11 (One UI 3.1)"),
     TCL_OS("Android version: 11 (TCL UI v3.0.2B.D.6)"),
     SamsungGalaxyA12_OS("Android version: 11(One UI 3.1)"),
+    Redmi9C_OS("Android version: 10(MIUI 12.0.9)"),
 
 
 

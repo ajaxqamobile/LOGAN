@@ -48,6 +48,7 @@ public class Phones {
                     qaPhones.SamsungGalaxyA50.getString(),
                     qaPhones.TCL.getString(),
                     qaPhones.SamsungGalaxyA12.getString(),
+                    qaPhones.Redmi9C.getString(),
 
             };
 
@@ -90,6 +91,7 @@ public class Phones {
                     qaPhones.SamsungGalaxyA50_OS.getString(),
                     qaPhones.TCL_OS.getString(),
                     qaPhones.SamsungGalaxyA12_OS.getString(),
+                    qaPhones.Redmi9C_OS.getString(),
 
             };
 
