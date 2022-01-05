@@ -47,7 +47,9 @@ public class DeviceID {
             // STOVE_GUARD_SWITCH_ID("17"),
             // SOCKET_ID
             "1e",
-            // WALL_SWITHC_ID
+            // SOCKET_TYPE_G_ID
+            "4c",
+            // WALL_SWITCH_ID
             "1f",
             // WIRE_INPUT_ID("26"),
             // WIRE_SIREN_ID("27"),
@@ -102,8 +104,8 @@ public class DeviceID {
             // WI_MT_GAS
             "1d",
             // WI_SENSOR
-            //"26",
+            // "26",
             // WI_TAMPER
-            //"26",
+            // "26",
     };
 }

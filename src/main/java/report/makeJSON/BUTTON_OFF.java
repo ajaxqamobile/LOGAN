@@ -45,7 +45,9 @@ public class BUTTON_OFF {
             "0a 01 09 484f4d455f534952454e 0b 00 b0 09630909",
             // SOCKET
             "0a 01 09 534f434b4554 0b 00 b0 09630909",
-            // WALL_SWITHC
+            // SOCKET_TYPE_G
+            "0a 01 09 534f434b455420545950452047 c3 01 0b 00 b0 09630909",
+            // WALL_SWITCH
             "0a 01 09 57414c4c5f535749544348 0b 00 b0 09630909",
             // DOUBLE_BUTTON
             "0a 01 09 444f55424c455f425554544f4e 0b 00 b0 09630909",
@@ -95,5 +97,5 @@ public class BUTTON_OFF {
             "0a 01 3c 001c 09 57495f4d545f50414e4943 0b 00 32 00 3f 03",
             // WI_MT_GAS
             "0a 01 3c 001c 09 57495f4d545f474153 0b 00 32 00 3f 04",
-    };
+               };
 }
