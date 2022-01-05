@@ -1651,6 +1651,91 @@
  ]
               },
               {
+"name": "00ff004c",
+                "node_type": "minus",
+                "id": "00ff004c",
+                "id_editable": true,
+                "type": "4c",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "38",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "20"
+        },
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "03",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "35",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00b8"
+        },
+ {
+        "name": "b7",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "08"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "534f434b455420545950452047"
+        },
+ {
+        "name": "42",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "000186a0"
+        },
+ {
+        "name": "16",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "c3",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4c"
+        }
+ ]
+              },
+              {
 "name": "00ff001f",
                 "node_type": "minus",
                 "id": "00ff001f",

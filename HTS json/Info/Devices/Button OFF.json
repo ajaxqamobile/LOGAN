@@ -1009,6 +1009,55 @@
  ]
               },
               {
+"name": "00ff004c",
+                "node_type": "minus",
+                "id": "00ff004c",
+                "id_editable": true,
+                "type": "4c",
+                "type_editable": true,
+                "obj_type": "device",
+                "can_delete": true,
+                "is_open": true,
+                "children": [
+ {
+        "name": "0a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "09",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "534f434b455420545950452047"
+        },
+ {
+        "name": "c3",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "0b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
+        },
+ {
+        "name": "27",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "4c"
+        }
+ ]
+              },
+              {
 "name": "00ff001f",
                 "node_type": "minus",
                 "id": "00ff001f",
