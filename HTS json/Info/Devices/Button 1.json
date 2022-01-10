@@ -2850,52 +2850,10 @@
                 "is_open": true,
                 "children": [
  {
-        "name": "38",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "04"
-        },
- {
-        "name": "0a",
+        "name": "03",
         "node_type": "param",
         "data_type": "hex",
         "value": "01"
-        },
- {
-        "name": "16",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "15",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00"
-        },
- {
-        "name": "31",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "32",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "b0",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "09630909"
-        },
- {
-        "name": "35",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00dc"
         },
  {
         "name": "09",
@@ -2904,7 +2862,25 @@
         "value": "534f434b455420545950452047"
         },
  {
-        "name": "03",
+        "name": "15",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "16",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "17",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "ffffffff"
+        },
+ {
+        "name": "0a",
         "node_type": "param",
         "data_type": "hex",
         "value": "01"
@@ -2916,16 +2892,124 @@
         "value": "01"
         },
  {
+        "name": "31",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "32",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "33",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "35",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "36",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "38",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "39",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3a",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3b",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3c",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3d",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "3f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "0000"
+        },
+ {
+        "name": "40",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00150015"
+        },
+ {
+        "name": "41",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "005a"
+        },
+ {
         "name": "42",
         "node_type": "param",
         "data_type": "hex",
-        "value": "00002710"
+        "value": "00b9"
         },
  {
         "name": "43",
         "node_type": "param",
         "data_type": "hex",
-        "value": "000186a0"
+        "value": "0f"
+        },
+ {
+        "name": "44",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
+        "name": "45",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "00"
+        },
+ {
+        "name": "47",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "1111"
+        },
+ {
+        "name": "b0",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "09630909"
         },
  {
         "name": "b7",
@@ -2950,12 +3034,6 @@
         "node_type": "param",
         "data_type": "hex",
         "value": "01"
-        },
- {
-        "name": "17",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "ffffffff"
         },
  {
         "name": "27",
@@ -6281,133 +6359,6 @@
         "node_type": "param",
         "data_type": "hex",
         "value": "1d"
-        }
- ]
-              },
-              {
-"name": "00ff004c",
-                "node_type": "minus",
-                "id": "00ff004c",
-                "id_editable": true,
-                "type": "4c",
-                "type_editable": true,
-                "obj_type": "device",
-                "can_delete": true,
-                "is_open": true,
-                "children": [
- {
-        "name": "38",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "04"
-        },
- {
-        "name": "0a",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "16",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "15",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00"
-        },
- {
-        "name": "31",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "32",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "b0",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "09630909"
-        },
- {
-        "name": "35",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00dc"
-        },
- {
-        "name": "09",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "534f434b455420545950452047"
-        },
- {
-        "name": "03",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "0b",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "42",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00002710"
-        },
- {
-        "name": "43",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "000186a0"
-        },
- {
-        "name": "b7",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "c0",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00"
-        },
- {
-        "name": "c1",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "00"
-        },
- {
-        "name": "c3",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "01"
-        },
- {
-        "name": "17",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "ffffffff"
-        },
- {
-        "name": "27",
-        "node_type": "param",
-        "data_type": "hex",
-        "value": "4c"
         }
    ]
               }
