@@ -2973,13 +2973,13 @@
         "name": "3f",
         "node_type": "param",
         "data_type": "hex",
-        "value": "0000"
+        "value": "0100"
         },
  {
         "name": "40",
         "node_type": "param",
         "data_type": "hex",
-        "value": "00001515"
+        "value": "00010000"
         },
  {
         "name": "41",
@@ -3015,7 +3015,7 @@
         "name": "47",
         "node_type": "param",
         "data_type": "hex",
-        "value": "1111"
+        "value": "4A36"
         },
  {
         "name": "b0",

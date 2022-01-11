@@ -1767,19 +1767,19 @@
         "name": "3f",
         "node_type": "param",
         "data_type": "hex",
-        "value": "0001"
+        "value": "0064"
         },
  {
         "name": "40",
         "node_type": "param",
         "data_type": "hex",
-        "value": "00000001"
+        "value": "00006400"
         },
  {
         "name": "41",
         "node_type": "param",
         "data_type": "hex",
-        "value": "0640"
+        "value": "0641"
         },
  {
         "name": "42",
@@ -1809,7 +1809,7 @@
         "name": "47",
         "node_type": "param",
         "data_type": "hex",
-        "value": "0010"
+        "value": "4A36"
         },
  {
         "name": "b0",

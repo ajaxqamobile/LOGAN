@@ -2451,13 +2451,13 @@
         "name": "3f",
         "node_type": "param",
         "data_type": "hex",
-        "value": "0010"
+        "value": "0065"
         },
  {
         "name": "40",
         "node_type": "param",
         "data_type": "hex",
-        "value": "00000015"
+        "value": "00006400"
         },
  {
         "name": "41",
@@ -2493,7 +2493,7 @@
         "name": "47",
         "node_type": "param",
         "data_type": "hex",
-        "value": "1110"
+        "value": "4A36"
         },
  {
         "name": "b0",
