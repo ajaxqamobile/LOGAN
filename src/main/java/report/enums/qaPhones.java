@@ -76,7 +76,7 @@ public enum qaPhones {
     SonyXperia10_OS("Android version: 11"),
     OppoReno4Pro_OS("Android version: 11 (Color OS 11.1)"),
     OppoReno5Lite_OS("Android version: 11 (Color OS 11.1)"),
-    Fold2_OS("Android version: 11 (One UI 3.1.1)"),
+    Fold2_OS("Android version: 12 (One UI 4)"),
     SamsungGalaxyA50_OS("Android version: 11 (One UI 3.1)"),
     TCL_OS("Android version: 11 (TCL UI v3.0.2B.D.6)"),
     SamsungGalaxyA12_OS("Android version: 11(One UI 3.1)"),
