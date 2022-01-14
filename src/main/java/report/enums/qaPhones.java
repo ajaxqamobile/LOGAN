@@ -46,7 +46,7 @@ public enum qaPhones {
     GalaxyS9_OS("Android version: 10.0 (One UI 2.5)"),
     XiaomiRedmiNote7_OS("Android version: 9.0"),
     SamsungGalaxyA5_OS("Android version: 5.1.1"),
-    GooglePixel3a_OS("Android version: 11"),
+    GooglePixel3a_OS("Android version: 12"),
     SamsungGalaxyS4_OS("Android version: 5.0.1"),
     XiaomiMIA2_OS("Android version: 10.0"),
     XiaomiRedmiNote2_OS("Android version: 5.0"),
@@ -126,7 +126,7 @@ public enum qaPhones {
     iPhone8Plus_OS("iOS version: 15.0"),
     iPhone5s_OS("iOS version: 12.5.4"),
     iPhone12_OS("iOS version: 15.1"),
-    iPhone13_OS("iOS Version: 15.2");
+    iPhone13_OS("iOS Version: 15.2.1");
 
     //==================================================================================================================
 
