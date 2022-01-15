@@ -2868,6 +2868,12 @@
                 "is_open": true,
                 "children": [
  {
+        "name": "9f",
+        "node_type": "param",
+        "data_type": "hex",
+        "value": "01"
+        },
+ {
         "name": "03",
         "node_type": "param",
         "data_type": "hex",
