@@ -126,7 +126,7 @@ public enum qaPhones {
     iPhone8Plus_OS("iOS version: 15.0"),
     iPhone5s_OS("iOS version: 12.5.4"),
     iPhone12_OS("iOS version: 15.1"),
-    iPhone13_OS("iOS Version: 15.2.1");
+    iPhone13_OS("iOS Version: 15.3");
 
     //==================================================================================================================
 
