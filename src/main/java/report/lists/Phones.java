@@ -49,6 +49,7 @@ public class Phones {
                     qaPhones.TCL.getString(),
                     qaPhones.SamsungGalaxyA12.getString(),
                     qaPhones.Redmi9C.getString(),
+                    qaPhones.Realme8PRO.getString(),
 
             };
 
@@ -92,6 +93,7 @@ public class Phones {
                     qaPhones.TCL_OS.getString(),
                     qaPhones.SamsungGalaxyA12_OS.getString(),
                     qaPhones.Redmi9C_OS.getString(),
+                    qaPhones.Realme8PRO_OS.getString(),
 
             };
 
@@ -115,7 +117,8 @@ public class Phones {
                     qaPhones.iPhone12ProMax.getString(),
                     qaPhones.iPhone5s.getString(),
                     qaPhones.iPhone12.getString(),
-                    qaPhones.iPhone13.getString()
+                    qaPhones.iPhone13.getString(),
+                    qaPhones.iPhoneXSMax.getString()
             };
 
     public static String[] iOSOS =
@@ -138,7 +141,8 @@ public class Phones {
                     qaPhones.iPhone12ProMax_OS.getString(),
                     qaPhones.iPhone5s_OS.getString(),
                     qaPhones.iPhone12_OS.getString(),
-                    qaPhones.iPhone13_OS.getString()
+                    qaPhones.iPhone13_OS.getString(),
+                    qaPhones.iPhoneXSMax_OS.getString()
             };
     public static String getPhone(String OS) throws IOException, InterruptedException {
         int count = 1;

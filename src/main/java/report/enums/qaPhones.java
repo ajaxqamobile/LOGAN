@@ -41,6 +41,7 @@ public enum qaPhones {
     TCL("TCL20SE"),
     SamsungGalaxyA12("Samsung Galaxy A12"),
     Redmi9C("Xiaomi Redmi 9C"),
+    Realme8PRO("Realme 8 Pro"),
 
     // Android OS
     GalaxyS9_OS("Android version: 10.0 (One UI 2.5)"),
@@ -81,6 +82,7 @@ public enum qaPhones {
     TCL_OS("Android version: 11 (TCL UI v3.0.2B.D.6)"),
     SamsungGalaxyA12_OS("Android version: 11(One UI 3.1)"),
     Redmi9C_OS("Android version: 10(MIUI 12.0.9)"),
+    Realme8PRO_OS("Android version: 11(Realme UI 2.0"),
 
 
 
@@ -105,6 +107,7 @@ public enum qaPhones {
     iPhone5s("iPhone 5S"),
     iPhone12("iPhone 12"),
     iPhone13("iPhone 13"),
+    iPhoneXSMax("iPhone XS Max"),
 
     //iOS
     AppleWatch1_OS("WatchOS version: 4.3.2"),
@@ -112,7 +115,7 @@ public enum qaPhones {
     AppleWatch5_OS("WatchOS version: Latest beta version of WatchOS"),
     iPhone7_OS("iOS version: 14.5.1"),
     iPhone4_OS("iOS version: 9.3.5"),
-    iPhone12ProMax_OS("iOS version: 15.1"),
+    iPhone12ProMax_OS("iOS version: 15.2.1"),
     iPhoneSE_OS("iOS version: 14.8"),
     iPhoneX_OS("iOS version: 14.7.1"),
     iPhoneXS_OS("iOS version: 14.2"),
@@ -126,7 +129,8 @@ public enum qaPhones {
     iPhone8Plus_OS("iOS version: 15.0"),
     iPhone5s_OS("iOS version: 12.5.4"),
     iPhone12_OS("iOS version: 15.1"),
-    iPhone13_OS("iOS Version: 15.3");
+    iPhone13_OS("iOS Version: 15.3"),
+    iPhoneXSMax_OS("iOS Version 15.3");
 
     //==================================================================================================================
 
