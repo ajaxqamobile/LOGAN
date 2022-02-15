@@ -82,7 +82,7 @@ public enum qaPhones {
     TCL_OS("Android version: 11 (TCL UI v3.0.2B.D.6)"),
     SamsungGalaxyA12_OS("Android version: 11(One UI 3.1)"),
     Redmi9C_OS("Android version: 10(MIUI 12.0.9)"),
-    Realme8PRO_OS("Android version: 11(Realme UI 2.0"),
+    Realme8PRO_OS("Android version: 11(Realme UI 2.0)"),
 
 
 
