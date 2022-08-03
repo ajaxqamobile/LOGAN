@@ -24,8 +24,8 @@ public enum qaPhones {
     MotoG8("Moto G8"),
     SamsungGalaxyM21("Samsung Galaxy M21"),
     SamsungGalaxyS20("Samsung Galaxy S20 FE"),
-    RedmiNote9Pro("Redmi Note 9 Pro"),
-    RedmiNote9("Redmi Note 9"),
+    RedmiNote9Pro("Xiaomi Redmi Note 9 Pro"),
+    RedmiNote9("Xiaomi Redmi Note 9"),
     HuaweiP40("Huawei P40"),
     XiaomiRedmi3s("Xiaomi Redmi 3s"),
     XiaomiMi11("Xiaomi Mi 11"),
@@ -42,6 +42,8 @@ public enum qaPhones {
     SamsungGalaxyA12("Samsung Galaxy A12"),
     Redmi9C("Xiaomi Redmi 9C"),
     Realme8PRO("Realme 8 Pro"),
+    GooglePixel5("Google Pixel 5"),
+    RedmiNote8Pro("Xiaomi Redmi Note 8 Pro"),
 
     // Android OS
     GalaxyS9_OS("Android version: 10.0 (One UI 2.5)"),
@@ -56,13 +58,13 @@ public enum qaPhones {
     MeizuPRO6_OS("Android version: 6.0 (Flyme)"),
     MeizuM6T_OS("Android version: 7.0 (Flyme)"),
     HuaweiPSmart_OS("Android version: 9.0 (EMUI 9.1.0)"),
-    SamsungGalaxyA51_OS("Android version: 10.0 (One UI 2.1)"),
+    SamsungGalaxyA51_OS("Android version: 12.0 (One UI 3.1)"),
     Vivo1920_OS("Android version: 10.0 (Funtouch OS)"),
     HuaweiNova5T_OS("Android version: 10.0 (EMUI version 10.1.0)"),
     GalaxyA20s_OS("Android version: 10.0 (One UI 2.0)"),
     Lenovo_OS("Android version: 4.4"),
     Nokia5_3_OS("Android version: 11.0"),
-    MotoG8_OS("Android version: 10.0"),
+    MotoG8_OS("Android version: 11.0"),
     SamsungGalaxyM21_OS("Android version: 11.0 (One UI 3.0)"),
     SamsungGalaxyS20_OS("Android version: 11.0 (One UI 3.0)"),
     RedmiNote9Pro_OS("Android version: 10.0 (MIUI 12.0.2)"),
@@ -83,6 +85,8 @@ public enum qaPhones {
     SamsungGalaxyA12_OS("Android version: 11(One UI 3.1)"),
     Redmi9C_OS("Android version: 10(MIUI 12.0.9)"),
     Realme8PRO_OS("Android version: 11(Realme UI 2.0)"),
+    GooglePixel5_OS("Android version: 13"),
+    RedmiNote8Pro_OS("Android version: 9(MIUI 11"),
 
 
 
@@ -108,6 +112,8 @@ public enum qaPhones {
     iPhone12("iPhone 12"),
     iPhone13("iPhone 13"),
     iPhoneXSMax("iPhone XS Max"),
+    iPhoneSE2022("iPhone SE 2022"),
+
 
     //iOS
     AppleWatch1_OS("WatchOS version: 4.3.2"),
@@ -116,7 +122,7 @@ public enum qaPhones {
     iPhone7_OS("iOS version: 14.5.1"),
     iPhone4_OS("iOS version: 9.3.5"),
     iPhone12ProMax_OS("iOS version: 15.2.1"),
-    iPhoneSE_OS("iOS version: 14.8"),
+    iPhoneSE_OS("iOS version: 15.5"),
     iPhoneX_OS("iOS version: 14.7.1"),
     iPhoneXS_OS("iOS version: 14.2"),
     iPhone6_OS("iOS version: 12.5.5"),
@@ -125,12 +131,13 @@ public enum qaPhones {
     iPhone11_OS("iOS version: 15.1"),
     iPhone11Pro_OS("iOS version: 14.6"),
     iPhoneSE2020_OS("iOS version: 15.4.1"),
-    iPhoneXR_OS("iOS version: 14.4.2"),
+    iPhoneXR_OS("iOS version: 15.5"),
     iPhone8Plus_OS("iOS version: 15.0"),
     iPhone5s_OS("iOS version: 12.5.4"),
-    iPhone12_OS("iOS version: 15.1"),
-    iPhone13_OS("iOS Version: 15.3"),
-    iPhoneXSMax_OS("iOS Version 15.3");
+    iPhone12_OS("iOS version: 15.6"),
+    iPhone13_OS("iOS Version: 15.5"),
+    iPhoneXSMax_OS("iOS Version 15.3"),
+    iPhoneSE2022_OS("iOS Version 15.4.1");
 
     //==================================================================================================================
 
